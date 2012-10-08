@@ -148,7 +148,7 @@ Sburb.loadStateFromStorage = function(auto, local)
 
 	if(!compressed)
 		return false;
-	var decoded = Iuppiter.decompress(Iuppiter.Base64.decode(Iuppiter.toByteArray(compressed),true));
+	var decoded = Iuppiter.decompress(Iuppiter.Base64.decode(Iuppiter.toByteArray(compressed),true)).replace(/\0/g,"");
 	Sburb.loadSerial(decoded);
 	
 	return true;
@@ -410,6 +410,8 @@ function serializeAssets(output,assets,effects){
 			innerHTML += curAsset.originalVals;
 		}else if(curAsset.type=="font"){
 			innerHTML += curAsset.originalVals;
+		}else if(curAsset.type=="text"){
+			innerHTML += escape(curAsset.text.trim());
 		}
 
 		output = output.concat("\n<asset name='"+curAsset.name+"' type='"+curAsset.type+"' ");
@@ -531,8 +533,20 @@ Sburb.loadSerialFromXML = function(file,keepOld) {
 		fi = document.getElementById("levelFile");
 		return;
     }
-    if (request.status === 200 || request.status == 0) {  
-		loadSerial(request.responseText, keepOld);
+    if (request.status === 200 || request.status == 0) { 
+        try {
+            loadSerial(request.responseText, keepOld);
+        } catch(err) {
+            if (err instanceof XMLParsingError) {
+                if (err.file) {
+                    console.error("Loaded from '"+file+"'")
+                } else {
+                    err.file = file
+                    console.error("Error in '"+file+"'")
+                }
+            }
+            throw err;
+        }
     }
 }
 
@@ -541,14 +555,13 @@ function loadSerial(serialText, keepOld) {
 	Sburb.haltUpdateProcess();
 
     var inText = serialText; //document.getElementById("serialText");
-    var parser=new DOMParser();
-    var input=parser.parseFromString(inText,"text/xml").documentElement;
+    var input = Sburb.parseXML(inText);
 	
 	if(!keepOld) {
     	purgeAssets(); 
     	purgeState();
     }
-    
+
     var rootAttr = input.attributes;
 
 	var levelPath = rootAttr.getNamedItem("levelPath");
@@ -588,6 +601,39 @@ function loadSerial(serialText, keepOld) {
     loadSerialAssets(input);
 	loadQueue.push(input);
 	loadSerialState(input); 
+}
+
+Sburb.parseXML = function(inText) {
+    var parser=new DOMParser();
+    var parsed=parser.parseFromString(inText,"text/xml");
+    
+    if (parsed.getElementsByTagName("parsererror").length>0) {
+        var error = parsed.getElementsByTagName("parsererror")[0];
+        throw new XMLParsingError(error, inText);
+    }
+    
+    return parsed.documentElement;
+}
+
+function XMLParsingError(error, input) {
+    this.name = "XMLParsingError";
+    this.message = parseXMLError(error);
+    this.input = (input || "");
+}
+XMLParsingError.prototype = new Error();
+
+function parseXMLError(n) {
+    if(n.nodeType == 3) {
+        return n.nodeValue;
+    }
+    if(n.nodeName == "h3") {
+        return "";
+    }
+    var error = ""
+    for(var i=0; i<n.childNodes.length; i++) {
+        error = error + parseXMLError(n.childNodes[i]);
+    }
+    return error;
 }
 
 function loadDependencies(input){
@@ -660,6 +706,8 @@ function parseSerialAsset(curAsset) {
 	}else if(type=="font"){
 		//var sources = value.split(";");
 		newAsset = Sburb.createFontAsset(name,value);
+	}else if(type=="text"){
+		newAsset = Sburb.createTextAsset(name,value);
 	}
     newAsset._raw_xml = curAsset;
 	return newAsset;
