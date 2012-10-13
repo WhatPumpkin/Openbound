@@ -1,0 +1,62 @@
+<sburb description='rufioh'>
+
+<dependencies>
+	<!--<dependency>dialogs/rufiohDialog.xml</dependency>-->
+</dependencies>
+
+<classes>
+	<animation class='rufioh-dialog' frameInterval='6' x='-180' y='-524'/>
+	
+	<character class='rufioh' name='rufioh' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='rufiohSheet' state='walkFront' facing='Front'>
+		
+	</character>
+	
+	<action class='beRufioh' name='Be Rufioh.' command='changeChar'>
+		<args>rufioh</args>
+		<action command='playSong'>
+			<args>rufiohSong</args>
+		</action>
+	</action>
+</classes>
+
+<assets>
+
+	<asset name='rufiohSheet' type='graphic'>chars/rufioh/rufioh.png</asset>
+
+	<asset name='rufiohSong' type='audio'>audio/music/SummonerLoop.oga;audio/music/SummonerLoop.mp3</asset> <!-- loops to 0 -->
+
+	<asset name='rufioh_happy' type='graphic'>dialogs/rufioh/rufioh_happy.png</asset>
+	<asset name='rufioh_happytalk' type='graphic'>dialogs/rufioh/rufioh_happytalk.png</asset>
+	<asset name='rufioh_idle' type='graphic'>dialogs/rufioh/rufioh_idle.png</asset>
+	<asset name='rufioh_laugh' type='graphic'>dialogs/rufioh/rufioh_laugh.png</asset>
+	<asset name='rufioh_no' type='graphic'>dialogs/rufioh/rufioh_no.png</asset>
+	<asset name='rufioh_notalk' type='graphic'>dialogs/rufioh/rufioh_notalk.png</asset>
+	<asset name='rufioh_offended' type='graphic'>dialogs/rufioh/rufioh_offended.png</asset>
+	<asset name='rufioh_offendedtalk' type='graphic'>dialogs/rufioh/rufioh_offendedtalk.png</asset>
+	<asset name='rufioh_sad' type='graphic'>dialogs/rufioh/rufioh_sad.png</asset>
+	<asset name='rufioh_sadtalk' type='graphic'>dialogs/rufioh/rufioh_sadtalk.png</asset>
+	<asset name='rufioh_sheepish' type='graphic'>dialogs/rufioh/rufioh_sheepish.png</asset>
+	<asset name='rufioh_surprise' type='graphic'>dialogs/rufioh/rufioh_surprise.png</asset>
+	<asset name='rufioh_surprisetalk' type='graphic'>dialogs/rufioh/rufioh_surprisetalk.png</asset>
+	<asset name='rufioh_talk' type='graphic'>dialogs/rufioh/rufioh_talk.png</asset>
+</assets>
+
+<hud>
+	<dialogsprites>	
+		<animation name='rufioh_happy' class='rufioh-dialog' sheet='rufioh_happy' />
+		<animation name='rufioh_happytalk' class='rufioh-dialog' sheet='rufioh_happytalk' length='2'/>
+		<animation name='rufioh_idle' class='rufioh-dialog' sheet='rufioh_idle' />
+		<animation name='rufioh_laugh' class='rufioh-dialog' sheet='rufioh_laugh' length='2'/>
+		<animation name='rufioh_no' class='rufioh-dialog' sheet='rufioh_no' />
+		<animation name='rufioh_notalk' class='rufioh-dialog' sheet='rufioh_notalk' length='2'/>
+		<animation name='rufioh_offended' class='rufioh-dialog' sheet='rufioh_offended' />
+		<animation name='rufioh_offendedtalk' class='rufioh-dialog' sheet='rufioh_offendedtalk' length='2'/>
+		<animation name='rufioh_sad' class='rufioh-dialog' sheet='rufioh_sad' />
+		<animation name='rufioh_sadtalk' class='rufioh-dialog' sheet='rufioh_sadtalk' length='2'/>
+		<animation name='rufioh_sheepish' class='rufioh-dialog' sheet='rufioh_sheepish' length='2'/>
+		<animation name='rufioh_surprise' class='rufioh-dialog' sheet='rufioh_surprise' />
+		<animation name='rufioh_surprisetalk' class='rufioh-dialog' sheet='rufioh_surprisetalk' length='2'/>
+		<animation name='rufioh_talk' class='rufioh-dialog' sheet='rufioh_talk' length='2'/>
+  </dialogsprites>
+</hud>
+</sburb>

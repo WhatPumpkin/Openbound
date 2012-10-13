@@ -1,0 +1,61 @@
+<sburb description='aranea'>
+
+<dependencies>
+	<!--<dependency>dialogs/araneaDialog.xml</dependency>-->
+</dependencies>
+
+<classes>
+	<animation class='aranea-dialog' frameInterval='6' x='-260' y='-524'/>
+	<!--
+	<character class='aranea' name='aranea' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='araneaSheet' state='walkFront' facing='Front'>
+		
+	</character>
+	
+	<action class='beAranea' name='Be Aranea.' command='changeChar'>
+		<args>aranea</args>
+		<action command='playSong'>
+			<args>hateYouSong</args>
+		</action>
+	</action>
+	-->
+</classes>
+
+<assets>
+	<asset name='aranea_angry' type='graphic'>dialogs/aranea/aranea_angry.png</asset>
+	<asset name='aranea_angrytalk' type='graphic'>dialogs/aranea/aranea_angrytalk.png</asset>
+	<asset name='aranea_annoyed' type='graphic'>dialogs/aranea/aranea_annoyed.png</asset>
+	<asset name='aranea_annoyedtalk' type='graphic'>dialogs/aranea/aranea_annoyedtalk.png</asset>
+	<asset name='aranea_facepalm' type='graphic'>dialogs/aranea/aranea_facepalm.png</asset>
+	<asset name='aranea_facepalmtalk' type='graphic'>dialogs/aranea/aranea_facepalmtalk.png</asset>
+	<asset name='aranea_happier' type='graphic'>dialogs/aranea/aranea_happier.png</asset>
+	<asset name='aranea_happy' type='graphic'>dialogs/aranea/aranea_happy.png</asset>
+	<asset name='aranea_happytalk' type='graphic'>dialogs/aranea/aranea_happytalk.png</asset>
+	<asset name='aranea_idle' type='graphic'>dialogs/aranea/aranea_idle.png</asset>
+	<asset name='aranea_mad' type='graphic'>dialogs/aranea/aranea_mad.png</asset>
+	<asset name='aranea_madtalk' type='graphic'>dialogs/aranea/aranea_madtalk.png</asset>
+	<asset name='aranea_surprised' type='graphic'>dialogs/aranea/aranea_surprised.png</asset>
+	<asset name='aranea_talk' type='graphic'>dialogs/aranea/aranea_talk.png</asset>
+	<asset name='aranea_think' type='graphic'>dialogs/aranea/aranea_think.png</asset>
+	
+</assets>
+
+<hud>
+	<dialogsprites>	
+		<animation name='aranea_angry' class='aranea-dialog' sheet='aranea_angry' />
+		<animation name='aranea_angrytalk' class='aranea-dialog' sheet='aranea_angrytalk' length='2'/>
+		<animation name='aranea_annoyed' class='aranea-dialog' sheet='aranea_annoyed' />
+		<animation name='aranea_annoyedtalk' class='aranea-dialog' sheet='aranea_annoyedtalk' length='2'/>
+		<animation name='aranea_facepalm' class='aranea-dialog' sheet='aranea_facepalm' />
+		<animation name='aranea_facepalmtalk' class='aranea-dialog' sheet='aranea_facepalmtalk' length='2'/>
+		<animation name='aranea_happier' class='aranea-dialog' sheet='aranea_happier' length='2'/>
+		<animation name='aranea_happy' class='aranea-dialog' sheet='aranea_happy' />
+		<animation name='aranea_happytalk' class='aranea-dialog' sheet='aranea_happytalk' length='2'/>
+		<animation name='aranea_idle' class='aranea-dialog' sheet='aranea_idle' />
+		<animation name='aranea_mad' class='aranea-dialog' sheet='aranea_mad' />
+		<animation name='aranea_madtalk' class='aranea-dialog' sheet='aranea_madtalk' length='2'/>
+		<animation name='aranea_surprised' class='aranea-dialog' sheet='aranea_surprised' />
+		<animation name='aranea_talk' class='aranea-dialog' sheet='aranea_talk' length='2'/>
+		<animation name='aranea_think' class='aranea-dialog' sheet='aranea_think' />
+  </dialogsprites>
+</hud>
+</sburb>

@@ -1,0 +1,77 @@
+<sburb description="first room">
+
+<dependencies>
+	<dependency>chars/meenah.xml</dependency>
+	<dependency>chars/horuss.xml</dependency>
+	<dependency>chars/rufioh.xml</dependency>
+	<dependency>chars/damara.xml</dependency>
+	<dependency>chars/mituna.xml</dependency>
+</dependencies>
+
+<assets>
+	
+	<asset name='firstRoomBG' type='graphic'>backgrounds/firstRoomBG.png</asset>
+
+  <asset name='firstRoomFG' type='graphic'>backgrounds/firstRoomFG.png</asset>
+
+	<asset name='firstRoomMap' type='graphic'>backgrounds/firstRoomMap.png</asset>
+	
+	<asset name='qwartz' type='graphic'>backgrounds/qwartz.png</asset>
+	
+	<asset name='firstRoomStairs1' type='path'>888,621;1101,456;1101,507;897,675</asset>
+	<asset name='firstRoomStairs2' type='path'>1509,468;1509,507;1890,207;1890,159</asset>
+	<asset name='firstRoomStairs3' type='path'>1191,1350;1191,1392;996,1545;996,1509</asset>
+	<asset name='firstRoomWalkable' type='path'>1540,1500;1700,1500;1700,1680;1540,1680</asset>
+</assets>
+
+<rooms>
+  <room name='firstRoom' walkableMap='firstRoomMap' mapScale='2'>
+  	<triggers>
+  		
+  	</triggers>
+  	
+  	<paths>
+  		<motionpath path='firstRoomStairs1' xtox='0.7' xtoy='-0.7' />
+  		<motionpath path='firstRoomStairs2' xtox='0.7' xtoy='-0.7' />
+  		<motionpath path='firstRoomStairs3' xtox='0.7' xtoy='-0.7' />
+  	</paths>
+  	
+  	<character class='meenah' x='405' y='726' >
+			<action class='beMeenah'/>
+  	</character>
+  	
+  	<character class='mituna' x='2394' y='285' state='crash'/>
+  	<character class='rufioh' x='771' y='753' />
+  	<character class='horuss' x='1794' y='828' />
+  	<character class='damara' x='453' y='1548' />
+  	
+  	<sprite name='qwartz' x='1566' y='1155'>
+  		<animation sheet='qwartz'/>
+  	</sprite>
+  	
+  	<sprite name='firstRoomOrb' class='blueBubble' x='1536' y='1518'>
+  		<action command='removeSprite' name='gggggg'>
+  			<args>qwartz,firstRoom</args>
+  			<action command='addWalkable'>
+  				<args>firstRoomWalkable,firstRoom</args>
+  			</action>
+  		</action>
+  	</sprite>
+
+    <sprite class='chest7' name='firstRoomChest1'>
+      <action command='openChest' name='Open.'>
+        <args>firstRoomChest1,tinkerbull,@!nothing yet</args>
+      </action>
+    </sprite>
+
+		<sprite name='firstRoomBG'>
+			<animation sheet='firstRoomBG'/>
+		</sprite>
+
+		<sprite name='firstRoomFG' depthing='2'>
+  		<animation sheet='firstRoomFG'/>
+  	</sprite>
+
+  </room> 
+</rooms>
+</sburb>

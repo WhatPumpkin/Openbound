@@ -1,0 +1,98 @@
+<sburb description='ui configuration'>
+
+<dependencies>
+	<!--<dependency>etc/rebubbleText.xml</dependency>-->
+</dependencies>
+
+<assets>
+  <asset name='SburbFont' type='font'>
+  	local:Courier New Bold, 
+  	local:Courier New, 
+  	url:fonts/cour.woff, 
+  	url:fonts/cour.ttf, 
+  	weight:bold
+  </asset>
+  
+  <asset name='preloaderBG' type='graphic'>interface/load.png</asset>
+	<asset name='volumeControl' type='graphic'>interface/volumeControl.png</asset>
+	<asset name='saveControl' type='graphic'>interface/save_icon.png</asset>
+	<asset name='helpControl' type='graphic'>interface/helpControl.png</asset>
+
+  <asset name='dialogBox' type='graphic'>interface/boxes/dialogBoxBig.png</asset>
+  <asset name='alttextbox_twitter' type='graphic'>interface/boxes/alttextbox_twitter.png</asset>
+  <asset name='hashTagBarSheet' type='graphic'>interface/hashtagbar.png</asset>
+  <asset name='heartButtonSheet' type='graphic'>interface/icons_heart.png</asset>
+  <asset name='spadeButtonSheet' type='graphic'>interface/icons_spade.png</asset>
+  <asset name='bubbleButtonSheet' type='graphic'>interface/icons_bub.png</asset>
+  <asset name='closeButtonSheet' type='graphic'>interface/closeconversation.png</asset>
+  
+  <asset name='alttextbox_4chan' type='graphic'>interface/boxes/alttextbox_4chan.gif</asset>
+  
+ 
+
+ 
+<asset name='dialogimg_cronus1' type='graphic'>interface/backgrounds/dialogimg_cronus1.png</asset>
+<asset name='dialogimg_cronus2' type='graphic'>interface/backgrounds/dialogimg_cronus2.png</asset>
+<asset name='dialogimg_cronus3' type='graphic'>interface/backgrounds/dialogimg_cronus3.png</asset>
+<asset name='dialogimg_cronus4' type='graphic'>interface/backgrounds/dialogimg_cronus4.png</asset>
+<asset name='dialogimg_mituna1' type='graphic'>interface/backgrounds/dialogimg_mituna1.gif</asset>
+<asset name='dialogimg_mituna2' type='graphic'>interface/backgrounds/dialogimg_mituna2.png</asset>
+<asset name='dialogimg_mituna3' type='graphic'>interface/backgrounds/dialogimg_mituna3.png</asset>
+
+<asset name='meenahmeme' type='graphic'>interface/backgrounds/meenahmeme.png</asset>
+
+</assets>
+
+<sprite name='meenahmeme'>
+	<animation sheet='meenahmeme' colSize='253' rowSize='160' length='20' x='244' y='55' frameInterval='2'/>
+</sprite>
+
+<hud>
+  	<spritebutton name='volumeButton' x='9' y='9' width='54' height='36' sheet='volumeControl'>
+  		<action command='toggleVolume' silent='true'></action>
+  	</spritebutton>
+  	<spritebutton name='helpButton' x='591' y='9' width='54' height='63' sheet='helpControl'>
+  		<action command='talk' soft='true'>
+  			<args>@! Use the arrow keys or WASD to move, and space to interact.</args>
+  		</action>
+  	</spritebutton>
+  	<spritebutton name='saveButton' x='558' y='18' sheet='saveControl'>
+  		<action command='talk' soft='true'>
+  			<args>
+  			@! Warning: this feature is experimental. Use it only if you're having stability issues and want to keep your place should the application crash. Save files are discarded when the browser is closed.
+  			</args>
+				<action command='saveOrLoad' >
+					<args></args>
+				</action>
+  		</action>
+  	</spritebutton>
+  	
+  	
+	<dialoger alertPos="56,120" talkPosRight="20,120" talkPosLeft="90,120" hiddenPos="-1000,120"
+		spriteStartLeft="-300,450" spriteEndLeft="100,450" spriteStartRight="950,450" spriteEndRight="550,450"
+		alertTextDimensions="30,30,450,220" leftTextDimensions="150,30,350,220" rightTextDimensions="30,30,350,220"
+		box="dialogBox" type="social">
+	</dialoger>
+</hud>
+
+<sprite name='hashTagBar'>
+	<animation sheet='hashTagBarSheet'/>
+</sprite>
+
+<spritebutton name='spadeButton' x='440' y='300' width='30' height='26' sheet='spadeButtonSheet'>
+	<action command='setButtonState' silent='true'>heartButton,0</action>
+</spritebutton>
+
+<spritebutton name='heartButton' x='480' y='300' width='30' height='26' sheet='heartButtonSheet'>
+	<action command='setButtonState' silent='true'>spadeButton,0</action>
+</spritebutton>
+
+<spritebutton name='closeButton' x='220' y='60' width='203' height='37' sheet='closeButtonSheet'>
+	<action command='skipDialog' silent='true'> </action>
+</spritebutton>
+
+<spritebutton name='bubbleButton' x='510' y='300' width='30' height='26' sheet='bubbleButtonSheet'>
+	<!--<action silent='true' soft='true' class='rebubble'/>-->
+	<action command='cancel' silent='true' soft='true'/>
+</spritebutton>
+</sburb>

@@ -1,0 +1,79 @@
+<sburb description='damara'>
+
+<dependencies>
+	<!--<dependency>dialogs/damaraDialog.xml</dependency>-->
+</dependencies>
+
+<classes>
+	<animation class='damara-dialog' frameInterval='6' x='-180' y='-524'/>
+	
+	<character class='damara' name='damara' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='damaraSheet' state='walkFront' facing='Front'>
+		
+	</character>
+	
+	<action class='beDamara' name='Be Damara.' command='changeChar'>
+		<args>damara</args>
+		<action command='playSong'>
+			<args>damaraSong,8.01</args>
+		</action>
+	</action>
+</classes>
+
+<assets>
+
+	<asset name='damaraSheet' type='graphic'>chars/damara/damara.png</asset>
+
+	<asset name='damaraSong' type='audio'>audio/music/RustMaidLoop.oga;audio/music/RustMaidLoop.mp3</asset> <!-- loops to 8.01 -->
+	
+	<asset name='damara_fiendish' type='graphic'>dialogs/damara/damara_fiendish.png</asset>
+	<asset name='damara_fu1' type='graphic'>dialogs/damara/damara_fu1.png</asset>
+	<asset name='damara_fu2' type='graphic'>dialogs/damara/damara_fu2.png</asset>
+	<asset name='damara_fu3' type='graphic'>dialogs/damara/damara_fu3.png</asset>
+	<asset name='damara_fu4' type='graphic'>dialogs/damara/damara_fu4.png</asset>
+	<asset name='damara_huh' type='graphic'>dialogs/damara/damara_huh.png</asset>
+	<asset name='damara_huhtalk' type='graphic'>dialogs/damara/damara_huhtalk.png</asset>
+	<asset name='damara_idle' type='graphic'>dialogs/damara/damara_idle.png</asset>
+	<asset name='damara_lewd' type='graphic'>dialogs/damara/damara_lewd.png</asset>
+	<asset name='damara_mean' type='graphic'>dialogs/damara/damara_mean.png</asset>
+	<asset name='damara_meantalk' type='graphic'>dialogs/damara/damara_meantalk.png</asset>
+	<asset name='damara_pissed' type='graphic'>dialogs/damara/damara_pissed.png</asset>
+	<asset name='damara_sad' type='graphic'>dialogs/damara/damara_sad.png</asset>
+	<asset name='damara_sadtalk' type='graphic'>dialogs/damara/damara_sadtalk.png</asset>
+	<asset name='damara_smilemean' type='graphic'>dialogs/damara/damara_smilemean.png</asset>
+	<asset name='damara_smilemeantalk' type='graphic'>dialogs/damara/damara_smilemeantalk.png</asset>
+	<asset name='damara_smile' type='graphic'>dialogs/damara/damara_smile.png</asset>
+	<asset name='damara_smiletalk' type='graphic'>dialogs/damara/damara_smiletalk.png</asset>
+	<asset name='damara_smoke' type='graphic'>dialogs/damara/damara_smoke.png</asset>
+	<asset name='damara_squint' type='graphic'>dialogs/damara/damara_squint.png</asset>
+	<asset name='damara_squinttalk' type='graphic'>dialogs/damara/damara_squinttalk.png</asset>
+	<asset name='damara_talk' type='graphic'>dialogs/damara/damara_talk.png</asset>
+
+</assets>
+
+<hud>
+	<dialogsprites>	
+		<animation name='damara_fiendish' class='damara-dialog' sheet='damara_fiendish' />
+		<animation name='damara_fu1' class='damara-dialog' sheet='damara_fu1' />
+		<animation name='damara_fu2' class='damara-dialog' sheet='damara_fu2' />
+		<animation name='damara_fu3' class='damara-dialog' sheet='damara_fu3' />
+		<animation name='damara_fu4' class='damara-dialog' sheet='damara_fu4' />
+		<animation name='damara_huh' class='damara-dialog' sheet='damara_huh' />
+		<animation name='damara_huhtalk' class='damara-dialog' sheet='damara_huhtalk' length='2'/>
+		<animation name='damara_idle' class='damara-dialog' sheet='damara_idle' />
+		<animation name='damara_lewd' class='damara-dialog' sheet='damara_lewd' length='2'/>
+		<animation name='damara_mean' class='damara-dialog' sheet='damara_mean' />
+		<animation name='damara_meantalk' class='damara-dialog' sheet='damara_meantalk' length='2'/>
+		<animation name='damara_pissed' class='damara-dialog' sheet='damara_pissed' />
+		<animation name='damara_sad' class='damara-dialog' sheet='damara_sad' />
+		<animation name='damara_sadtalk' class='damara-dialog' sheet='damara_sadtalk' length='2'/>
+		<animation name='damara_smilemean' class='damara-dialog' sheet='damara_smilemean' />
+		<animation name='damara_smilemeantalk' class='damara-dialog' sheet='damara_smilemeantalk' length='2'/>
+		<animation name='damara_smile' class='damara-dialog' sheet='damara_smile' />
+		<animation name='damara_smiletalk' class='damara-dialog' sheet='damara_smiletalk' length='2'/>
+		<animation name='damara_smoke' class='damara-dialog' sheet='damara_smoke' length='2'/>
+		<animation name='damara_squint' class='damara-dialog' sheet='damara_squint' />
+		<animation name='damara_squinttalk' class='damara-dialog' sheet='damara_squinttalk' length='2'/>
+		<animation name='damara_talk' class='damara-dialog' sheet='damara_talk' length='2'/>
+  </dialogsprites>
+</hud>
+</sburb>

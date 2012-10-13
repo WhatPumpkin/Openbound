@@ -1,0 +1,83 @@
+<sburb description='horuss'>
+
+<dependencies>
+	<!--<dependency>dialogs/horussDialog.xml</dependency>-->
+</dependencies>
+
+<classes>
+	<animation class='horuss-dialog' frameInterval='6' x='-180' y='-524'/>
+	
+	<character class='horuss' name='horuss' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='horussSheet' state='walkFront' facing='Front'>
+		
+	</character>
+	
+	<action class='beHoruss' name='Be Horuss.' command='changeChar'>
+		<args>horuss</args>
+		<action command='playSong'>
+			<args>horussSong</args>
+		</action>
+	</action>
+</classes>
+
+<assets>
+
+	<asset name='horussSheet' type='graphic'>chars/horuss/horuss.png</asset>
+
+	<asset name='horussSong' type='audio'>audio/music/IndigoHeirLoop.oga;audio/music/IndigoHeirLoop.mp3</asset> <!-- loops to 0 -->
+	<asset name='horuss_bashful' type='graphic'>dialogs/horuss/horuss_bashful.png</asset>
+	<asset name='horuss_crossed2' type='graphic'>dialogs/horuss/horuss_crossed2.png</asset>
+	<asset name='horuss_crossed' type='graphic'>dialogs/horuss/horuss_crossed.png</asset>
+	<asset name='horuss_grin' type='graphic'>dialogs/horuss/horuss_grin.png</asset>
+	<asset name='horuss_hmm' type='graphic'>dialogs/horuss/horuss_hmm.png</asset>
+	<asset name='horuss_hmmtalk' type='graphic'>dialogs/horuss/horuss_hmmtalk.png</asset>
+	<asset name='horuss_horsedick_blur1' type='graphic'>dialogs/horuss/horuss_horsedick_blur1.png</asset>
+	<asset name='horuss_horsedick_blur2' type='graphic'>dialogs/horuss/horuss_horsedick_blur2.png</asset>
+	<asset name='horuss_horsedick_blur3' type='graphic'>dialogs/horuss/horuss_horsedick_blur3.png</asset>
+	<asset name='horuss_horsedick' type='graphic'>dialogs/horuss/horuss_horsedick.png</asset>
+	<asset name='horuss_idle2' type='graphic'>dialogs/horuss/horuss_idle2.png</asset>
+	<asset name='horuss_idle2talk' type='graphic'>dialogs/horuss/horuss_idle2talk.png</asset>
+	<asset name='horuss_idle' type='graphic'>dialogs/horuss/horuss_idle.png</asset>
+	<asset name='horuss_laugh' type='graphic'>dialogs/horuss/horuss_laugh.png</asset>
+	<asset name='horuss_mad' type='graphic'>dialogs/horuss/horuss_mad.png</asset>
+	<asset name='horuss_oops' type='graphic'>dialogs/horuss/horuss_oops.png</asset>
+	<asset name='horuss_sad' type='graphic'>dialogs/horuss/horuss_sad.png</asset>
+	<asset name='horuss_sadtalk' type='graphic'>dialogs/horuss/horuss_sadtalk.png</asset>
+	<asset name='horuss_smile' type='graphic'>dialogs/horuss/horuss_smile.png</asset>
+	<asset name='horuss_smiletalk' type='graphic'>dialogs/horuss/horuss_smiletalk.png</asset>
+	<asset name='horuss_sweat_bashful2' type='graphic'>dialogs/horuss/horuss_sweat_bashful2.png</asset>
+	<asset name='horuss_sweat_bashful' type='graphic'>dialogs/horuss/horuss_sweat_bashful.png</asset>
+	<asset name='horuss_sweat_grin' type='graphic'>dialogs/horuss/horuss_sweat_grin.png</asset>
+	<asset name='horuss_sweat_idle' type='graphic'>dialogs/horuss/horuss_sweat_idle.png</asset>
+	<asset name='horuss_sweat_talk' type='graphic'>dialogs/horuss/horuss_sweat_talk.png</asset>
+</assets>
+
+<hud>
+	<dialogsprites>	
+		<animation name='horuss_bashful' class='horuss-dialog' sheet='horuss_bashful' length='2'/>
+		<animation name='horuss_crossed2' class='horuss-dialog' sheet='horuss_crossed2' length='2'/>
+		<animation name='horuss_crossed' class='horuss-dialog' sheet='horuss_crossed' length='2'/>
+		<animation name='horuss_grin' class='horuss-dialog' sheet='horuss_grin' />
+		<animation name='horuss_hmm' class='horuss-dialog' sheet='horuss_hmm' />
+		<animation name='horuss_hmmtalk' class='horuss-dialog' sheet='horuss_hmmtalk' length='2'/>
+		<animation name='horuss_horsedick_blur1' class='horuss_horsedick-dialog' sheet='horuss_horsedick_blur1' length='2'/>
+		<animation name='horuss_horsedick_blur2' class='horuss_horsedick-dialog' sheet='horuss_horsedick_blur2' length='2'/>
+		<animation name='horuss_horsedick_blur3' class='horuss_horsedick-dialog' sheet='horuss_horsedick_blur3' length='2'/>
+		<animation name='horuss_horsedick' class='horuss-dialog' sheet='horuss_horsedick' />
+		<animation name='horuss_idle2' class='horuss-dialog' sheet='horuss_idle2' />
+		<animation name='horuss_idle2talk' class='horuss-dialog' sheet='horuss_idle2talk' length='2'/>
+		<animation name='horuss_idle' class='horuss-dialog' sheet='horuss_idle' length='2'/>
+		<animation name='horuss_laugh' class='horuss-dialog' sheet='horuss_laugh' />
+		<animation name='horuss_mad' class='horuss-dialog' sheet='horuss_mad' />
+		<animation name='horuss_oops' class='horuss-dialog' sheet='horuss_oops' />
+		<animation name='horuss_sad' class='horuss-dialog' sheet='horuss_sad' />
+		<animation name='horuss_sadtalk' class='horuss-dialog' sheet='horuss_sadtalk' length='2'/>
+		<animation name='horuss_smile' class='horuss-dialog' sheet='horuss_smile' />
+		<animation name='horuss_smiletalk' class='horuss-dialog' sheet='horuss_smiletalk' length='2'/>
+		<animation name='horuss_sweat_bashful2' class='horuss_sweat-dialog' sheet='horuss_sweat_bashful2' length='2'/>
+		<animation name='horuss_sweat_bashful' class='horuss_sweat-dialog' sheet='horuss_sweat_bashful' length='2'/>
+		<animation name='horuss_sweat_grin' class='horuss_sweat-dialog' sheet='horuss_sweat_grin' length='2'/>
+		<animation name='horuss_sweat_idle' class='horuss_sweat-dialog' sheet='horuss_sweat_idle' length='2'/>
+		<animation name='horuss_sweat_talk' class='horuss_sweat-dialog' sheet='horuss_sweat_talk' length='2'/>
+	</dialogsprites>
+</hud>
+</sburb>

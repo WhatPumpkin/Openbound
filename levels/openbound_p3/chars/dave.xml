@@ -1,0 +1,50 @@
+<sburb description='dave'>
+
+<dependencies>
+	<!--<dependency>dialogs/dave/daveDialog.xml</dependency>-->
+</dependencies>
+
+<classes>
+	<animation class='dave-dialog' frameInterval='6' x='-180' y='-524'/>
+	
+	<character class='dave' name='dave' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='daveSheet' state='walkFront' facing='Front'>
+		
+	</character>
+	
+	<action class='beDave' name='Be Dave.' command='changeChar'>
+		<args>dave</args>
+		<action command='playSong'>
+			<args>daveSong,4.68</args>
+		</action>
+	</action>
+</classes>
+
+<assets>
+
+	<asset name='daveSheet' type='graphic'>chars/dave/dave.png</asset>
+
+	<asset name='daveSong' type='audio'>audio/music/DaveSpriteLoop.oga;audio/music/DaveSpriteLoop.mp3</asset> <!-- loops to 4.68 -->
+	
+	<asset name='dave_concern' type='graphic'>dialogs/dave/dave_concern.png</asset>
+	<asset name='dave_huh' type='graphic'>dialogs/dave/dave_huh.png</asset>
+	<asset name='dave_huhtalk' type='graphic'>dialogs/dave/dave_huhtalk.png</asset>
+	<asset name='dave_idle' type='graphic'>dialogs/dave/dave_idle.png</asset>
+	<asset name='dave_mad' type='graphic'>dialogs/dave/dave_mad.png</asset>
+	<asset name='dave_madtalk' type='graphic'>dialogs/dave/dave_madtalk.png</asset>
+	<asset name='dave_smug' type='graphic'>dialogs/dave/dave_smug.png</asset>
+	<asset name='dave_talk' type='graphic'>dialogs/dave/dave_talk.png</asset>
+</assets>
+
+<hud>
+	<dialogsprites>	
+		<animation name='dave_concern' class='dave-dialog' sheet='dave_concern' length='2'/>
+		<animation name='dave_huh' class='dave-dialog' sheet='dave_huh' />
+		<animation name='dave_huhtalk' class='dave-dialog' sheet='dave_huhtalk' length='2'/>
+		<animation name='dave_idle' class='dave-dialog' sheet='dave_idle' />
+		<animation name='dave_mad' class='dave-dialog' sheet='dave_mad' />
+		<animation name='dave_madtalk' class='dave-dialog' sheet='dave_madtalk' length='2'/>
+		<animation name='dave_smug' class='dave-dialog' sheet='dave_smug' length='2'/>
+		<animation name='dave_talk' class='dave-dialog' sheet='dave_talk' length='2'/>
+	</dialogsprites>
+</hud>
+</sburb>

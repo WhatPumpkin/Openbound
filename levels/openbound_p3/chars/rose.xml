@@ -1,0 +1,56 @@
+<sburb description='rose'>
+
+<dependencies>
+	<!--<dependency>dialogs/rose/roseDialog.xml</dependency>-->
+</dependencies>
+
+<classes>
+	<animation class='rose-dialog' frameInterval='6' x='-180' y='-524'/>
+	
+	<character class='rose' name='rose' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='roseSheet' state='walkFront' facing='Front'>
+		
+	</character>
+	
+	<action class='beRose' name='Be Rose.' command='changeChar'>
+		<args>rose</args>
+		<action command='playSong'>
+			<args>roseSong</args>
+		</action>
+	</action>
+</classes>
+
+<assets>
+
+	<asset name='roseSheet' type='graphic'>chars/rose/rose.png</asset>
+
+	<asset name='roseSong' type='audio'>audio/music/IndigoHeirLoop.oga;audio/music/IndigoHeirLoop.mp3</asset> <!-- loops to 0 -->
+	
+	<asset name='rose_annoyed' type='graphic'>dialogs/rose/rose_annoyed.png</asset>
+	<asset name='rose_annoyedtalk' type='graphic'>dialogs/rose/rose_annoyedtalk.png</asset>
+	<asset name='rose_concern' type='graphic'>dialogs/rose/rose_concern.png</asset>
+	<asset name='rose_coy' type='graphic'>dialogs/rose/rose_coy.png</asset>
+	<asset name='rose_coytalk' type='graphic'>dialogs/rose/rose_coytalk.png</asset>
+	<asset name='rose_happy' type='graphic'>dialogs/rose/rose_happy.png</asset>
+	<asset name='rose_happytalk' type='graphic'>dialogs/rose/rose_happytalk.png</asset>
+	<asset name='rose_idle' type='graphic'>dialogs/rose/rose_idle.png</asset>
+	<asset name='rose_laugh' type='graphic'>dialogs/rose/rose_laugh.png</asset>
+	<asset name='rose_sad' type='graphic'>dialogs/rose/rose_sad.png</asset>
+	<asset name='rose_talk' type='graphic'>dialogs/rose/rose_talk.png</asset>
+</assets>
+
+<hud>
+	<dialogsprites>	
+		<animation name='rose_annoyed' class='rose-dialog' sheet='rose_annoyed' length='4' frameInterval='0:60,1:6'/>
+		<animation name='rose_annoyedtalk' class='rose-dialog' sheet='rose_annoyedtalk' length='2'/>
+		<animation name='rose_concern' class='rose-dialog' sheet='rose_concern' length='2'/>
+		<animation name='rose_coy' class='rose-dialog' sheet='rose_coy' />
+		<animation name='rose_coytalk' class='rose-dialog' sheet='rose_coytalk' length='2'/>
+		<animation name='rose_happy' class='rose-dialog' sheet='rose_happy' />
+		<animation name='rose_happytalk' class='rose-dialog' sheet='rose_happytalk' length='2' />
+		<animation name='rose_idle' class='rose-dialog' sheet='rose_idle' length='4' frameInterval='0:60,1:6'/>
+		<animation name='rose_laugh' class='rose-dialog' sheet='rose_laugh' length='2'/>
+		<animation name='rose_sad' class='rose-dialog' sheet='rose_sad' />
+		<animation name='rose_talk' class='rose-dialog' sheet='rose_talk' length='2'/>
+	</dialogsprites>
+</hud>
+</sburb>

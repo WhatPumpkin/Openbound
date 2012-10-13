@@ -1,0 +1,39 @@
+<sburb description='terezi'>
+
+<dependencies>
+	<dependency>dialogs/tereziDialog.xml</dependency>
+</dependencies>
+
+<classes>
+	<animation class='terezi-dialog' frameInterval='6' x='-230' y='-454'/>
+	
+	<character class='terezi' name='terezi' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='tereziSheet' state='walkFront' facing='Front'>
+		
+	</character>
+	
+	<action class='beTerezi' name='Be Terezi.' command='changeChar'>
+		<args>terezi</args>
+		<action command='playSong' noDelay='true'>
+			<args>tealSeerSong,16.89</args>
+		</action>
+	</action>
+</classes>
+
+<assets>
+
+	<asset name='tereziSheet' type='graphic'>chars/terezi/terezi.png</asset>
+
+	<asset name='tealSeerSong' type='audio'>audio/music/TealSeerLoop.oga;audio/music/TealSeerLoop.mp3</asset>--> <!-- loops to 16.89 -->
+
+	<asset name='terezi_idle' type='graphic'>dialogs/terezi/terezi_idle.png</asset>
+	<asset name='terezi_sad' type='graphic'>dialogs/terezi/terezi_sad.png</asset>
+	
+</assets>
+
+<hud>
+	<dialogsprites>	
+  		<animation name='terezi_idle' class='terezi-dialog' sheet='terezi_idle'/>
+  		<animation name='terezi_sad' class='terezi-dialog' sheet='terezi_sad' />
+  </dialogsprites>
+</hud>
+</sburb>

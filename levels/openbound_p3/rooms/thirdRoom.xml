@@ -1,0 +1,464 @@
+<sburb description="third room">
+
+<dependencies>
+	<dependency>chars/meulin.xml</dependency>
+	<dependency>chars/kurloz.xml</dependency>
+</dependencies>
+
+<classes>
+	
+</classes>
+
+<assets>
+	<asset name='thirdRoomBG_0_0' type='graphic'>backgrounds/slices/thirdRoomBG_0_0.png</asset>
+	<asset name='thirdRoomBG_0_1' type='graphic'>backgrounds/slices/thirdRoomBG_0_1.png</asset>
+	<asset name='thirdRoomBG_0_2' type='graphic'>backgrounds/slices/thirdRoomBG_0_2.png</asset>
+	<asset name='thirdRoomBG_0_3' type='graphic'>backgrounds/slices/thirdRoomBG_0_3.png</asset>
+	<asset name='thirdRoomBG_0_4' type='graphic'>backgrounds/slices/thirdRoomBG_0_4.png</asset>
+	<asset name='thirdRoomBG_0_5' type='graphic'>backgrounds/slices/thirdRoomBG_0_5.png</asset>
+	<asset name='thirdRoomBG_1_0' type='graphic'>backgrounds/slices/thirdRoomBG_1_0.png</asset>
+	<asset name='thirdRoomBG_1_1' type='graphic'>backgrounds/slices/thirdRoomBG_1_1.png</asset>
+	<asset name='thirdRoomBG_1_2' type='graphic'>backgrounds/slices/thirdRoomBG_1_2.png</asset>
+	<asset name='thirdRoomBG_1_3' type='graphic'>backgrounds/slices/thirdRoomBG_1_3.png</asset>
+	<asset name='thirdRoomBG_1_4' type='graphic'>backgrounds/slices/thirdRoomBG_1_4.png</asset>
+	<asset name='thirdRoomBG_1_5' type='graphic'>backgrounds/slices/thirdRoomBG_1_5.png</asset>
+	<asset name='thirdRoomBG_2_0' type='graphic'>backgrounds/slices/thirdRoomBG_2_0.png</asset>
+	<asset name='thirdRoomBG_2_1' type='graphic'>backgrounds/slices/thirdRoomBG_2_1.png</asset>
+	<asset name='thirdRoomBG_2_2' type='graphic'>backgrounds/slices/thirdRoomBG_2_2.png</asset>
+	<asset name='thirdRoomBG_2_3' type='graphic'>backgrounds/slices/thirdRoomBG_2_3.png</asset>
+	<asset name='thirdRoomBG_2_4' type='graphic'>backgrounds/slices/thirdRoomBG_2_4.png</asset>
+	<asset name='thirdRoomBG_2_5' type='graphic'>backgrounds/slices/thirdRoomBG_2_5.png</asset>
+	<asset name='thirdRoomBG_3_0' type='graphic'>backgrounds/slices/thirdRoomBG_3_0.png</asset>
+	<asset name='thirdRoomBG_3_1' type='graphic'>backgrounds/slices/thirdRoomBG_3_1.png</asset>
+	<asset name='thirdRoomBG_3_2' type='graphic'>backgrounds/slices/thirdRoomBG_3_2.png</asset>
+	<asset name='thirdRoomBG_3_3' type='graphic'>backgrounds/slices/thirdRoomBG_3_3.png</asset>
+	<asset name='thirdRoomBG_3_4' type='graphic'>backgrounds/slices/thirdRoomBG_3_4.png</asset>
+	<asset name='thirdRoomBG_3_5' type='graphic'>backgrounds/slices/thirdRoomBG_3_5.png</asset>
+
+	<asset name='thirdRoomFG_0_1' type='graphic'>backgrounds/slices/thirdRoomFG_0_1.png</asset>
+	<asset name='thirdRoomFG_0_4' type='graphic'>backgrounds/slices/thirdRoomFG_0_4.png</asset>
+	<asset name='thirdRoomFG_1_3' type='graphic'>backgrounds/slices/thirdRoomFG_1_3.png</asset>
+	<asset name='thirdRoomFG_1_4' type='graphic'>backgrounds/slices/thirdRoomFG_1_4.png</asset>
+	<asset name='thirdRoomMap' type='graphic'>backgrounds/thirdRoomMap.png</asset>
+	
+	<asset name='catLusus' type='graphic'>objects/daww3.png</asset>
+	<asset name='thirdRoomDoor' type='graphic'>objects/map3_door.png</asset>
+	<asset name='thirdRoomLily' type='graphic'>objects/map3_lilypad.png</asset>
+	
+	<asset name='thirdRoomStairs' type='path'>1064,1897;1214,2048;1214,2147;1064,1982</asset>
+	<asset name='thirdRoomPost1' type='path'>696,312;696,336;727,336;727,312</asset>
+	<asset name='thirdRoomPost2' type='path'>817,317;847,317;847,337;817,337</asset>
+	
+	<asset name='obj09' type='graphic'>objects/items/obj09.png</asset>
+	<asset name='obj10' type='graphic'>objects/items/obj10.png</asset>
+	<asset name='obj11' type='graphic'>objects/items/obj11.png</asset>
+	<asset name='obj12' type='graphic'>objects/items/obj12.png</asset>
+	<asset name='obj13' type='graphic'>objects/items/obj13.png</asset>
+	<asset name='obj14' type='graphic'>objects/items/obj14.png</asset>
+	<asset name='obj15' type='graphic'>objects/items/obj15.png</asset>
+	<asset name='obj16' type='graphic'>objects/items/obj16.png</asset>
+	<asset name='obj17' type='graphic'>objects/items/obj17.png</asset>
+	
+	<asset name='meme10' type='graphic'>interface/backgrounds/meme10.png</asset>
+<asset name='meme11' type='graphic'>interface/backgrounds/meme11.png</asset>
+<asset name='meme12' type='graphic'>interface/backgrounds/meme12.png</asset>
+<asset name='meme13' type='graphic'>interface/backgrounds/meme13.png</asset>
+<asset name='meme14' type='graphic'>interface/backgrounds/meme14.png</asset>
+<asset name='meme15' type='graphic'>interface/backgrounds/meme15.png</asset>
+<asset name='meme16' type='graphic'>interface/backgrounds/meme16.png</asset>
+<asset name='meme17' type='graphic'>interface/backgrounds/meme17.png</asset>
+<asset name='meme1' type='graphic'>interface/backgrounds/meme1.png</asset>
+<asset name='meme2' type='graphic'>interface/backgrounds/meme2.png</asset>
+<asset name='meme3' type='graphic'>interface/backgrounds/meme3.png</asset>
+<asset name='meme4' type='graphic'>interface/backgrounds/meme4.png</asset>
+<asset name='meme5' type='graphic'>interface/backgrounds/meme5.png</asset>
+<asset name='meme6' type='graphic'>interface/backgrounds/meme6.png</asset>
+<asset name='meme7' type='graphic'>interface/backgrounds/meme7.png</asset>
+<asset name='meme8' type='graphic'>interface/backgrounds/meme8.png</asset>
+<asset name='meme9' type='graphic'>interface/backgrounds/meme9.png</asset>
+</assets>
+
+<sprite name='meme1'>
+	<animation frameInterval='2' sheet='meme1' colSize='259' rowSize='180' length='9' x='54' y='49'/>
+</sprite>
+<sprite name='meme2'>
+	<animation frameInterval='2' sheet='meme2' colSize='220' rowSize='168' length='12' x='71' y='56'/>
+</sprite>
+<sprite name='meme3'>
+	<animation frameInterval='2' sheet='meme3' colSize='220' rowSize='172' length='2' x='68' y='55'/>
+</sprite>
+<sprite name='meme4'>
+	<animation frameInterval='2' sheet='meme4' colSize='194' rowSize='220' length='10' x='54' y='25'/>
+</sprite>
+<sprite name='meme5'>
+	<animation frameInterval='2' sheet='meme5' colSize='250' rowSize='170' length='16' x='33' y='52'/>
+</sprite>
+<sprite name='meme6'>
+	<animation frameInterval='2' sheet='meme6' colSize='245' rowSize='142' length='28' x='27' y='66'/>
+</sprite>
+<sprite name='meme7'>
+	<animation frameInterval='2' sheet='meme7' colSize='264' rowSize='145' length='24' x='24' y='64'/>
+</sprite>
+<sprite name='meme8'>
+	<animation frameInterval='2' sheet='meme8' colSize='279' rowSize='149' length='18' x='23' y='59'/>
+</sprite>
+<sprite name='meme9'>
+	<animation frameInterval='2' sheet='meme9' colSize='238' rowSize='179' length='24' x='42' y='46'/>
+</sprite>
+<sprite name='meme10'>
+	<animation frameInterval='2' sheet='meme10' colSize='239' rowSize='179' length='6' x='252' y='46'/>
+</sprite>
+<sprite name='meme11'>
+	<animation frameInterval='2' sheet='meme11' colSize='241' rowSize='136' length='12' x='252' y='70'/>
+</sprite>
+<sprite name='meme12'>
+	<animation frameInterval='2' sheet='meme12' colSize='200' rowSize='200' length='20' x='281' y='35'/>
+</sprite>
+<sprite name='meme13'>
+	<animation frameInterval='2' sheet='meme13' colSize='368' rowSize='209' length='4' x='154' y='34'/>
+</sprite>
+<sprite name='meme14'>
+	<animation frameInterval='2' sheet='meme14' colSize='344' rowSize='192' length='2' x='166' y='41'/>
+</sprite>
+<sprite name='meme15'>
+	<animation frameInterval='2' sheet='meme15' colSize='224' rowSize='124' length='12' x='35' y='75'/>
+</sprite>
+<sprite name='meme16'>
+	<animation frameInterval='2' sheet='meme16' colSize='242' rowSize='180' length='16' x='25' y='47'/>
+</sprite>
+<sprite name='meme17'>
+	<animation frameInterval='2' sheet='meme17' colSize='306' rowSize='201' length='40' x='22' y='32'/>
+</sprite>
+
+
+<sprite name='thirdRoomLily' x='1031' y='1891'>
+	<animation sheet='thirdRoomLily'/>
+</sprite>
+
+<sprite name='thirdRoomDoor' x='765' y='336' width='100' height='60'>
+	<animation sheet='thirdRoomDoor' x='-60' y='-144'/>
+</sprite>
+
+<sprite depthing='3' name='obj09'>
+<animation x='-50' y='-50'  sheet='obj09'/>
+</sprite>
+<sprite depthing='3' name='obj10'>
+<animation x='-50' y='-50'  sheet='obj10'/>
+</sprite>
+<sprite depthing='3' name='obj11'>
+<animation x='-50' y='-50'  sheet='obj11'/>
+</sprite>
+<sprite depthing='3' name='obj12'>
+<animation x='-50' y='-50'  sheet='obj12'/>
+</sprite>
+<sprite depthing='3' name='obj13'>
+<animation x='-50' y='-50'  sheet='obj13'/>
+</sprite>
+<sprite depthing='3' name='obj14'>
+<animation x='-50' y='-50'  sheet='obj14'/>
+</sprite>
+<sprite depthing='3' name='obj15'>
+<animation x='-50' y='-50'  sheet='obj15'/>
+</sprite>
+<sprite depthing='3' name='obj16'>
+<animation x='-50' y='-50'  sheet='obj16'/>
+</sprite>
+<sprite depthing='3' name='obj17'>
+<animation x='-50' y='-50'  sheet='obj17'/>
+</sprite>
+
+<sprite class='chest3' name='thirdRoomChest10' x='1365' y='2109'>
+  <action sprite='meulin' command='openChest' name='Open.'>
+		<args>thirdRoomChest10,obj10,
+			@! You got a COD PIECE!
+			@! So soft, so inviting... you are fighting the temptation to wear it right now with all your might. If the crotch was any more forgiving, it would be canonized by the Vatican.
+		</args>
+		<action command='setGameState'>
+			<args>hasCod,true</args>
+		</action>
+	</action>
+</sprite>
+
+<rooms>
+  <room name='thirdRoom' walkableMap='thirdRoomMap' mapScale='2'>
+  	<triggers>
+  		<trigger>
+  			<args>inBox2,char,168,2752,924,3000</args>
+  			<action class='notForYou' />
+	 		</trigger>
+	 		
+  		<trigger>
+  			<args>inBox2,meenah,168,2752,924,3000</args>
+  			<action command='goBack'>
+  				<args>char</args>
+  				<action command='changeRoomRemote'>rooms/firstRoom.xml,firstRoom,5412,99</action>
+  			</action>
+  		</trigger>
+
+  		<trigger>
+  			<args>gameState,givingCod=true</args>
+				<args>gameState,hasCod!=true</args>
+				<action command='setGameState' noDelay='true'>
+  				<args>givingCod,false</args>
+					<action command='talk'>
+						<args>
+							@! You don't have a COD PIECE! You have not obtained such exquisite finery yet. Perhaps you should do a bit more treasure hunting?
+						</args>
+					</action>
+				</action>
+  		</trigger>
+  		
+  		<trigger>
+  			<args>gameState,givingCod=true</args>
+  			<trigger detonate='true'>
+  				<args>gameState,hasCod=true</args>
+  				<action command='playSong'>
+  					<args>purpleBardSong,6.30</args>
+  					<action class='kurlozTalk6'>
+  						<action command='changeChar'>
+  							<args>kurloz</args>
+  						</action>
+  					</action>
+  				</action>
+  			</trigger>
+  			<action command='setGameState'>
+  				<args>givingCod,false</args>
+  			</action>
+  		</trigger>
+  		
+  		
+  		<trigger>
+  			<args>spriteProperty,char,name=kurloz</args>
+  			<args>withinRange,kurloz,meenah,80</args>
+  			<action command='goBack'>
+  				<args>char</args>
+  				<action class='kurlozTalk7' />
+  			</action>
+  		</trigger>
+  		
+  		<trigger>
+  			<args>inBox2,kurloz,726,317,817,336</args>
+  			<args>gameState,thirdDoorOpen=true</args>
+  			<action command='changeRoomRemote'>rooms/fourthRoom.xml,fourthRoom,325,240</action>
+  		</trigger>
+  	</triggers>
+  
+  	<character class='meulin' x='948' y='534'>
+  		<action class='meulinTalk1' />
+  		<action class='meulinTalk2' />
+  		<action class='meulinTalk3' />
+  		<action sprite='meenah' class='beMeulin'/>
+  	</character>
+  	
+  	<character class='kurloz' x='624' y='1668'>
+  		<action class='kurlozTalk1' />
+  		<action class='kurlozTalk2' />
+  		<action class='kurlozTalk3' />
+  		<action class='kurlozTalk5' >
+  			<action command='presentActions'>
+  				<args>
+  					<action command='setGameState' name='Yes.'>
+  						<args>givingCod,true</args>
+  					</action>
+  					<action command='cancel' name='No.' />
+  				</args>
+  			</action>
+  		</action>
+  	</character>
+  
+  	<sprite name='catLusus' x='246' y='831' width='160' height='120' collidable='true'>
+  		<animation sheet='catLusus' x='-80' y='-60' length='12' frameInterval='4'/>
+  		<action command='talk' name='Examine.'>
+						<args>
+						@!:#cat-mom mrrrrr...
+						<!--  -->
+						</args>
+			</action>
+  	</sprite>
+  	
+  	<sprite name='thirdRoomBubble1' class='blueBubble' x='999' y='1875'>
+  		<action sprite='!meulin' command='talk' name='Examine.'>
+				<args>
+				@! This does not contain your memory. Only Meulin can access this bubble.
+				<!--  -->
+				</args>
+			</action>
+			
+			<action sprite='meulin' command='talk' name='Examine.'>
+				<args>
+				@! You remember spending a fair amount of your time hopping around these lily pads. Once you stumbled on a treasure so rare, so incredible, you could find neither the words nor the mimes to describe it. Alas, you lost it. Could this be the gateway to that special memory?
+				<!-- stairs appear -->
+				</args>
+				<action command='addWalkable'>
+					<args>thirdRoomStairs,thirdRoom</args>
+					<action command='addMotionPath' noDelay='true'>
+						<args>thirdRoomStairs,0.7,0.7,0,1,0,0,thirdRoom</args>
+						<action command='addSprite' noDelay='true'>
+							<args>thirdRoomLily,thirdRoom</args>
+							<action command='addSprite' noDelay='true'>
+								<args>thirdRoomChest10,thirdRoom</args>
+								<action command='playSound' noDelay='true'>
+									<args>stairSound</args>
+								</action>
+							</action>
+						</action>
+					</action>
+				</action>
+			</action>
+  	</sprite>
+  
+  	<sprite name='thirdRoomBubble2' class='blueBubble' x='663' y='375'>
+  		<action sprite='!kurloz' command='talk' name='Examine.'>
+						<args>
+						@! This does not contain your memory. Only Kurloz can access this bubble.
+						<!--  -->
+						</args>
+			</action>
+			
+			<action sprite='kurloz' command='talk' name='Examine.'>
+				<args>
+				@! You've kept many secrets from your friends. Secrets to you were always the most beautiful miracles of all. They are the private answers to a bunch of riddles no one ever asked.
+				@! But since this place is made of memories, you've had to be extra careful with your secrets. You've carved out an extensive network of virtual catacombs throughout the bubbles, leading to hidden treasures, black recollections, and perhaps one or two illicit dropoff points.
+				<!--  -->
+				</args>
+				<action command='addUnwalkable'>
+					<args>thirdRoomPost1,thirdRoom</args>
+					<action command='addUnwalkable' noDelay='true'>
+						<args>thirdRoomPost2,thirdRoom</args>
+						<action command='addSprite' noDelay='true'>
+							<args>thirdRoomDoor,thirdRoom</args>
+							<action command='setGameState' noDelay='true'>
+								<args>thirdDoorOpen,true</args>
+								<action command='playSound' noDelay='true'>
+									<args>hitPowerfulSound</args>
+								</action>
+							</action>
+						</action>
+					</action>
+				</action>
+			</action>
+  	</sprite>
+  	
+  	<sprite class='chest3' name='thirdRoomChest9' x='855' y='2646'>
+			<action command='openChest' name='Open.'>
+		  <args>thirdRoomChest9,obj09,
+		    @! You got a TAROT DECK!
+		    @!:#highly-desirable-merchandise Any aspiring seer would be crazy not to keep one of these on hand. Maybe you'll try selling it to Kankri later, or that talkative broad in the orange nightgown.
+		  </args>
+		  </action>
+  	</sprite>
+  
+  	
+  	
+  	<sprite class='chest3' name='thirdRoomChest11' x='186' y='1680'>
+			<action command='openChest' name='Open.'>
+				<args>thirdRoomChest11,obj11,
+				  @! You got a JUJU!
+				  @! A VOODOO DOLL to be exact. You wonder what happens if you pull one of these pins...
+				  @! Nah, better leave them be. Got a bad feeling about this thing. Really bad, uh... what's the word you're looking for. Bad...
+				  @!:#whatever-you-say Mojo?
+				</args>
+			</action>
+  	</sprite>
+  	
+  	<sprite class='chest3' name='thirdRoomChest12' x='921' y='1539'>
+			<action command='openChest' name='Open.'>
+				<args>thirdRoomChest12,obj12,
+					@! You got a SPADE KEY!
+				</args>
+				<action command='addAction'>
+  				<args>megaDoor,
+  					<action name='Use spade key.' command='removeAction'>
+  						<args>megaDoor,Use spade key.</args>
+  						<action command='setGameState'>
+  							<args>spadeKeyUsed,true</args>
+  							<action command='addSprite'>
+  								<args>spadeKeyOverlay,firstRoom</args>
+  								<action command='playSound' noDelay='true'>
+										<args>openSound2</args>
+									</action>
+  							</action>
+  						</action>
+  					</action>
+  				</args>
+  			</action>
+			</action>
+  	</sprite>
+  	
+  	<sprite class='chest3' name='thirdRoomChest13' x='228' y='570'>
+			 <action command='openChest' name='Open.'>
+		  <args>thirdRoomChest13,obj13,
+		    @! You got an OLIVE POTION!
+		    @! This is supposed to be a love potion. Just one sip and AUGH, IT'S JUST MORE NASTY TROLL BLOOD. What the hell is going on here? Who is even bottling this stuff?
+		    @!:#hustlin Oh well, you'll hang on to it anyway. Maybe you'll be able to con some lovestruck sucker out of a whole mess of boonies for this slop.
+		    @!: (OTOH, if you're not Meenah right now you just chuck it off the lily pad.)
+		  </args>
+		  </action>
+  	</sprite>
+  	
+  	<sprite class='chest3' name='thirdRoomChest14' x='288' y='543'>
+			 <action command='openChest' name='Open.'>
+		  <args>thirdRoomChest14,obj14,
+		    @! You got a TEA POT!
+		    @! mmmm
+		    @!:#:3 chameowmile
+		  </args>
+		  </action>
+  	</sprite>
+  	
+  	<sprite class='chest3' name='thirdRoomChest15' x='348' y='528'>
+			  <action command='openChest' name='Open.'>
+				<args>thirdRoomChest15,obj15,
+				  @! You got a pair of ACTION CLAWS!
+				  @! Whoa, easy there... you could accidentally grab one of them firmly, and then drag it across your face diagonally if you're not careful.
+				</args>
+				</action>
+  	</sprite>
+  	
+  	<sprite class='chest3' name='thirdRoomChest16' x='936' y='393'>
+		  <action command='openChest' name='Open.'>
+				<args>thirdRoomChest16,obj16,
+					@! You got a HEART KEY!
+				</args>
+				<action command='addAction'>
+  				<args>megaDoor,
+  					<action name='Use heart key.' command='removeAction'>
+  						<args>megaDoor,Use heart key.</args>
+  						<action command='setGameState'>
+  							<args>heartKeyUsed,true</args>
+  							<action command='addSprite'>
+  								<args>heartKeyOverlay,firstRoom</args>
+  								<action command='playSound' noDelay='true'>
+										<args>openSound2</args>
+									</action>
+  							</action>
+  						</action>
+  					</action>
+  				</args>
+  			</action>
+			</action>
+  	</sprite>
+  	
+  	<sprite class='chest3' name='thirdRoomChest17' x='681' y='1155'>
+			 <action command='openChest' name='Open.'>
+				<args>thirdRoomChest17,obj17,
+				  @! You got a JUJU!
+				  @! Looks to be a CHESS SET, to be specific. It's quite lovely. But...
+				  @! A bunch of the pieces are missing. :(
+				</args>
+			</action>
+  	</sprite>
+  	
+  	
+  
+  	<sprite name='thirdRoomBG'>
+  		<animation sheet='thirdRoomBG' sliced='true' colSize='500' rowSize='500' numCols='4' numRows='6'/>
+  	</sprite>
+  	
+  	<sprite name='thirdRoomFG' depthing='2'>
+  		<animation sheet='thirdRoomFG' sliced='true' colSize='500' rowSize='500' numCols='4' numRows='6'/>
+  	</sprite>
+  
+  </room> 
+</rooms>
+</sburb>
