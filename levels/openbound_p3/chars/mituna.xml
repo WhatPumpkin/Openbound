@@ -1,7 +1,7 @@
 <sburb description='mituna'>
 
 <dependencies>
-	<dependency>dialogs/mitunaDialog.xml</dependency>
+	<!--<dependency>dialogs/mitunaDialog.xml</dependency>-->
 </dependencies>
 
 <classes>

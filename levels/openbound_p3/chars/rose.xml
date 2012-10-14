@@ -23,7 +23,7 @@
 
 	<asset name='roseSheet' type='graphic'>chars/rose/rose.png</asset>
 
-	<asset name='roseSong' type='audio'>audio/music/IndigoHeirLoop.oga;audio/music/IndigoHeirLoop.mp3</asset> <!-- loops to 0 -->
+	<asset name='roseSong' type='audio'>audio/music/OrchidHorrorLoop.oga;audio/music/OrchidHorrorLoop.mp3</asset> <!-- loops to 0 -->
 	
 	<asset name='rose_annoyed' type='graphic'>dialogs/rose/rose_annoyed.png</asset>
 	<asset name='rose_annoyedtalk' type='graphic'>dialogs/rose/rose_annoyedtalk.png</asset>

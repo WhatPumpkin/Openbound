@@ -17,12 +17,25 @@
 	<asset name='firstRoomMap' type='graphic'>backgrounds/firstRoomMap.png</asset>
 	
 	<asset name='qwartz' type='graphic'>backgrounds/qwartz.png</asset>
+  <asset name='tinkerbull' type='graphic'>objects/items/tinkerbull.png</asset>
+  <asset name='fidussspawneggs' type='graphic'>objects/items/fidusspawneggs.png</asset>
+  <asset name='horsaponi' type='graphic'>objects/horsaponi.png</asset>
+  <asset name='plush1' type='graphic'>objects/plush1.png</asset>
+  <asset name='plush2' type='graphic'>objects/plush2.png</asset>
 	
 	<asset name='firstRoomStairs1' type='path'>888,621;1101,456;1101,507;897,675</asset>
 	<asset name='firstRoomStairs2' type='path'>1509,468;1509,507;1890,207;1890,159</asset>
 	<asset name='firstRoomStairs3' type='path'>1191,1350;1191,1392;996,1545;996,1509</asset>
 	<asset name='firstRoomWalkable' type='path'>1540,1500;1700,1500;1700,1680;1540,1680</asset>
 </assets>
+
+<sprite name='plush2' x='1219' y='529' width='77' height='40'>
+  <animation sheet='plush2' x='-48' y='-55'/>
+</sprite>
+
+<sprite name='horsaponi' x='1298' y='533' width='123' height='20' depthing='1'>
+  <animation sheet='horsaponi' x='-70' y='-84'/>
+</sprite>
 
 <rooms>
   <room name='firstRoom' walkableMap='firstRoomMap' mapScale='2'>
@@ -36,7 +49,7 @@
   		<motionpath path='firstRoomStairs3' xtox='0.7' xtoy='-0.7' />
   	</paths>
   	
-  	<character class='meenah' x='405' y='726' >
+  	<character class='meenah' x='390' y='630' >
 			<action class='beMeenah'/>
   	</character>
   	
@@ -62,6 +75,16 @@
       <action command='openChest' name='Open.'>
         <args>firstRoomChest1,tinkerbull,@!nothing yet</args>
       </action>
+    </sprite>
+
+    <sprite class='chest8' name='firstRoomChest2'>
+      <action command='openChest' name='Open.'>
+        <args>firstRoomChest2,fidussspawneggs,@!nothing yet</args>
+      </action>
+    </sprite>
+
+    <sprite name='plush1' x='1237' y='511' width='61' height='30'>
+      <animation sheet='plush1' x='-34' y='-50'/>
     </sprite>
 
 		<sprite name='firstRoomBG'>

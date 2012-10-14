@@ -26,26 +26,7 @@
   <asset name='bubbleButtonSheet' type='graphic'>interface/icons_bub.png</asset>
   <asset name='closeButtonSheet' type='graphic'>interface/closeconversation.png</asset>
   
-  <asset name='alttextbox_4chan' type='graphic'>interface/boxes/alttextbox_4chan.gif</asset>
-  
- 
-
- 
-<asset name='dialogimg_cronus1' type='graphic'>interface/backgrounds/dialogimg_cronus1.png</asset>
-<asset name='dialogimg_cronus2' type='graphic'>interface/backgrounds/dialogimg_cronus2.png</asset>
-<asset name='dialogimg_cronus3' type='graphic'>interface/backgrounds/dialogimg_cronus3.png</asset>
-<asset name='dialogimg_cronus4' type='graphic'>interface/backgrounds/dialogimg_cronus4.png</asset>
-<asset name='dialogimg_mituna1' type='graphic'>interface/backgrounds/dialogimg_mituna1.gif</asset>
-<asset name='dialogimg_mituna2' type='graphic'>interface/backgrounds/dialogimg_mituna2.png</asset>
-<asset name='dialogimg_mituna3' type='graphic'>interface/backgrounds/dialogimg_mituna3.png</asset>
-
-<asset name='meenahmeme' type='graphic'>interface/backgrounds/meenahmeme.png</asset>
-
 </assets>
-
-<sprite name='meenahmeme'>
-	<animation sheet='meenahmeme' colSize='253' rowSize='160' length='20' x='244' y='55' frameInterval='2'/>
-</sprite>
 
 <hud>
   	<spritebutton name='volumeButton' x='9' y='9' width='54' height='36' sheet='volumeControl'>
