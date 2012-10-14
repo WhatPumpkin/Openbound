@@ -1,11 +1,11 @@
 <sburb description='horuss'>
 
 <dependencies>
-	<!--<dependency>dialogs/horussDialog.xml</dependency>-->
+	<dependency>dialogs/horussDialog.xml</dependency>
 </dependencies>
 
 <classes>
-	<animation class='horuss-dialog' frameInterval='6' x='-180' y='-524'/>
+	<animation class='horuss-dialog' frameInterval='6' x='-240' y='-524'/>
 	
 	<character class='horuss' name='horuss' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='horussSheet' state='walkFront' facing='Front'>
 		
@@ -59,25 +59,25 @@
 		<animation name='horuss_grin' class='horuss-dialog' sheet='horuss_grin' />
 		<animation name='horuss_hmm' class='horuss-dialog' sheet='horuss_hmm' />
 		<animation name='horuss_hmmtalk' class='horuss-dialog' sheet='horuss_hmmtalk' length='2'/>
-		<animation name='horuss_horsedick_blur1' class='horuss_horsedick-dialog' sheet='horuss_horsedick_blur1' length='2'/>
-		<animation name='horuss_horsedick_blur2' class='horuss_horsedick-dialog' sheet='horuss_horsedick_blur2' length='2'/>
-		<animation name='horuss_horsedick_blur3' class='horuss_horsedick-dialog' sheet='horuss_horsedick_blur3' length='2'/>
+		<animation name='horuss_horsedick_blur1' class='horuss-dialog' sheet='horuss_horsedick_blur1' length='2'/>
+		<animation name='horuss_horsedick_blur2' class='horuss-dialog' sheet='horuss_horsedick_blur2' length='2'/>
+		<animation name='horuss_horsedick_blur3' class='horuss-dialog' sheet='horuss_horsedick_blur3' length='2'/>
 		<animation name='horuss_horsedick' class='horuss-dialog' sheet='horuss_horsedick' />
 		<animation name='horuss_idle2' class='horuss-dialog' sheet='horuss_idle2' />
 		<animation name='horuss_idle2talk' class='horuss-dialog' sheet='horuss_idle2talk' length='2'/>
-		<animation name='horuss_idle' class='horuss-dialog' sheet='horuss_idle' length='2'/>
-		<animation name='horuss_laugh' class='horuss-dialog' sheet='horuss_laugh' />
+		<animation name='horuss_idle' class='horuss-dialog' sheet='horuss_idle' />
+		<animation name='horuss_laugh' class='horuss-dialog' sheet='horuss_laugh' length='2'/>
 		<animation name='horuss_mad' class='horuss-dialog' sheet='horuss_mad' />
 		<animation name='horuss_oops' class='horuss-dialog' sheet='horuss_oops' />
 		<animation name='horuss_sad' class='horuss-dialog' sheet='horuss_sad' />
 		<animation name='horuss_sadtalk' class='horuss-dialog' sheet='horuss_sadtalk' length='2'/>
 		<animation name='horuss_smile' class='horuss-dialog' sheet='horuss_smile' />
 		<animation name='horuss_smiletalk' class='horuss-dialog' sheet='horuss_smiletalk' length='2'/>
-		<animation name='horuss_sweat_bashful2' class='horuss_sweat-dialog' sheet='horuss_sweat_bashful2' length='2'/>
-		<animation name='horuss_sweat_bashful' class='horuss_sweat-dialog' sheet='horuss_sweat_bashful' length='2'/>
-		<animation name='horuss_sweat_grin' class='horuss_sweat-dialog' sheet='horuss_sweat_grin' length='2'/>
-		<animation name='horuss_sweat_idle' class='horuss_sweat-dialog' sheet='horuss_sweat_idle' length='2'/>
-		<animation name='horuss_sweat_talk' class='horuss_sweat-dialog' sheet='horuss_sweat_talk' length='2'/>
+		<animation name='horuss_sweat_bashful2' class='horuss-dialog' sheet='horuss_sweat_bashful2' length='2'/>
+		<animation name='horuss_sweat_bashful' class='horuss-dialog' sheet='horuss_sweat_bashful' length='2'/>
+		<animation name='horuss_sweat_grin' class='horuss-dialog' sheet='horuss_sweat_grin' length='2'/>
+		<animation name='horuss_sweat_idle' class='horuss-dialog' sheet='horuss_sweat_idle' length='2'/>
+		<animation name='horuss_sweat_talk' class='horuss-dialog' sheet='horuss_sweat_talk' length='2'/>
 	</dialogsprites>
 </hud>
 </sburb>

@@ -1,0 +1,93 @@
+<sburb>
+    <classes>
+<action class='meenahTalk1' sprite='rufioh' command='talk' name='Talk to Meenah.'>
+      <args>
+      @rufioh_happytalk RUFIOH: d*mn... thank god 1 got my lusus back... dunno what 1'd do w1thout the l1ttle guy!
+      @meenah_talk MEENAH: is he even uh
+      @meenah_idle MEENAH: "reel"
+      @meenah_idle MEENAH: ya know
+      @meenah_talk MEENAH: like the ghost of your actual lusus or
+      @rufioh_sheepish RUFIOH: er... know what? not sure, doll!
+      @rufioh_happytalk RUFIOH: he could just be a memory f1gment or someth1ng l1ke that. or maybe he's really h1s ghost...
+      @rufioh_happytalk RUFIOH: when damara acc1dentally dropped a hunger trunk on h1m way back... crushed h1s l1ttle body... 1 always dreamed 1 m1ght meet up w1th h1m aga1n 1n the afterl1fe.
+      @rufioh_sheepish RUFIOH: so when 1 found h1m here... guess 1 d1dn't th1nk about 1t much? 1 was just happy to see h1m.
+      @rufioh_talk:#you-know...-the-bas1cs? RUFIOH: he 1s my happy thought after all. 1 can't really br1ng myself to do much w1thout h1m... l1ke fly... f1ght... crow... 
+      @meenah_idle MEENAH: truth
+      @rufioh_surprisetalk RUFIOH: 1 remember when 1 was young... just a l1ttle runt out there try1ng to make 1t 1n the world... people would look at me funny cause my w1ngs were grow1ng 1n, and that really freaked people out yo!
+      @rufioh_sadtalk RUFIOH: so 1 got way self consc1ous and d1dn't feel at home out there... w1th everybody eye1ng me up l1ke that...
+      @rufioh_surprisetalk RUFIOH: so one n1ght my lusus led me 1nto the woods...
+      @rufioh_talk:#shouted-bangarang-SO-LOUD-you-don't-even-KNOW! RUFIOH: and 1 found th1s whole baller v1llage of f***ck1n tree houses and rope ladders and 1 was l1ke D*MN!
+      @rufioh_happytalk RUFIOH: that's when 1 became an off1c1al member of the lost weeaboos.
+      @meenah_annoyed MEENAH: hey ok so...
+      @meenah_annoyedtalk MEENAH: can we not actually talk about the lost weeaboos
+      @meenah_annoyedtalk MEENAH: can that just be not a conversation we have
+      @rufioh_offended RUFIOH: uh...
+      @meenah_annoyedtalk MEENAH: ruf listen your storys cool but theres some junk thats just so silly i cant even try to abide
+      @rufioh_sheepish RUFIOH: yeah 1 guess... heh.
+      @rufioh_happytalk RUFIOH: but anyway, they were my boys... a better posse you couldn't hope to ch1ll w1th, k1ck the sh*t on troll an1me... all that.
+      @meenah_wut2:#no MEENAH: aw fer glub sake
+      @rufioh_happytalk RUFIOH: f1rst bumped 1nto damara out there... crazy t1mes!
+      @rufioh_happytalk RUFIOH: 1 th1nk those were format1ve sweeps for me... learned to love a lotta th1ngs 1 st1ll do to th1s day.
+      @rufioh_surprisetalk RUFIOH: between you and me... 1 m1ss the days 1 could just jam w1th her about troll an1me... but now... you know how 1t 1s...
+      @meenah_annoyedtalk MEENAH: ok why do you stinkin nerds insist on calling it troll anime
+      @meenah_annoyed MEENAH: i gotta ask
+      @meenah_annoyedtalk MEENAH: dont you realize prefacing anything with 'troll' inside the context a troll culture is redundant as fuck
+      @meenah_annoyed MEENAH: why dont you just call them cartoons
+      @rufioh_surprise:#deep... RUFIOH: yeah... 1 d1g that. never thought about that... huh.
+      @rufioh_sheepish RUFIOH: 1t's ok, 1 get that the stuff 1 l1ke 1sn't for everyone.
+      @rufioh_sheepish RUFIOH: people say 1t's just for w1gglers... and 1 k1nd of assumed one day 1'd grow out of 1t, but guess 1 never d1d?
+      @rufioh_surprisetalk RUFIOH: then aga1n... we all d1ed... and now we really are all young forever... 
+      @rufioh_surprisetalk RUFIOH: just l1ke the prophecy of the lost weeaboos sa1d... 
+      @rufioh_notalk RUFIOH: whoa spooky... 1 always thought that was a load of bs!!!
+      @meenah_talk MEENAH: whoops you just said lost weeaboos again thus failing the conversation
+      @meenah_talk MEENAH: in the immortal hand gestured words of the late great meulin leijon:
+      @meenah_fish MEENAH: IM SO DON-E
+      <!--  -->
+      </args>
+</action>
+
+<action class='meenahTalk2' sprite='horuss' command='talk' name='Talk to Meenah.'>
+      <args>
+      @meenah_idle MEENAH: hozak
+      @meenah_talk MEENAH: serious question
+      @horuss_idle2talk HORUSS: (EMOTE) &lt; Yes, my peerless, e%alted Eminency?
+      @meenah_happytalk MEENAH: when did you decide you were a horse
+      @kankri_whistle KANKRI: *PHWEEEEEEEEEEEEEET!!!*
+      @kankri_talk2 KANKRI: H9ld up there, Meenah. The questi9n y9u just asked was in fact a severe micr9aggressi9n against th9se wh9 are stricken with deeply plightened feelings 9f species dysph9ria. Y9ur questi9n was inn9cent en9ugh, s9 I'm n9t a69ut t9 g9 d9wn the peril9us r9ad 9f trigger shaming, 6ut Meenah, my g99dness, what y9u just said was catastr9phically triggering. P99r H9russ here will likely feel triggered f9r weeks 6ecause 9f y9ur th9ughtless questi9n. Hell, even I'm feeling a little triggered 6y it, and I'm n9t even under the impressi9n I'm a h9rse. I think every9ne within earsh9t was triggered 6y that. Y9u feel triggered, right H9russ?
+      @horuss_laugh HORUSS: (EMOTE) &lt; Trigger sounds like a wonderful name for a hoofbeast.
+      @kankri_talk KANKRI: See? T9tally triggered. N9w let's let the healing 6egin.
+      @meenah_annoyed:#so-done MEENAH: 38(
+      @kankri_talk4 KANKRI: Meenah, his 6elief that he is actually a majestic h99f6east is n9t characterized 6y ch9ice. In fact, it is n9t even a 6elief. It is a FACT, which we must strive t9 respect as FACTUAL, in n9 small part due t9 his hyperimp9rtant feelings a69ut it. Tail9ring factual reality ar9und pe9ple's critical feelings is a c9rnerst9ne 9f Pr96lematics, and failure t9 d9 s9 can 9nly result in the release 9f devastating payl9ads 9f c9rrecti9nal w9rds depl9yed t9 educate, heal, and rhet9rically 9verwhelm. 
+      @kankri_talk3 KANKRI: When y9u asked "when did y9u decide y9u were a h9rse," y9u implied that he made a ch9ice t9 craft this feature 9f his identity, as 9pp9sed t9 listening carefully t9 the fauna within, heeding the call 9f the l9ng, gh9stly sn9ut his 69dy has tragically denied him, whilst feeling the su6tle tingling 9f his phant9m h9rsey p9steri9r.
+      @horuss_smiletalk HORUSS: 8=D &lt; So true, friend. Your wisdom truly transcends your degenerate, mildly nauseating mutant b100d.
+      @kankri_talk2 KANKRI: Thank y9u. N9w, y9u kn9w h9w I hate t9 derail c9nversati9ns, 6ut I think this 9ccasi9n calls f9r a th9r9ugh, unrelenting educati9n 9n the t9pic. And n9w I shall 6egin my crushing harangue 9n this delicate su6ject, as thusly:
+      @kankri_talk4~dialogimg_kankri
+      @!~dialogimg_sneak
+      <!--  -->
+      </args>
+</action>
+
+<action class='meenahTalk3' sprite='meenah' command='talk' name='Talk to Meenah.'>
+      <args>
+      @damara_talk DAMARA: あなたは時間の領主に挑戦します。
+      @damara_talk DAMARA: あなたの哀れな軍隊は失敗しなければならない。
+      @damara_talk DAMARA: 彼はあなたの幽霊を食べるようになる。彼は現実そのものを消費するからである。
+      @meenah_idle MEENAH: i think...
+      @meenah_idle MEENAH: it sounded like...
+      @meenah_talk MEENAH: youre tryin to wish me luck in my upcoming battle?
+      @meenah_happytalk MEENAH: hey thanks megido
+      @meenah_happytalk MEENAH: maybe i had you all wrong
+      @damara_smile DAMARA: ない。あなたはそうしなかった。
+      @meenah_happytalk MEENAH: aw ive probably been a bitch to you for no reason
+      @meenah_happytalk MEENAH: lets forget all that shit ever happened
+      @meenah_happytalk MEENAH: hey how about a hug
+      @meenah_angrytalk MEENAH: whoa watch where youre puttin that hand!!!
+      @damara_smoke DAMARA: 私は何も後悔はありません。
+      @meenah_talk MEENAH: apology accepted
+      @meenah_talk MEENAH: hey you get around to moving that huge quartz glacier yet
+      @meenah_fish MEENAH: kind of in a hurry here
+      <!--  -->
+      </args>
+</action>
+  	</classes>
+</sburb>

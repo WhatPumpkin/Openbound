@@ -1,11 +1,11 @@
 <sburb description='rufioh'>
 
 <dependencies>
-	<!--<dependency>dialogs/rufiohDialog.xml</dependency>-->
+	<dependency>dialogs/rufiohDialog.xml</dependency>
 </dependencies>
 
 <classes>
-	<animation class='rufioh-dialog' frameInterval='6' x='-180' y='-524'/>
+	<animation class='rufioh-dialog' frameInterval='6' x='-340' y='-598'/>
 	
 	<character class='rufioh' name='rufioh' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='rufiohSheet' state='walkFront' facing='Front'>
 		

@@ -5,17 +5,8 @@
 </dependencies>
 
 <assets>
-	<asset name='prospitians' type='graphic'>objects/prospitians.png</asset>
-
-	<asset name='secondRoomBG_0_0' type='graphic'>backgrounds/slices/secondRoomBG_0_0.png</asset>
-	<asset name='secondRoomBG_0_1' type='graphic'>backgrounds/slices/secondRoomBG_0_1.png</asset>
-	<asset name='secondRoomBG_0_2' type='graphic'>backgrounds/slices/secondRoomBG_0_2.png</asset>
-	<asset name='secondRoomBG_1_0' type='graphic'>backgrounds/slices/secondRoomBG_1_0.png</asset>
-	<asset name='secondRoomBG_1_1' type='graphic'>backgrounds/slices/secondRoomBG_1_1.png</asset>
-	<asset name='secondRoomBG_1_2' type='graphic'>backgrounds/slices/secondRoomBG_1_2.png</asset>
-	<asset name='secondRoomBG_2_0' type='graphic'>backgrounds/slices/secondRoomBG_2_0.png</asset>
-	<asset name='secondRoomBG_2_1' type='graphic'>backgrounds/slices/secondRoomBG_2_1.png</asset>
-	<asset name='secondRoomBG_2_2' type='graphic'>backgrounds/slices/secondRoomBG_2_2.png</asset>
+	<asset name='secondRoomBG' type='graphic'>backgrounds/secondRoomBG.png</asset>
+	<asset name='secondRoomFG' type='graphic'>backgrounds/secondRoomFG.png</asset>
 
 	<asset name='secondRoomMap' type='graphic'>backgrounds/secondRoomMap.png</asset>
 </assets>
@@ -25,29 +16,20 @@
   <room name='secondRoom' walkableMap='secondRoomMap' mapScale='2'>
   	<triggers>
   		<trigger>
-  			<args>inBox2,char,302,0,806,56</args>
-  			<action command='changeRoomRemote'>rooms/firstRoom.xml,firstRoom,4011,1026</action>
+  			<args>inBox2,char,200,196,286,820</args>
+  			<action command='changeRoomRemote'>rooms/firstRoom.xml,firstRoom,2403,1428</action>
+  		</trigger>
+  		<trigger>
+  			<args>inBox2,char,1376,310,1266,254</args>
+  			<action command='changeRoomRemote'>rooms/thirdRoom.xml,thirdRoom,2904,1761</action>
   		</trigger>
   	</triggers>
   	
-  	<sprite name='secondRoomProspitians' x='552' y='843' width='152' height='40' collidable='true' depthing='1'>
-  		<animation sheet='prospitians' x='-70' y='-80'/>
-			<action command='talk' name='Examine.'>
-				<args>
-				@! Is it... could it be???
-				@! IT IS! IT'S PROBLEM SLEUTH, ACE DICK, AND PICKLE INSPECTOR, IN THEIR ORIGINAL PROSPITIAN ATTIRE! YOU KNEW IT! YOU KNEW YOU WOULD FIND THEM EVENTUALLY! IT'S SO GREAT TO MEET ...
-				@! Wait.
-				@!:#proportioned-prospitians#........ This is not Problem Sleuth, Ace Dick, and Pickle Inspector. These are just some random Prospitians who are similarly proportioned.
-				@! You're beginning to think you'll never run into them.
-				<!--  -->
-				</args>
-			</action>
-		</sprite>
-  	
-  	
-  	
   	<sprite name='secondRoomBG'>
-  		<animation sheet='secondRoomBG'  sliced='true' colSize='500' rowSize='500' numCols='3' numRows='3'/>
+  		<animation sheet='secondRoomBG'/>
+  	</sprite>
+  	<sprite name='secondRoomFG' depthing='2'>
+  		<animation sheet='secondRoomFG'/>
   	</sprite>
   </room> 
 </rooms>

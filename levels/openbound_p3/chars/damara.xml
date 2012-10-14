@@ -1,11 +1,11 @@
 <sburb description='damara'>
 
 <dependencies>
-	<!--<dependency>dialogs/damaraDialog.xml</dependency>-->
+	<dependency>dialogs/damaraDialog.xml</dependency>
 </dependencies>
 
 <classes>
-	<animation class='damara-dialog' frameInterval='6' x='-180' y='-524'/>
+	<animation class='damara-dialog' frameInterval='6' x='-180' y='-494'/>
 	
 	<character class='damara' name='damara' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='damaraSheet' state='walkFront' facing='Front'>
 		

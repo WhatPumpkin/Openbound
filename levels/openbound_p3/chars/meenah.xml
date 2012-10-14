@@ -1,7 +1,7 @@
 <sburb description='meenah'>
 
 <dependencies>
-	<!--<dependency>dialogs/meenahDialog.xml</dependency>-->
+	<dependency>dialogs/meenahDialog.xml</dependency>
 </dependencies>
 
 <classes>

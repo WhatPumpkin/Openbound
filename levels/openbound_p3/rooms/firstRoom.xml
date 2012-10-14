@@ -18,7 +18,7 @@
 	
 	<asset name='qwartz' type='graphic'>backgrounds/qwartz.png</asset>
   <asset name='tinkerbull' type='graphic'>objects/items/tinkerbull.png</asset>
-  <asset name='fidussspawneggs' type='graphic'>objects/items/fidusspawneggs.png</asset>
+  <asset name='fidusspawneggs' type='graphic'>objects/items/fidusspawneggs.png</asset>
   <asset name='horsaponi' type='graphic'>objects/horsaponi.png</asset>
   <asset name='plush1' type='graphic'>objects/plush1.png</asset>
   <asset name='plush2' type='graphic'>objects/plush2.png</asset>
@@ -33,14 +33,56 @@
   <animation sheet='plush2' x='-48' y='-55'/>
 </sprite>
 
-<sprite name='horsaponi' x='1298' y='533' width='123' height='20' depthing='1'>
-  <animation sheet='horsaponi' x='-70' y='-84'/>
+<sprite name='horsaponi' x='1408' y='533' width='123' height='20' depthing='1' collidable='true'>
+  <animation sheet='horsaponi' length='8' x='-70' y='-84'/>
+  <action command='talk' name='Examine.'>
+    <args>@! nothing yet</args>
+  </action>
+  <action command='removeSprite' name='Take Horsaponi to Horuss.'>
+    <args>horsaponi,firstRoom</args>
+    <action command='removeAction' noDelay='true'>
+      <args>horsaponi, Take Horsaponi to Horuss.</args>
+      <action command='addAction' noDelay='true'>
+        <args>
+          horuss,
+          <action name='Give Horsaponi to Horuss.' command='addSprite'>
+            <args>horsaponi,firstRoom</args>
+            <action command="moveSprite" noDelay='true'>
+              <args>horsaponi,1755,702</args>
+              <action command="talk">
+                <args>@! nothing for now</args>
+                <action command='removeAction'>
+                  <args>horuss,Be Horuss.,Give Horsaponi to Horuss.</args>
+                  <action command='addAction'>
+                    <args>horuss,
+                      <action class='beHoruss'/>
+                    </args>
+                  </action>
+                </action>
+              </action>
+            </action>
+          </action>
+        </args>
+      </action>
+    </action>
+  </action>
+</sprite>
+
+<sprite name='tinkerbull'>
+  <animation sheet='tinkerbull' length='4' x='-30' y='-50'/>
+</sprite>
+
+<sprite name='fidusspawneggs'>
+  <animation sheet='fidusspawneggs' x='-50' y='-50'/>
 </sprite>
 
 <rooms>
   <room name='firstRoom' walkableMap='firstRoomMap' mapScale='2'>
   	<triggers>
-  		
+  		<trigger>
+        <args>inBox2,meenah,2607,1701,2478,1146</args>
+        <action command='changeRoomRemote'>rooms/secondRoom.xml,secondRoom,340,502</action>
+      </trigger>
   	</triggers>
   	
   	<paths>
@@ -50,20 +92,46 @@
   	</paths>
   	
   	<character class='meenah' x='390' y='630' >
+      <action class='meenahTalk1'/>
+      <action class='meenahTalk2'/>
+      <action class='meenahTalk3'/>
 			<action class='beMeenah'/>
   	</character>
   	
   	<character class='mituna' x='2394' y='285' state='crash'/>
-  	<character class='rufioh' x='771' y='753' />
-  	<character class='horuss' x='1794' y='828' />
-  	<character class='damara' x='453' y='1548' />
+  	
+    <character class='rufioh' x='771' y='753' >
+      <action class='rufiohTalk1'/>
+      <action class='rufiohTalk2'/>
+      <action class='rufiohTalk3'/>
+      <action class='rufiohTalk4'/>
+      <action class='rufiohTalk5'/>
+    </character>
+  	
+    <character class='horuss' x='1794' y='828' >
+      <action class='horussTalk1'/>
+      <action class='horussTalk2'/>
+      <action class='horussTalk3'/>
+      <action class='horussTalk4'/>
+      <action class='horussTalk5'/>
+    </character>
+  	
+    <character class='damara' x='453' y='1548' >
+      <action class='damaraTalk1'/>
+      <action class='damaraTalk2'/>
+      <action class='damaraTalk3'/>
+      <action class='damaraTalk4'/>
+      <action class='damaraTalk5'/>
+      <action class='damaraTalk6'/>
+      <action class='beDamara' sprite='rufioh'/>
+    </character>
   	
   	<sprite name='qwartz' x='1566' y='1155'>
   		<animation sheet='qwartz'/>
   	</sprite>
   	
   	<sprite name='firstRoomOrb' class='blueBubble' x='1536' y='1518'>
-  		<action command='removeSprite' name='gggggg'>
+  		<action command='removeSprite' name='gggggg' sprite='damara'>
   			<args>qwartz,firstRoom</args>
   			<action command='addWalkable'>
   				<args>firstRoomWalkable,firstRoom</args>
@@ -71,20 +139,52 @@
   		</action>
   	</sprite>
 
-    <sprite class='chest7' name='firstRoomChest1'>
-      <action command='openChest' name='Open.'>
-        <args>firstRoomChest1,tinkerbull,@!nothing yet</args>
+    <sprite class='chest7' name='firstRoomChest1' x='360' y='1544'>
+      <action command='openChest' name='Open.' sprite='horuss'>
+        <args>firstRoomChest1,tinkerbull,@! nothing yet</args>
+        <action command='addAction'>
+          <args>rufioh,
+            <action command='talk' name='Give Rufioh his lusus.'>
+              <args>@! nothing for now</args>
+              <action command='addAction'>
+                <args>rufioh,
+                  <action class='beRufioh'/>
+                </args>
+                <action command='removeAction' noDelay='true'>
+                  <args>rufioh,Give Rufioh his lusus.</args>
+                </action>
+              </action>
+            </action>
+          </args>
+        </action>
       </action>
     </sprite>
 
-    <sprite class='chest8' name='firstRoomChest2'>
+    <sprite class='chest8' name='firstRoomChest2' x='629' y='1447'>
       <action command='openChest' name='Open.'>
-        <args>firstRoomChest2,fidussspawneggs,@!nothing yet</args>
+        <args>firstRoomChest2,fidusspawneggs,@! nothing yet</args>
+        <action command='addAction'>
+          <args>
+            plush1,
+            <action name='Use Fiduspawn egg on host plush.' command='removeSprite'>
+              <args>plush1,firstRoom</args>
+              <action command='addSprite' noDelay='true'>
+                <args>plush2,firstRoom</args>
+                <action command='addSprite' noDelay='true'>
+                  <args>horsaponi,firstRoom</args>
+                </action>
+              </action>
+            </action>
+          </args>
+        </action>
       </action>
     </sprite>
 
     <sprite name='plush1' x='1237' y='511' width='61' height='30'>
       <animation sheet='plush1' x='-34' y='-50'/>
+      <action command='talk' name='Examine.'>
+        <args>@! nothing yet</args>
+      </action>
     </sprite>
 
 		<sprite name='firstRoomBG'>
