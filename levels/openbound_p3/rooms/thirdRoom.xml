@@ -17,7 +17,7 @@
   	<triggers>
   		<trigger>
   			<args>inBox2,char,2991,1911,2841,1812</args>
-  			<action command='changeRoomRemote'>rooms/secondRoom.xml,secondRoom,1326,370</action>
+  			<action command='changeRoomRemote'>rooms/secondRoom.xml,secondRoom,1326,380</action>
   		</trigger>
   		<trigger>
   			<args>inBox2,char,345,831,225,609</args>

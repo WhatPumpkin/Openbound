@@ -14,7 +14,7 @@
 	<action class='beMeenah' name='Be Meenah.' command='changeChar'>
 		<args>meenah</args>
 		<action command='playSong'>
-			<args>hateYouSong</args>
+			<args>meenahSong</args>
 		</action>
 	</action>
 </classes>

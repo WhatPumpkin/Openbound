@@ -1,4 +1,13 @@
 <sburb>
+      <assets>
+            <asset name='dialogimg_kankri' type='graphic'>interface/backgrounds/dialogimg_kankri.png</asset>
+            <asset name='dialogimg_sneak' type='graphic'>interface/backgrounds/dialogimg_sneak.png</asset>
+      </assets>
+
+      <sprite name='dialogimg_sneak'>
+            <animation sheet='dialogimg_sneak' length='2'/>
+      </sprite>
+
     <classes>
 <action class='meenahTalk1' sprite='rufioh' command='talk' name='Talk to Meenah.'>
       <args>

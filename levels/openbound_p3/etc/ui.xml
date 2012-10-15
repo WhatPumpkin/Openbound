@@ -8,8 +8,8 @@
   <asset name='SburbFont' type='font'>
   	local:Courier New Bold, 
   	local:Courier New, 
-  	url:fonts/cour.woff, 
-  	url:fonts/cour.ttf, 
+    url: fonts/cour.woff,
+    url: fonts/cour.ttf,
   	weight:bold
   </asset>
   

@@ -6,6 +6,7 @@
 	<dependency>chars/rufioh.xml</dependency>
 	<dependency>chars/damara.xml</dependency>
 	<dependency>chars/mituna.xml</dependency>
+  <dependency>chars/kankri.xml</dependency>
 </dependencies>
 
 <assets>

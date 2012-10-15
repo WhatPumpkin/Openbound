@@ -1,7 +1,0 @@
-
-<animation name='anims' class='anims-dialog' sheet='anims' />
-<animation name='horsaponi' class='horsaponi-dialog' sheet='horsaponi' />
-<animation name='tinkerbull' class='tinkerbull-dialog' sheet='tinkerbull' />
-<asset name='anims' type='graphic'>anims.txt</asset>
-<asset name='horsaponi' type='graphic'>horsaponi.png</asset>
-<asset name='tinkerbull' type='graphic'>tinkerbull.png</asset>

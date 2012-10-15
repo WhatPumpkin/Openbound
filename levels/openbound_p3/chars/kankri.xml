@@ -34,7 +34,7 @@
 		<animation name='kankri_talk3' class='kankri-dialog' sheet='kankri_talk3'  length='2'/>
 		<animation name='kankri_talk4' class='kankri-dialog' sheet='kankri_talk4'  length='2'/>
 		<animation name='kankri_talk' class='kankri-dialog' sheet='kankri_talk'  length='2'/>
-		<animation name='kankri_whistle' class='kankri-dialog' sheet='kankri_whistle' />
+		<animation name='kankri_whistle' class='kankri-dialog' sheet='kankri_whistle' length='2' />
   </dialogsprites>
 </hud>
 </sburb>
