@@ -22,13 +22,13 @@ events.spriteProperty = function(info) {
 	var params = parseParams(info);
 	var token;
 	var query = params[2];
-	if(query.indexOf(">")>-1 || query.indexOf("GREATER") > -1){
-		token = ">";
+	if((query.indexOf(">")>-1 && (token=">")) ||
+	   (query.indexOf("GREATER") > -1 && (token="GREATER"))){
 		this.trigger = function(entity,property,target){
 			return entity[property]>target;
 		};	
-	}else if(query.indexOf("<")>-1 || query.indexOf("LESS") > -1){
-		token = "<";
+	}else if((query.indexOf("<")>-1 && (token="<")) ||
+	         (query.indexOf("LESS") > -1 && (token="LESS"))){
 		this.trigger = function(entity,property,target){
 			return entity[property]<target;
 		};
@@ -111,6 +111,9 @@ events.time = function(info) {
 		this.time--;
 		return this.time<=0;
 	};
+	this.serialize = function(){
+		return "time,"+this.time;
+	}
 };
 
 //Check if the sprite's animation has played
@@ -153,13 +156,13 @@ events.gameState = function(info) {
 	var params = parseParams(info);
 	var token;
 	var query = params[1];
-	if(query.indexOf(">")>-1 || query.indexOf("GREATER") > -1){
-		token = ">";
+	if((query.indexOf(">")>-1 && (token=">")) ||
+	   (query.indexOf("GREATER") > -1 && (token="GREATER"))){
 		this.trigger = function(property,target){
 			return Sburb.gameState[property]>target;
 		};
-	}else if(query.indexOf("<")>-1 || query.indexOf("LESS") > -1){
-		token = "<";
+	}else if((query.indexOf("<")>-1 && (token="<")) ||
+	         (query.indexOf("LESS") > -1 && (token="LESS"))){
 		this.trigger = function(property,target){
 			return Sburb.gameState[property]<target;
 		};
@@ -197,9 +200,11 @@ events.nudge = function(info){
 //check that there are no pending or active actions on the queue
 //syntax: none
 events.noActions = function(info){
+	var params = parseParams(info);
 	this.reset = function(){ } //do nothing
 	this.checkCompletion = function(){
-		return Sburb.curAction==null;
+		var queue = params.length>0 ? Sburb.getActionQueueById(params[1]) : Sburb;
+		return !queue || !queue.curAction;
 	}
 }
 

@@ -33,7 +33,11 @@ Sburb.Keys = {backspace:8,tab:9,enter:13,shift:16,ctrl:17,alt:18,escape:27,space
 
 Sburb.name = 'Jterniabound';
 Sburb.version = '1.0';
+Sburb.Container = null; //"deploy" div
+Sburb.Game = null; //the game div
+Sburb.Map = null; //the map div
 Sburb.Stage = null; //the canvas, we're gonna load it up with a bunch of flash-like game data like fps and scale factors
+Sburb.Bins = {}; //the various bin divs
 Sburb.cam = {x:0,y:0}
 Sburb.crashed = false; // In case of catastrophic failure
 Sburb.stage = null; //its context
@@ -58,6 +62,7 @@ Sburb.chooser = null; //the option chooser
 Sburb.inputDisabled = false; //disables player-control
 Sburb.curAction = null; //the current action being performed
 Sburb.actionQueues = [] //additional queues for parallel actions
+Sburb.nextQueueId = 0; //the next created actionQueue, specified without a id, will get this number and increment it
 Sburb.bgm = null; //the current background music
 Sburb.hud = null; //the hud; help and sound buttons
 Sburb.Mouse = {down:false,x:0,y:0}; //current recorded properties of the mouse
@@ -79,6 +84,7 @@ var lastDrawTime = 0;
 
 Sburb.testCompatibility = function(div, levelName, includeDevTools) {
     if(Modernizr.xhr2 && !Sburb.firedAsync) {
+      try {  
         // Test blob response
         var xhr = new XMLHttpRequest();
         xhr.open("GET",levelName,true);
@@ -109,6 +115,9 @@ Sburb.testCompatibility = function(div, levelName, includeDevTools) {
         xhr.onabort = function() { Modernizr.addTest('xhrarraybuffer', function () { return false; }); };
         xhr.onerror = function() { Modernizr.addTest('xhrarraybuffer', function () { return false; }); };
         xhr.send();
+      } catch (e) {
+        alert(e.message + "\n\nIf you are running Google Chrome, you need to run it with the -allow-file-access-from-files switch to load this.")
+      }
         
         Sburb.firedAsync = true;
     } else {
@@ -200,45 +209,71 @@ Sburb.initialize = function(div,levelName,includeDevTools){
         return; // Hard crash if the browser is too old. testCompatibility() will handle the error message
 	Sburb.debugger = new Sburb.Debugger(); // Load debugger first! -- But not quite
     
-	var deploy = '   \
-	<div style="position: relative;\
-        padding-left: 0;\
-		padding-right: 0;\
-		margin-left: auto;\
-		margin-right: auto;\
-		display: block;\
-		width:650px;\
-		height:450px;"> \
-		<div id="SBURBgameDiv" style="position: absolute; z-index:100">\
-			<canvas id="SBURBStage" width="650" height="450" tabindex="0" \
-						onmousedown = "Sburb.onMouseDown(event,this)"\
-						onmousemove = "Sburb.onMouseMove(event,this)"\
-						onmouseup = "Sburb.onMouseUp(event,this)"\
-						>\
-						ERROR: Your browser is too old to display this content!\
-			</canvas>\
-			<canvas id="SBURBMapCanvas" width="1" height="1" style="display:none"/> \
-		</div>\
-		<div id="SBURBmovieBin" style="position: absolute; z-index:200"> </div>\
-		<div id="SBURBfontBin"></div>\
-		<div id="SBURBgifBin" style="width: 0; height: 0; overflow: hidden;"></div>\
-		</br>';
-	if(includeDevTools){
-		Sburb._include_dev = true;
-	}
-	deploy+='</div>';
-	document.getElementById(div).innerHTML = deploy;
-	var gameDiv = document.getElementById("SBURBgameDiv");
+    var deploy = document.createElement('div');
+    deploy.style.position = "relative";
+    deploy.style.padding = "0";
+    deploy.style.margin = "auto";
+    
+	var gameDiv = document.createElement('div');
+    gameDiv.id = "SBURBgameDiv";
 	gameDiv.onkeydown = _onkeydown;
 	gameDiv.onkeyup = _onkeyup;
+    gameDiv.style.position = "absolute";
+    gameDiv.style.zIndex = "100";
+    deploy.appendChild(gameDiv);
 	
-	Sburb.Stage = document.getElementById("SBURBStage");	
-	Sburb.Stage.scaleX = Sburb.Stage.scaleY = 3;
-	Sburb.Stage.x = Sburb.Stage.y = 0;
-	Sburb.Stage.fps = 30;
-	Sburb.Stage.fade = 0;
-	Sburb.Stage.fadeRate = 0.1;
+	var movieDiv = document.createElement('div');
+    movieDiv.id = "SBURBmovieBin";
+    movieDiv.style.position = "absolute";
+    movieDiv.style.zIndex = "200";
+    deploy.appendChild(movieDiv);
+    
+	var fontDiv = document.createElement('div');
+    fontDiv.id = "SBURBfontBin";
+    deploy.appendChild(fontDiv);
+    
+	var gifDiv = document.createElement('div');
+    gifDiv.id = "SBURBgifBin";
+    gifDiv.style.width = "0";
+    gifDiv.style.height = "0";
+    gifDiv.style.overflow = "hidden";
+    deploy.appendChild(gifDiv);
+    
+	var gameCanvas = document.createElement("canvas");
+    gameCanvas.id = "SBURBStage";
+    gameCanvas.onmousedown = function(e) { Sburb.onMouseDown(e,this); };
+    gameCanvas.onmouseup = function(e) { Sburb.onMouseUp(e,this); };
+    gameCanvas.onmousemove = function(e) { Sburb.onMouseMove(e,this); };
+    gameCanvas.tabIndex = 0;
+	gameCanvas.scaleX = gameCanvas.scaleY = 3;
+	gameCanvas.x = gameCanvas.y = 0;
+	gameCanvas.fps = 30;
+	gameCanvas.fade = 0;
+	gameCanvas.fadeRate = 0.1;
+    gameCanvas.innerText = "ERROR: Your browser is too old to display this content!";
+    gameDiv.appendChild(gameCanvas);
+    
+	var mapCanvas = document.createElement("canvas");
+    mapCanvas.id = "SBURBMapCanvas";
+    mapCanvas.width = 1;
+    mapCanvas.height = 1;
+    mapCanvas.style.display = "none";
+    gameDiv.appendChild(mapCanvas);
 	
+	document.getElementById(div).appendChild(deploy);
+    
+    // Copy local variables into Sburb
+    Sburb.Container = deploy;
+    Sburb.Game = gameDiv;
+    Sburb.Map = mapCanvas;
+    Sburb.Stage = gameCanvas;
+    Sburb.Bins["movie"] = movieDiv;
+    Sburb.Bins["font"] = fontDiv;
+    Sburb.Bins["gif"] = gifDiv;
+    
+    // Set default dimensions
+    Sburb.setDimensions(650,450);
+    
 	Sburb.stage = Sburb.Stage.getContext("2d");
 	Sburb.Stage.onblur = _onblur;
 	Sburb.chooser = new Sburb.Chooser();
@@ -253,10 +288,21 @@ Sburb.initialize = function(div,levelName,includeDevTools){
 	Sburb.gameState = {};
 	Sburb.pressed = {};
 	Sburb.pressedOrder = [];
-	
+    
     Sburb.loadSerialFromXML(levelName); // comment out this line and
     //loadAssets();                        // uncomment these two lines, to do a standard hardcode load
     //_hardcode_load = 1;
+}
+
+Sburb.setDimensions = function(width, height) {
+    if(width) {
+        Sburb.Container.style.width = width+"px";
+        Sburb.Stage.width = width;
+    }
+    if(height) {
+        Sburb.Container.style.height = height+"px";
+        Sburb.Stage.height = height;
+    }
 }
 
 function startUpdateProcess(){
@@ -494,8 +540,7 @@ function drawHud(){
 function hasControl(){
 	return !Sburb.dialoger.talking 
 		&& !Sburb.chooser.choosing 
-		&& !Sburb.destRoom 
-		&& !Sburb.waitFor 
+		&& !Sburb.destRoom  
 		&& !Sburb.fading 
 		&& !Sburb.destFocus;
 }
@@ -562,20 +607,28 @@ function chainAction(){
 			i--;
 			continue;
 		}
-		chainActionInQueue(queue);
+		if(queue.paused || queue.waitFor) {
+			if((queue.trigger && queue.trigger.checkCompletion()) 
+                || queue.waitFor) {
+				queue.paused = false;
+				queue.trigger = null;
+			} else {
+				continue;
+			}
+		}
 	}
 }    
 
 function chainActionInQueue(queue) {
 	if(queue.curAction.times<=0){
 		if(queue.curAction.followUp){
-			if(hasControl() || queue.curAction.followUp.noWait){
+			if(hasControl() || queue.curAction.followUp.noWait || queue.noWait){
 				Sburb.performAction(queue.curAction.followUp,queue);
 			}
 		}else{
 			queue.curAction = null;
 		}
-	}else if(hasControl() || queue.curAction.noWait){
+	}else if(hasControl() || queue.curAction.noWait || queue.noWait){
 		Sburb.performAction(queue.curAction,queue);
 	}
 }
@@ -586,27 +639,46 @@ function updateWait(){
 			Sburb.waitFor = null;
 		}
 	}
+    if(Sburb.inputDisabled && Sburb.inputDisabled.checkCompletion){
+        if(Sburb.inputDisabled.checkCompletion()){
+            Sburb.inputDisabled = false;
+        }
+    }
 }
 
 Sburb.performAction = function(action, queue){
 	if(action.silent){
 		if((action.times==1)&&(!action.followUp)) {
 			Sburb.performActionSilent(action);
-			return;
+			return null;
 		}
 		if((!queue)||(queue==Sburb)) {
-			queue={"curAction":action};
+			if(action.silent==true) {
+				queue=new Sburb.ActionQueue(action);
+			} else {
+				var options=action.silent.split(":");
+				var noWait=(options[0]=="full")?true:false;
+				var id=null;
+				if(noWait) {
+					options.shift();
+				}
+				if(options.length>0) {
+					id=options.shift();
+				}
+				queue=new Sburb.ActionQueue(action,id,options,noWait);
+			}
 			Sburb.actionQueues.push(queue);
 		}
 	}
 	if(queue&&(queue!=Sburb)) {
 		performActionInQueue(action, queue);
-		return;
+		return queue;
 	}
 	if(((Sburb.curAction && Sburb.curAction.followUp!=action && Sburb.curAction!=action) || !hasControl()) && action.soft){
-		return;
+		return null;
 	}
 	performActionInQueue(action, Sburb);
+	return null;
 }
 
 function performActionInQueue(action, queue) {
@@ -616,8 +688,9 @@ function performActionInQueue(action, queue) {
 		if(looped){
 			queue.curAction = queue.curAction.followUp.clone();
 		}
-   	Sburb.performActionSilent(queue.curAction);
-   	looped = true;
+       	var result = Sburb.performActionSilent(queue.curAction);
+        handleCommandResult(queue,result);
+       	looped = true;
 	}while(queue.curAction && queue.curAction.times<=0 && queue.curAction.followUp && queue.curAction.followUp.noDelay);
 }
 
@@ -627,7 +700,18 @@ Sburb.performActionSilent = function(action){
 	if(info){
 		info = info.trim();
 	}
-	Sburb.commands[action.command.trim()](info);
+	return Sburb.commands[action.command.trim()](info);
+}
+
+function handleCommandResult(queue,result){
+    if(result){
+        if(queue.hasOwnProperty("trigger")){
+            queue.paused = true;
+            queue.trigger = result;
+        }else{
+            queue.waitFor = result;
+        }
+    }
 }
 
 
