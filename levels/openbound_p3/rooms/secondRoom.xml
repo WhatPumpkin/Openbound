@@ -1,7 +1,8 @@
 <sburb description="second room">
 
 <dependencies>
-
+  <dependency>chars/kanaya.xml</dependency>
+  <dependency>chars/porrim.xml</dependency>
 </dependencies>
 
 <assets>
@@ -9,6 +10,8 @@
 	<asset name='secondRoomFG' type='graphic'>backgrounds/secondRoomFG.png</asset>
 
 	<asset name='secondRoomMap' type='graphic'>backgrounds/secondRoomMap.png</asset>
+
+  <asset name='secondRoomDoor' type='graphic'>objects/doorclosed.png</asset>
 </assets>
 
 
@@ -25,6 +28,16 @@
   		</trigger>
   	</triggers>
   	
+    <character class='kanaya' x='1760' y='622'>
+      
+    </character>
+
+    <character class='porrim' x='1816' y='622'>
+
+    </character>
+
+    <sprite name='secondRoomDoor' x='1230' y='200'/>
+
   	<sprite name='secondRoomBG'>
   		<animation sheet='secondRoomBG'/>
   	</sprite>
