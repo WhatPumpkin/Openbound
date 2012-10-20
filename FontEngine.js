@@ -61,7 +61,7 @@ Sburb.FontEngine.prototype.prefixColours = {
 	cc : "#77003c",feferi : "#77003c",
 	cg : "#626262",karkat : "#626262",
 	ct : "#000056",equius : "#000056",
-	ga : "#008141",kanaya : "#008141",
+	ga : "#008141",kanaya : "#008141", kanaya2 : "#008141",
 	gc : "#008282",terezi : "#008282",
 	ta : "#a1a100",sollux : "#a1a100",
 	tc : "#2b0057",gamzee : "#6c00da",
