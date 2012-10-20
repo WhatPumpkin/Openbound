@@ -42,13 +42,6 @@
   			<action command='changeRoomRemote'>rooms/thirdRoom.xml,thirdRoom,2904,1761</action>
   		</trigger>
   	</triggers>
-
-    <character class='meenah' x='390' y='530' >
-      <action class='meenahTalk1'/>
-      <action class='meenahTalk2'/>
-      <action class='meenahTalk3'/>
-      <action sprite='damara' class='beMeenah'/>
-    </character>
   	
     <character class='kanaya' x='1760' y='622' state='walkRight'>
       <action class='kanayaTalk1'/>
@@ -64,6 +57,9 @@
                   <args>secondRoomDoor,secondRoom</args>
                   <action command='addWalkable'>
                     <args>secondRoomWalkable,secondRoom</args>
+                    <action command='setGameState'>
+                      <args>followingKanaya,true</args>
+                    </action>
                   </action>
                 </action>
               </action>

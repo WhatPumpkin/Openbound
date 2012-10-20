@@ -1,7 +1,7 @@
 <sburb description='karkat'>
 
 <dependencies>
-	<dependency>dialogs/karkatDialog.xml</dependency>
+	<!--<dependency>dialogs/karkatDialog.xml</dependency>-->
 </dependencies>
 
 <classes>
@@ -22,8 +22,6 @@
 <assets>
 
 	<asset name='karkatSheet' type='graphic'>chars/karkat/karkat.png</asset>
-
-	<asset name='karkatSong' type='audio'>audio/music/KarkatLoop.oga;audio/music/KarkatLoop.mp3</asset> --><!-- loops to 0 -->
 	
 	<asset name='karkat_eyeroll1' type='graphic'>dialogs/karkat/karkat_eyeroll1.png</asset>
 	<asset name='karkat_eyeroll2' type='graphic'>dialogs/karkat/karkat_eyeroll2.png</asset>

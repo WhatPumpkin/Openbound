@@ -8,6 +8,7 @@
 	<dependency>chars/mituna.xml</dependency>
   <dependency>chars/kankri.xml</dependency>
   <dependency>chars/latula.xml</dependency>
+  <dependency>chars/kanaya.xml</dependency>
 </dependencies>
 
 <classes>
@@ -44,27 +45,27 @@
   <asset name='latula' type='graphic'>objects/latula.png</asset>
 </assets>
 
-<sprite name='item1'>
+<sprite depthing='3' name='item1'>
   <animation sheet='item1' x='-50' y='-50'/>
 </sprite>
 
-<sprite name='item2'>
+<sprite depthing='3' name='item2'>
   <animation sheet='item2' x='-50' y='-50'/>
 </sprite>
 
-<sprite name='item3'>
+<sprite depthing='3' name='item3'>
   <animation sheet='item3' x='-50' y='-50'/>
 </sprite>
 
-<sprite name='item4'>
+<sprite depthing='3' name='item4'>
   <animation sheet='item4' x='-50' y='-50'/>
 </sprite>
 
-<sprite name='item5'>
+<sprite depthing='3' name='item5'>
   <animation sheet='item5' x='-50' y='-50'/>
 </sprite>
 
-<sprite name='item6'>
+<sprite depthing='3' name='item6'>
   <animation sheet='item6' x='-50' y='-50'/>
 </sprite>
 
@@ -118,7 +119,7 @@
                       </args>
                       <action command='addAction'>
                         <args>horuss,
-                          <action class='beHoruss'/>
+                          <action sprite='meenah' class='beHoruss'/>
                         </args>
                       </action>
                     </action>
@@ -133,11 +134,11 @@
   </action>
 </sprite>
 
-<sprite name='tinkerbull'>
+<sprite name='tinkerbull' depthing='3'>
   <animation sheet='tinkerbull' length='4' x='-30' y='-50'/>
 </sprite>
 
-<sprite name='fidusspawneggs'>
+<sprite name='fidusspawneggs' depthing='3'>
   <animation sheet='fidusspawneggs' x='-50' y='-50'/>
 </sprite>
 
@@ -145,8 +146,29 @@
   <room name='firstRoom' walkableMap='firstRoomMap' mapScale='2'>
   	<triggers>
   		<trigger>
+
         <args>inBox2,meenah,2607,1701,2478,1146</args>
-        <action command='changeRoomRemote'>rooms/secondRoom.xml,secondRoom,340,502</action>
+        <action command='goBack'>
+          <args>meenah</args>
+          <action command='changeRoomRemote'>
+            <args>rooms/secondRoom.xml,secondRoom,340,502</args>
+            <action command='try' >
+              <args>
+                <trigger>
+                  <args>gameState,followingKanaya=true</args>
+                  <action class='beKanaya'>
+                    <action command='goBack'>
+                      <args>kanaya</args>
+                      <action command='follow'>
+                        <args>meenah,kanaya</args>
+                      </action>
+                    </action>
+                  </action>
+                </trigger>
+              </args>
+            </action>
+          </action>
+        </action>
       </trigger>
   	</triggers>
   	
@@ -155,14 +177,18 @@
   		<motionpath path='firstRoomStairs2' xtox='0.7' xtoy='-0.7' />
   		<motionpath path='firstRoomStairs3' xtox='0.7' xtoy='-0.7' />
   	</paths>
-  	<!--
-  	<character class='meenah' x='390' y='630' >
+  	
+  	<character class='meenah' x='320' y='466' >
       <action class='meenahTalk1'/>
       <action class='meenahTalk2'/>
       <action class='meenahTalk3'/>
-      <action class='beMeenah'/>
+      <action sprite='damara' class='beMeenah'>
+        <action command='removeSprite'>
+          <args>latula,firstRoom</args>
+        </action>
+      </action>
     </character>
-  	-->
+  	
   	<character class='mituna' x='2394' y='285' state='crash'>
       <action sprite='!damara' command='talk' name="It's Mituna!">
           <args>
@@ -202,7 +228,11 @@
       <action class='damaraTalk4'/>
       <action class='damaraTalk5'/>
       <action class='damaraTalk6'/>
-      <action class='beDamara' sprite='rufioh'/>
+      <action class='beDamara' sprite='rufioh'>
+        <action command='addSprite'>
+          <args>latula,firstRoom</args>
+        </action>
+      </action>
     </character>
   	
   	<sprite name='qwartz' x='1566' y='1155'>

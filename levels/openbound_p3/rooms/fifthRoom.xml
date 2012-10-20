@@ -20,21 +20,23 @@
   <asset name='item16' type='graphic'>objects/items/item16.png</asset>
   <asset name='item17' type='graphic'>objects/items/item17.png</asset>
   <asset name='item18' type='graphic'>objects/items/item18.png</asset>
+
+  <asset name='dialogimg_ks.png'>interface/backgrounds/dialogimg_ks.png</asset>
 </assets>
 
-<sprite name='item15'>
+<sprite depthing='3' name='item15'>
   <animation sheet='item15' x='-50' y='-50'/>
 </sprite>
 
-<sprite name='item16'>
+<sprite depthing='3' name='item16'>
   <animation sheet='item16' x='-50' y='-50'/>
 </sprite>
 
-<sprite name='item17'>
+<sprite depthing='3' name='item17'>
   <animation sheet='item17' x='-50' y='-50'/>
 </sprite>
 
-<sprite name='item18'>
+<sprite depthing='3' name='item18'>
   <animation sheet='item18' x='-50' y='-50'/>
 </sprite>
 
@@ -64,7 +66,7 @@
       <animation sheet='jovrosSheet' x='-84' y='-94'/>
     </sprite>
 
-    <sprite name='andrew' x='668' y='2090' width='130' height='80' depthing='1'>
+    <sprite name='andrew' x='668' y='2090' width='130' height='80' depthing='1' collidable='true'>
       <animation sheet='andrewSheet' x='-66' y='-86'/>
       <action class='andrewTalk1'/>
     </sprite>

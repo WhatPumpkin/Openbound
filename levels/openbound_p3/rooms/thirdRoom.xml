@@ -26,23 +26,23 @@
   <asset name='item13' type='graphic'>objects/items/item13.png</asset>
 </assets>
 
-<sprite name='item9'>
+<sprite depthing='3' name='item9'>
   <animation sheet='item9' x='-50' y='-50'/>
 </sprite>
 
-<sprite name='item10'>
+<sprite depthing='3' name='item10'>
   <animation sheet='item10' x='-50' y='-50'/>
 </sprite>
 
-<sprite name='item11'>
+<sprite depthing='3' name='item11'>
   <animation sheet='item11' x='-50' y='-50'/>
 </sprite>
 
-<sprite name='item12'>
+<sprite depthing='3' name='item12'>
   <animation sheet='item12' x='-50' y='-50'/>
 </sprite>
 
-<sprite name='item13'>
+<sprite depthing='3' name='item13'>
   <animation sheet='item13' x='-50' y='-50'/>
 </sprite>
 
@@ -50,12 +50,30 @@
   <room name='thirdRoom' walkableMap='thirdRoomMap' mapScale='2'>
   	<triggers>
   		<trigger>
-  			<args>inBox2,char,2991,1911,2841,1812</args>
+  			<args>inBox2,kanaya,2991,1911,2841,1812</args>
   			<action command='changeRoomRemote'>rooms/secondRoom.xml,secondRoom,1326,380</action>
   		</trigger>
       <trigger>
-        <args>inBox2,char,1800,312,1551,243</args>
+        <args>inBox2,kanaya,1800,312,1551,243</args>
         <action command='changeRoomRemote'>rooms/sixthRoom.xml,sixthRoom,623,846</action>
+      </trigger>
+      <trigger>
+        <args>inBox2,rose,1800,312,1551,243</args>
+        <action command='changeRoomRemote'>
+          <args>rooms/sixthRoom.xml,sixthRoom,623,846</args>
+          <action command='addSprite'>
+            <args>gamzee,sixthRoom</args>
+          </action>
+        </action>
+      </trigger>
+      <trigger>
+        <args>inBox2,dave,1800,312,1551,243</args>
+        <action command='changeRoomRemote'>
+          <args>rooms/sixthRoom.xml,sixthRoom,623,846</args>
+          <action command='addSprite'>
+            <args>karkat,sixthRoom</args>
+          </action>
+        </action>
       </trigger>
   		<trigger>
   			<args>inBox2,kanaya,345,831,225,609</args>

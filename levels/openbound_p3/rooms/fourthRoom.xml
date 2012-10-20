@@ -12,10 +12,10 @@
 	<asset name='fourthRoomMap' type='graphic'>backgrounds/fourthRoomMap.png</asset>
   <asset name='araneaStandSheet' type='graphic'>objects/aranea_stand.png</asset>
 
-  <asset name='item14' type='graphic'>objects/item14.png</asset>
+  <asset name='item14' type='graphic'>objects/items/item14.png</asset>
 </assets>
 
-<sprite name='item14'>
+<sprite depthing='3' name='item14'>
   <animation sheet='item14' x='-50' y='-50'/>
 </sprite>
 

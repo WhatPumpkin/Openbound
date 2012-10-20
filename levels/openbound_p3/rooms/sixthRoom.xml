@@ -15,7 +15,7 @@
 </assets>
 
 <character class='karkat' x='792' y='638'>
-      <action command='talk' name='Talk to Karkat.'>
+      <action sprite='dave' command='talk' name='Talk to Karkat.'>
         <args>
         @karkat_talk KARKAT: OK, THIS IS JUST FUCKING STUPID NOW.
         @dave_idle DAVE: what
@@ -106,15 +106,33 @@
   	<triggers>
 
   		<trigger>
-  			<args>inBox2,char,751,998,503,900</args>
+  			<args>inBox2,kanaya,751,998,503,900</args>
   			<action command='changeRoomRemote'>rooms/thirdRoom.xml,thirdRoom,1668,378</action>
   		</trigger>
+
+      <trigger>
+        <args>inBox2,dave,751,998,503,900</args>
+        <action command='removeSprite'>
+          <args>karkat,sixthRoom</args>
+          <action command='changeRoomRemote'>rooms/thirdRoom.xml,thirdRoom,1668,378</action>
+        </action>
+      </trigger>
+
+      <trigger>
+        <args>inBox2,rose,751,998,503,900</args>
+        <action command='removeSprite'>
+          <args>gamzee,sixthRoom</args>
+          <action command='changeRoomRemote'>rooms/thirdRoom.xml,thirdRoom,1668,378</action>
+        </action>
+      </trigger>
 
   	</triggers>
 
     
 
-    <sprite name='snooze' x='570' y='450' />
+    <sprite name='snooze' x='570' y='450' >
+      <animation sheet='snooze' length='4' frameInterval='10'/>
+    </sprite>
 
     <sprite name='sleepKat' x='602' y='589' width='224' height='100'>
       <action sprite='kanaya' command='talk' name='Examine snoozing Karkat.'>
@@ -149,9 +167,7 @@
   	<sprite name='sixthRoomBG'>
   		<animation sheet='sixthRoomBG'/>
   	</sprite>
-  	<sprite name='sixthRoomFG' depthing='2'>
-  		<animation sheet='sixthRoomFG'/>
-  	</sprite>
+
   </room> 
 </rooms>
 
