@@ -1,6 +1,6 @@
 <sburb>
 <classes>
-<action class='hussieTalk1' command='talk' name='This guy again?'>
+<action class='andrewTalk1' command='talk' name='This guy again?'>
       <args>
       @! Oh. It's you. Scram kid!
       @meenah_idle MEENAH: hey orange dude

@@ -14,8 +14,37 @@
   <asset name='thirdRoomStairs1' type='path'>2247,1569;2430,1746;2424,1677;2247,1512</asset>
   <asset name='thirdRoomStairs2' type='path'>2181,648;2181,612;2019,771;2019,843</asset>
   <asset name='thirdRoomStairs3' type='path'>936,501;771,657;777,729;930,561</asset>
+
+  <asset name='dialogimg_tab1' type='graphic'>interface/backgrounds/dialogimg_tab1.png</asset>
+  <asset name='dialogimg_tab2' type='graphic'>interface/backgrounds/dialogimg_tab2.png</asset>
+  <asset name='dialogimg_tab3' type='graphic'>interface/backgrounds/dialogimg_tab3.png</asset>
+
+  <asset name='item9' type='graphic'>objects/items/item9.png</asset>
+  <asset name='item10' type='graphic'>objects/items/item10.png</asset>
+  <asset name='item11' type='graphic'>objects/items/item11.png</asset>
+  <asset name='item12' type='graphic'>objects/items/item12.png</asset>
+  <asset name='item13' type='graphic'>objects/items/item13.png</asset>
 </assets>
 
+<sprite name='item9'>
+  <animation sheet='item9' x='-50' y='-50'/>
+</sprite>
+
+<sprite name='item10'>
+  <animation sheet='item10' x='-50' y='-50'/>
+</sprite>
+
+<sprite name='item11'>
+  <animation sheet='item11' x='-50' y='-50'/>
+</sprite>
+
+<sprite name='item12'>
+  <animation sheet='item12' x='-50' y='-50'/>
+</sprite>
+
+<sprite name='item13'>
+  <animation sheet='item13' x='-50' y='-50'/>
+</sprite>
 
 <rooms>
   <room name='thirdRoom' walkableMap='thirdRoomMap' mapScale='2'>
@@ -24,6 +53,10 @@
   			<args>inBox2,char,2991,1911,2841,1812</args>
   			<action command='changeRoomRemote'>rooms/secondRoom.xml,secondRoom,1326,380</action>
   		</trigger>
+      <trigger>
+        <args>inBox2,char,1800,312,1551,243</args>
+        <action command='changeRoomRemote'>rooms/sixthRoom.xml,sixthRoom,623,846</action>
+      </trigger>
   		<trigger>
   			<args>inBox2,kanaya,345,831,225,609</args>
         <action command='goBack' noDelay='true'>
@@ -57,6 +90,60 @@
       <action class='daveTalk2'/>
       <action class='beDave'/>
     </character>
+
+    <sprite class='chest7' name='thirdRoomChest9' x='2826' y='351'>
+      <action command='openChest' name='Open.'>
+        <args>thirdRoomChest9,item9,
+            @! You got a CAN OF EARTH TAB!
+            @! The mayor had a couple of these stowed in his rags for safe keeping. He has decided to store them in chests now, which unbeknownst to him are the opposite of safe keeping.
+            @! You crack it open and chug it. You are overwhelmed by the intense rush of sugar. This high will surely last for hours.
+            @!~dialogimg_tab1
+            @!~dialogimg_tab2
+            @!~dialogimg_tab3
+        </args>
+      </action>
+    </sprite>
+
+    <sprite class='chest7' name='thirdRoomChest10' x='2181' y='897'>
+      <action command='openChest' name='Open.'>
+        <args>thirdRoomChest10,item10,
+             @! You got an EMPTY BOTTLE!
+      @! You guess... you'll just kinda...
+      @!:#boring-treasure Put it over there with the other bottles.
+        </args>
+      </action>
+    </sprite>
+
+    <sprite class='chest7' name='thirdRoomChest11' x='1698' y='474'>
+      <action command='openChest' name='Open.'>
+        <args>thirdRoomChest11,item11,
+             @! You got a...
+      @! Hey what even is this thing?
+      @! Whatever it is, you got it.
+        </args>
+      </action>
+    </sprite>
+
+    <sprite class='chest7' name='thirdRoomChest12' x='1353' y='474'>
+      <action command='openChest' name='Open.'>
+        <args>thirdRoomChest12,item12,
+                   @! You got a BOONBUCK!
+      @! Ok, you can't even pretend to be excited about this. You get the feeling that whoever was stocking these chests just started running out of treasure assets.
+      @! You put the phoned-in item back in the chest. But a little later, Meenah sneaks back over here, takes the boonbuck, and stashes it in her nautically themed, hot pink clam shell shaped purse, which we have never seen her rendered with, but is totally is something that exists in the most canonical way possible. There, now you know.
+
+        </args>
+      </action>
+    </sprite>
+
+    <sprite class='chest7' name='thirdRoomChest13' x='828' y='1206'>
+      <action command='openChest' name='Open.'>
+        <args>thirdRoomChest13,item13,
+             @! EEEUUUGHH MORE TROLL BLOOD, WHY???
+      @! As you prepare to lob it into the dark shaft below, you catch a whiff of it. Hold on... it smells... fruity?
+      @! You guess it was a false alarm. This appears to be some form of delicious juice. Your bad.
+        </args>
+      </action>
+    </sprite>
   	
   	<sprite name='thirdRoomBG'>
   		<animation sheet='thirdRoomBG'/>

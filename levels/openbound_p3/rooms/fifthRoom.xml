@@ -15,8 +15,28 @@
   <asset name='andrewSheet' type='graphic'>objects/andrew.png</asset>
 
   <asset name='fifthRoomStairs' type='path'>1100,1252;1100,1282;922,1142;920,1096</asset>
+  
+  <asset name='item15' type='graphic'>objects/items/item15.png</asset>
+  <asset name='item16' type='graphic'>objects/items/item16.png</asset>
+  <asset name='item17' type='graphic'>objects/items/item17.png</asset>
+  <asset name='item18' type='graphic'>objects/items/item18.png</asset>
 </assets>
 
+<sprite name='item15'>
+  <animation sheet='item15' x='-50' y='-50'/>
+</sprite>
+
+<sprite name='item16'>
+  <animation sheet='item16' x='-50' y='-50'/>
+</sprite>
+
+<sprite name='item17'>
+  <animation sheet='item17' x='-50' y='-50'/>
+</sprite>
+
+<sprite name='item18'>
+  <animation sheet='item18' x='-50' y='-50'/>
+</sprite>
 
 <rooms>
   <room name='fifthRoom' walkableMap='fifthRoomMap' mapScale='2'>
@@ -25,23 +45,67 @@
   			<args>inBox2,char,1336,696,1432,420</args>
   			<action command='changeRoomRemote'>rooms/fourthRoom.xml,fourthRoom,279,405</action>
   		</trigger>
+      <!--
+      <trigger>
+        <args>inBox,char,1024,2020,1000,1000</args>
+      </trigger>
+      -->
   	</triggers>
 
     <paths>
       <motionpath path='fifthRoomStairs' xtox='0.7' xtoy='0.7' />
     </paths>
 
-    <sprite name='vriska' x='1126' y='2238' width='40' height='24'>
+    <sprite name='vriska' x='1126' y='2238' width='40' height='24'  collidable='true' depthing='1'>
       <animation sheet='vriskaSheet' x='-26' y='-92'/>
     </sprite>
 
-    <sprite name='jovros' x='1130' y='2338' width='150' height='26'>
+    <sprite name='jovros' x='1130' y='2338' width='150' height='26' collidable='true' depthing='1'>
       <animation sheet='jovrosSheet' x='-84' y='-94'/>
     </sprite>
 
-    <sprite name='andrew' x='668' y='2090' width='130' height='80'>
+    <sprite name='andrew' x='668' y='2090' width='130' height='80' depthing='1'>
       <animation sheet='andrewSheet' x='-66' y='-86'/>
       <action class='andrewTalk1'/>
+    </sprite>
+
+    <sprite class='chest7' name='fifthRoomChest15' x='440' y='540'>
+      <action command='openChest' name='Open.'>
+        <args>fifthRoomChest15,item15,
+        @! You got a BROKEN 8 BALL!
+      @! You remember seeing a bunch of these earlier. What was the context again? You just had so many long weird conversations it's all kind of a jumble now.
+      @! You feel unlucky just looking at this thing. You toss it in the bushes.
+        </args>
+      </action>
+    </sprite>
+
+    <sprite class='chest7' name='fifthRoomChest16' x='672' y='756'>
+      <action command='openChest' name='Open.'>
+        <args>fifthRoomChest16,item16,
+         @!:#pshoooes You got a pair of ROCKET BOOTS!
+      @! What would a ghost need with rocket boots, anyway? Can't all ghosts fly?
+      @! Or maybe that's just dead god tiers, who can generally fly anyway. Or dead dream selves? Actually you don't know what the flying rules are and you don't really care.
+        </args>
+      </action>
+    </sprite>
+
+    <sprite class='chest7' name='fifthRoomChest17' x='608' y='756'>
+      <action command='openChest' name='Open.'>
+        <args>fifthRoomChest17,item17,
+          @! You got a HEAP OF PRICELESS TREASURE!
+      @! Huh. Actual treasure, inside a treasure chest.
+      @! Now you've seen everything.
+        </args>
+      </action>
+    </sprite>
+
+    <sprite class='chest7' name='fifthRoomChest18' x='828' y='1532'>
+      <action command='openChest' name='Open.'>
+        <args>fifthRoomChest18,item18,
+           @! You got the FLUORITE OCTET!
+      @!:#:::;) Feeling lucky, punk????????
+        </args>
+      </action>
     </sprite>
   	
   	<sprite name='fifthRoomBG'>

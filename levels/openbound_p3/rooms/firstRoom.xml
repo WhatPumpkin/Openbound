@@ -7,7 +7,12 @@
 	<dependency>chars/damara.xml</dependency>
 	<dependency>chars/mituna.xml</dependency>
   <dependency>chars/kankri.xml</dependency>
+  <dependency>chars/latula.xml</dependency>
 </dependencies>
+
+<classes>
+  
+</classes>
 
 <assets>
 	
@@ -28,16 +33,62 @@
 	<asset name='firstRoomStairs2' type='path'>1509,468;1509,507;1890,207;1890,159</asset>
 	<asset name='firstRoomStairs3' type='path'>1191,1350;1191,1392;996,1545;996,1509</asset>
 	<asset name='firstRoomWalkable' type='path'>1540,1500;1700,1500;1700,1680;1540,1680</asset>
+
+  <asset name='item1' type='graphic'>objects/items/item1.png</asset>
+  <asset name='item2' type='graphic'>objects/items/item2.png</asset>
+  <asset name='item3' type='graphic'>objects/items/item3.png</asset>
+  <asset name='item4' type='graphic'>objects/items/item4.png</asset>
+  <asset name='item5' type='graphic'>objects/items/item5.png</asset>
+  <asset name='item6' type='graphic'>objects/items/item6.png</asset>
+
+  <asset name='latula' type='graphic'>objects/latula.png</asset>
 </assets>
+
+<sprite name='item1'>
+  <animation sheet='item1' x='-50' y='-50'/>
+</sprite>
+
+<sprite name='item2'>
+  <animation sheet='item2' x='-50' y='-50'/>
+</sprite>
+
+<sprite name='item3'>
+  <animation sheet='item3' x='-50' y='-50'/>
+</sprite>
+
+<sprite name='item4'>
+  <animation sheet='item4' x='-50' y='-50'/>
+</sprite>
+
+<sprite name='item5'>
+  <animation sheet='item5' x='-50' y='-50'/>
+</sprite>
+
+<sprite name='item6'>
+  <animation sheet='item6' x='-50' y='-50'/>
+</sprite>
+
+<sprite name='latula' x='2356' y='252' width='40' height='30' collidable='true' depthing='1'>
+  <animation sheet='latula' x='-39' y='-78'/>
+</sprite>
 
 <sprite name='plush2' x='1219' y='529' width='77' height='40'>
   <animation sheet='plush2' x='-48' y='-55'/>
+  <action command='talk' name='Examine.'>
+        <args>
+        @!:#You-hum-the-fiduspawn-theme-song-while-gently-weeping. Blech. What a disgusting, friendly mess. His sacrifice was not in vain though. He was brutally murdered from within, so that a new friend could be born.
+        <!--  -->
+        </args>
+  </action>
 </sprite>
 
 <sprite name='horsaponi' x='1408' y='533' width='123' height='20' depthing='1' collidable='true'>
   <animation sheet='horsaponi' length='8' x='-70' y='-84'/>
   <action command='talk' name='Examine.'>
-    <args>@! nothing yet</args>
+        <args>
+        @! What an utterly magnificent specimen. But if you train HORSAPONI hard enough, one day he may become HORSARONI. By which I mean, he will grow slightly bigger, and gain no measurable advantages in combat. You will however be required to feed him more.
+        <!--  -->
+        </args>
   </action>
   <action command='removeSprite' name='Take Horsaponi to Horuss.'>
     <args>horsaponi,firstRoom</args>
@@ -54,10 +105,23 @@
                 <args>@! nothing for now</args>
                 <action command='removeAction'>
                   <args>horuss,Be Horuss.,Give Horsaponi to Horuss.</args>
-                  <action command='addAction'>
-                    <args>horuss,
-                      <action class='beHoruss'/>
-                    </args>
+                  <action command='removeAction'>
+                    <args>horsaponi,Examine.</args>
+                    <action command='addAction'>
+                      <args>horsaponi,
+                        <action command='talk' name='Examine.'>
+                              <args>
+                              @!:#neigh Dear, sweet, beautiful, dear, precious, sweet, sweet, dear, sweet HORSEAPONI. 
+                              <!--  -->
+                              </args>
+                        </action>
+                      </args>
+                      <action command='addAction'>
+                        <args>horuss,
+                          <action class='beHoruss'/>
+                        </args>
+                      </action>
+                    </action>
                   </action>
                 </action>
               </action>
@@ -99,7 +163,21 @@
       <action class='beMeenah'/>
     </character>
   	-->
-  	<character class='mituna' x='2394' y='285' state='crash'/>
+  	<character class='mituna' x='2394' y='285' state='crash'>
+      <action sprite='!damara' command='talk' name="It's Mituna!">
+          <args>
+          @!:#Falling-is-hard-work! D'aw, looks like he's all tuckered out under the brain tree.  
+          <!--  -->
+          </args>
+      </action>
+      <action sprite='damara' command='talk' name="It's Mituna!">
+          <args>
+          @latula_happier LATULA: h3y d4mz!!!!
+          @latula_happytalk LATULA: 1f you go 4nywh3r3 n34r h1m, 1 w1ll fuck1ng k1ll you!
+          <!--  -->
+          </args>
+      </action>
+    </character>
   	
     <character class='rufioh' x='771' y='753' >
       <action class='rufiohTalk1'/>
@@ -132,7 +210,13 @@
   	</sprite>
   	
   	<sprite name='firstRoomOrb' class='blueBubble' x='1536' y='1518'>
-  		<action command='removeSprite' name='gggggg' sprite='damara'>
+      <action sprite='!damara' command='talk' name='Examine bubble.'>
+            <args>
+            @! This bubble contains Damara's memory of a huge quartz obstacle. Only she can remove it. Stinkin' witch. She never makes it easy, does she?
+            <!--  -->
+            </args>
+      </action>
+  		<action sprite='damara' command='removeSprite' name='Remove quartz glacier.'>
   			<args>qwartz,firstRoom</args>
   			<action command='addWalkable'>
   				<args>firstRoomWalkable,firstRoom</args>
@@ -140,30 +224,76 @@
   		</action>
   	</sprite>
 
-    <sprite class='chest7' name='firstRoomChest1' x='360' y='1544'>
-      <action command='openChest' name='Open.' sprite='horuss'>
-        <args>firstRoomChest1,tinkerbull,@! nothing yet</args>
-        <action command='addAction'>
-          <args>rufioh,
-            <action command='talk' name='Give Rufioh his lusus.'>
-              <args>@! nothing for now</args>
-              <action command='addAction'>
-                <args>rufioh,
-                  <action class='beRufioh'/>
-                </args>
-                <action command='removeAction' noDelay='true'>
-                  <args>rufioh,Give Rufioh his lusus.</args>
-                </action>
-              </action>
-            </action>
-          </args>
-        </action>
+    <sprite class='chest8' name='firstRoomChest1' x='618' y='778'>
+      <action command='openChest' name='Open.'>
+        <args>firstRoomChest1,item1,
+          @! You got some FIDUSPAWN CARDS! Gotta hatch em all!!!!!
+          @! Is advice you should follow if you want way too many fiduspawn crawling around. For safety reasons, the manufacturer recommends that you only hatch some.
+        </args>
+      </action>
+    </sprite>
+    
+    <sprite class='chest8' name='firstRoomChest2' x='1422' y='422'>
+      <action command='openChest' name='Open.'>
+        <args>firstRoomChest2,item2,
+          @! You got a BUSTED ROBOT HEAD! 
+      @! There was a rumor going around that once, through an elaborate courtship process, Horuss sent Rufioh a robotic duplicate of himself to spar with, piece by piece. The last part he sent was supposedly the head.
+      @! That's almost certainly a myth. Horuss is a pretty strange dude, but he would have to be a total lunatic to do something like that. The anecdote strains plausibility.
+        </args>
       </action>
     </sprite>
 
-    <sprite class='chest8' name='firstRoomChest2' x='629' y='1447'>
+    <sprite class='chest8' name='firstRoomChest3' x='1984' y='134'>
       <action command='openChest' name='Open.'>
-        <args>firstRoomChest2,fidusspawneggs,@! nothing yet</args>
+        <args>firstRoomChest3,item3,
+          @! You got a pair of DUTTON BUBBLE GOGGLES!
+      @! You can see into infinity for eternity. 
+      @! Just the way Charles Dutton would have wanted it.
+        </args>
+      </action>
+    </sprite>
+
+    <sprite class='chest7' name='firstRoomChest4' x='2122' y='560'>
+      <action sprite='horuss' command='openChest' name='Open.'>
+        <args>firstRoomChest4,item4,
+          @! You got a PRICELESS WORK OF FINE ART!!!
+      @! You spend a few moments solemnly contemplating the artistic merits of the splendid classical sculpture.
+      @horuss_horsedick_blur1 
+      @! Wait, no...
+      @! Hang on, don't move. The pixelation is missing its mark...
+      @horuss_horsedick_blur2 
+      @! Damn it! Still not quite right... ok, hold your horses.
+      @horuss_horsedick_blur3 
+      @! Perfect! Whew, crisis averted. That was a close call.
+      @! You very nearly caught a glimpse of a horse penis and began to cry.
+        </args>
+        <action command='removeAction'>
+          <args>firstRoomChest4,Open.</args>
+        </action>
+      </action>
+      <action sprite='!horuss' command='talk' name='Open.'>
+        <args>
+        @! This chest appears to have an extremely complicated lock. There's no way you can open it. You'll need to find someone who's handy with gadgets.
+        </args>
+      </action>
+    </sprite>
+
+    <sprite class='chest8' name='firstRoomChest5' x='1082' y='1106'>
+      <action command='openChest' name='Open.'>
+        <args>firstRoomChest5,item5,
+          @! You got some more BOONDOLLARS!
+      @! A little while ago you would have been pumped to score this dough, but now this is just pocket change to you.
+      @! You sneer with contempt at the pitiable sum of money and let it slip through your fingers to the forest below. Let the beggars and peasants scrounge for it, you say.
+        </args>
+      </action>
+    </sprite>
+
+    <sprite class='chest8' name='firstRoomChest6' x='629' y='1447'>
+      <action command='openChest' name='Open.'>
+        <args>firstRoomChest6,fidusspawneggs,
+          @! You got some FIDUSPAWN EGGS!!!
+      @! You can go use one of these on the HOST PLUSH back there! It honestly sounds like a childish waste of time, but little do you know that Fiduspawn's key demographic is your age group. You are the suckerfish. It's you.
+        </args>
         <action command='addAction'>
           <args>
             plush1,
@@ -181,10 +311,56 @@
       </action>
     </sprite>
 
+    <sprite class='chest7' name='firstRoomChest7' x='360' y='1544'>
+      <action command='openChest' name='Open.' sprite='horuss'>
+        <args>firstRoomChest7,tinkerbull,
+                @! You got RUFIOH'S LUSUS!!! 
+              @! The poor little guy is gasping for breath. Who could have locked him in here? Who could be so cruel?
+              @! You glance at Damara suspiciously. She doesn't bother to look at you, and takes another drag.
+        </args>
+        <action command='addAction'>
+          <args>rufioh,
+            <action command='talk' name='Give Rufioh his lusus.'>
+              <args>@! nothing for now</args>
+              <action command='addAction'>
+                <args>rufioh,
+                  <action class='beRufioh'/>
+                </args>
+                <action command='removeAction' noDelay='true'>
+                  <args>rufioh,Give Rufioh his lusus.</args>
+                </action>
+              </action>
+            </action>
+          </args>
+          <action command='removeAction'>
+            <args>firstRoomChest7,Open.</args>
+          </action>
+        </action>
+      </action>
+      <action sprite='!horuss' command='talk' name='Open.'>
+        <args>
+          @! What's that sound? You listen closely to the chest. You hear something flapping around in there. This thing looks air tight. Whatever's in there might run out of ghost oxygen soon.
+      @! Alas, this chest appears to have an extremely complicated lock. There's no way you can open it. You'll need to find someone who's handy with gadgets.
+        </args>
+      </action>
+    </sprite>
+
+    <sprite class='chest8' name='firstRoomChest8' x='2288' y='1292'>
+      <action command='openChest' name='Open.'>
+        <args>firstRoomChest8,item6,
+          @! You got an EAST BEFORAN SCROLL!
+          @!:#tinyurl.com/damaramegido It is covered in mysterious runes. If only there were some way for laypersons to translate this absurd gibberish.
+        </args>
+      </action>
+    </sprite>
+
     <sprite name='plush1' x='1237' y='511' width='61' height='30'>
       <animation sheet='plush1' x='-34' y='-50'/>
       <action command='talk' name='Examine.'>
-        <args>@! nothing yet</args>
+            <args>
+            @!:#You-start-humming-the-fiduspawn-theme-song. It's a happy looking HOST PLUSH! It won't be so happy anymore if you hatch a FIDUSPAWN EGG near it. Maybe you'll be able to find some eggs in this area if you keep searching. Then the REAL fun can begin.
+            <!--  -->
+            </args>
       </action>
     </sprite>
 

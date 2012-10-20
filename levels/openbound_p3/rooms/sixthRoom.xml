@@ -14,27 +14,137 @@
 
 </assets>
 
+<character class='karkat' x='792' y='638'>
+      <action command='talk' name='Talk to Karkat.'>
+        <args>
+        @karkat_talk KARKAT: OK, THIS IS JUST FUCKING STUPID NOW.
+        @dave_idle DAVE: what
+        @karkat_talk KARKAT: I'M ASLEEP, BUT I GUESS THE METEOR IS PHYSICALLY PASSING THROUGH THE BUBBLE I'M DREAMING IN?
+        @karkat_talk KARKAT: AND NOW MY "DREAM PHANTOM", OR WHATEVER THE FUCK YOU'RE SUPPOSED TO CALL THIS VERSION OF YOURSELF, IS ACTUALLY IN THE SAME PHYSICAL LOCATION AS MY SLEEPING BODY.
+        @karkat_yell KARKAT: I'VE JUST BEEN STANDING HERE WATCHING MYSELF SLEEP ON THE HORN PILE. IT'S OFFICIAL. WE'VE BREACHED A CRITICAL THRESHOLD OF BULGE NUMBING IDIOCY. 
+        @dave_huh DAVE: huh
+        @karkat_yell KARKAT: WHAT DO WE EVEN CALL THIS DREAMING INSTANCE OF OURSELVES? IT CAN'T BE "DREAM SELF" BECAUSE THAT'S ALREADY A THING. AS IN THE VERSION OF YOURSELF ON DERSE OR PROSPIT.
+        @karkat_yell KARKAT: BUT THAT WAS MORE LIKE A PHYSICAL, REAL SELF, THAT JUST HAPPENED TO SERVE AS A BACKUP LIFE. THIS IS SOMETHING TOTALLY DIFFERENT, LIKE A WEIRD HOLOGRAM.
+        @karkat_what KARKAT: HEY, AM I TANGIBLE TO YOU?
+        @dave_huh DAVE: uh
+        @karkat_idle KARKAT: TOUCH ME.
+        @dave_huh DAVE: what
+        @karkat_eyeroll1 KARKAT: JUST GIVE ME A LITTLE POKE.
+        @dave_mad DAVE: no
+        @karkat_talk KARKAT: DON'T BE LIKE THAT, JUST MAN UP AND TOUCH ME. MAYBE JUST BRUSH MY CHEEK GENTLY WITH THE BACK OF YOUR HAND. SOMETHING UNAMBIGUOUSLY PLATONIC LIKE THAT.
+        @dave_mad DAVE: no fuck you
+        @dave_madtalk DAVE: im not caressing your dream hologram
+        @karkat_facepalm KARKAT: YOU HAVE A REALLY TRAGICALLY UNDER-INQUISITIVE MIND, DAVE. THIS IS FOR SCIENCE. IF SCIENCE WAS UP TO YOU, HUMANITY NEVER WOULD HAVE COME ANYWHERE CLOSE TO RISING TO THE LEVEL OF PATHETIC INFERIORITY IT WAS BARELY ABLE TO ACHIEVE AS IT WAS.
+        @dave_talk DAVE: you look really tired man
+        @dave_talk DAVE: your sleep phantom should curl up with your napping meat torso in the horn pile and try to score some shuteye
+        @karkat_shout KARKAT: YEAH, WELL MAYBE I'LL DO JUST THAT, ASSHOLE!
+        @dave_idle DAVE: ok
+        @dave_idle DAVE: hop to it
+        @karkat_sullen KARKAT: NO. NOT WHILE YOU'RE WATCHING.
+        @dave_idle DAVE: man
+        @dave_talk DAVE: our conversations can be so embarrassing
+        @dave_talk DAVE: im so glad we manage to have most of them in private
+        @karkat_eyeroll1 KARKAT: YEAH
+        @karkat_eyeroll2 KARKAT: ME TOO
+        <!--  -->
+        </args>
+      </action>
+    </character>
+
+    <sprite name='gamzee' x='422' y='624' width='40' height='24' collidable='true' depthing='1'>
+      <animation sheet='gamzeeSheet' x='-30' y='-90'/>
+      <action sprite='rose' command='talk' name='Talk to Gamzee.'>
+            <args>
+            @rose_talk ROSE: You better not let Kanaya find you in here.
+            @rose_talk ROSE: She still hates you, you know.
+            @rose_talk ROSE: And not in "that way." I think she still truly would like to kill you.
+            @gamzee_idle GAMZEE: yeah, i all up and motherfuckin know that already.
+            @rose_concern ROSE: I've wondered, doesn't it ever get confusing? Trying to differentiate between platonic, malicious intent, and gestures of black romance?
+            @gamzee_idle GAMZEE: NO.
+            @gamzee_idle GAMZEE: like i'd even give a dayglow chainsaw bitch like that on my time of day up in any quadrant.
+            @gamzee_idle GAMZEE: BESIDES, ALREADY GOT MY BLACK ROM ON WITH ANOTHER MOTHERFUCKER.
+            @gamzee_idle GAMZEE: been dating somebody in the motherfuckin shadows. getting pretty nasty between us. all experiencing the shit out of the dark miracle called hatebliss. 
+            @rose_concern ROSE: Wait, really?
+            @rose_annoyed ROSE: Who?
+            @gamzee_idle GAMZEE: :o)
+            @rose_idle ROSE: Karkat?
+            @gamzee_idle GAMZEE: no.
+            @rose_laugh ROSE: Dave??
+            @gamzee_idle GAMZEE: NO.
+            @rose_sad ROSE: Not... the Mayor???
+            @gamzee_idle GAMZEE: no.
+            @rose_concern ROSE: Wait...
+            @rose_concern ROSE: Terezi?
+            @gamzee_idle GAMZEE: HONK.
+            @rose_talk ROSE: Are you serious?
+            @gamzee_idle GAMZEE: do i mother fucking look like i'd motherfuckin joke around with a mother fucker?
+            @rose_idle ROSE: I...
+            @rose_annoyedtalk ROSE: I can't even parse that relationship as something meaningful.
+            @rose_annoyed ROSE: What...
+            @gamzee_idle GAMZEE: IT'S SIMPLE. 
+            @gamzee_idle GAMZEE: mother fucker.
+            @gamzee_idle GAMZEE: SHE ALL GETS ON HER HATE OF ME QUITE UNDERSTANDABLY, SEEING AS TO WHAT A VILE PIECE OF CLOWN ASS TRASH I'M ALL IS.
+            @gamzee_idle GAMZEE: but doesn't quite hate me enough to want to kill me. :o)
+            @rose_talk ROSE: This is a really startling revelation, I must say.
+            @rose_talk ROSE: It's a game changer.
+            @gamzee_idle GAMZEE: HEY.
+            @gamzee_idle GAMZEE: please don't all tell at this noise to anyone.
+            @gamzee_idle GAMZEE: IF KARKAT MOTHER FUCKIN KNEW ON THIS...
+            @gamzee_idle GAMZEE: he actually would want to kill me. :o(
+            @rose_talk ROSE: Yes, I can see the dilemma you're in.
+            @rose_talk ROSE: Your social dynamics really begin to get complicated once your quadrants start to fill up, don't they?
+            @gamzee_idle GAMZEE: MOTHER FUCK YEAH THEY MOTHER FUCKING DO.
+            @rose_talk ROSE: Don't worry. Your secret is safe with me.
+            @rose_talk ROSE: Now shoo. Back into the ventilation system with you, before you're spotted.
+            <!--  -->
+            </args>
+      </action>
+    </sprite>
 
 <rooms>
   <room name='sixthRoom' walkableMap='sixthRoomMap' mapScale='2'>
   	<triggers>
-  		<!--
+
   		<trigger>
-  			<args>inBox2,char,1336,696,1432,420</args>
-  			<action command='changeRoomRemote'>rooms/fourthRoom.xml,fourthRoom,279,405</action>
+  			<args>inBox2,char,751,998,503,900</args>
+  			<action command='changeRoomRemote'>rooms/thirdRoom.xml,thirdRoom,1668,378</action>
   		</trigger>
-  		-->
+
   	</triggers>
 
-    <sprite name='gamzee' x='422' y='624' width='40' height='24'>
-      <animation sheet='gamzeeSheet' x='-30' y='-90'/>
-    </sprite>
+    
 
     <sprite name='snooze' x='570' y='450' />
 
-    <character class='karkat' x='792' y='638'>
-    	
-    </character>
+    <sprite name='sleepKat' x='602' y='589' width='224' height='100'>
+      <action sprite='kanaya' command='talk' name='Examine snoozing Karkat.'>
+            <args>
+            @meenah_idle MEENAH: !!!!!
+            @! Hey, it's your newly recruited Grand Threshecutioner! Looks like he hasn't woken up from the same nap he was having last time you talked to him. The guy must have been really tired.
+            @! Why's he sleeping in this massive pile of horns? That can't be too comfortable. Maybe you should wake him up. Then as long as he's awake, might as well see if he's ready to pack his bags and head off to war.
+            @! Hold on. Maryam is eying you suspiciously. She isn't on to your plan, is she? How could she know? This girl is really cramping your style. You'd try to shake her loose, but as a rainbow drinker she seems to have an absolutely insane fastness attribute.
+            @kanaya2_talk KANAYA: Whatever Youre Thinking Dont Even Try It
+            @meenah_wut MEENAH: what!!!
+            @meenah_wut2 MEENAH: wasnt thinkin nofin
+            @kanaya2_talk KANAYA: Lets Keep Moving
+            <!--  -->
+            </args>
+      </action>
+      <action sprite='rose' command='talk' name='Examine snoozing Karkat.'>
+            <args>
+            @! "ZZZZZZZZZZZZZ," Karkat said from atop the towering heap of hilarious clown accessories.
+            <!--  -->
+            </args>
+      </action>
+      <action sprite='dave' command='talk' name='Examine snoozing Karkat.'>
+            <args>
+            @! So many horns. You've always wondered what the elusive juggalo troll even needs with so many horns? You think he may have some sort of problem. Also what is with trolls and their weird tendency to be found sleeping in horn piles? You can't even imagine a less comfortable place to nap. There are some things you will never understand.
+            <!--  -->
+            </args>
+      </action>
+    </sprite>
+
+    
   	
   	<sprite name='sixthRoomBG'>
   		<animation sheet='sixthRoomBG'/>

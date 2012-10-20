@@ -20,14 +20,23 @@
   <room name='secondRoom' walkableMap='secondRoomMap' mapScale='2'>
   	<triggers>
   		<trigger>
-  			<args>inBox2,char,200,196,286,820</args>
-        <action command='goBack'>
-          <args>char</args>
-          <action class='beMeenah'>
-            <action command='changeRoomRemote' noDelay='true'>rooms/firstRoom.xml,firstRoom,2403,1428</action>
+  			<args>inBox2,kanaya,200,196,286,820</args>
+        <action command='goBack' noDelay='true'>
+          <args>kanaya</args>
+          <action command='fadeOut'>
+            <action command='unfollow'>
+              <args>meenah</args>
+              <action class='beMeenah'>
+                <action command='changeRoomRemote' noDelay='true'>rooms/firstRoom.xml,firstRoom,2403,1428</action>
+              </action>
+            </action>
           </action>
         </action>
   		</trigger>
+      <trigger>
+        <args>inBox2,meenah,200,196,286,820</args>
+        <action command='changeRoomRemote' noDelay='true'>rooms/firstRoom.xml,firstRoom,2403,1428</action>
+      </trigger>
   		<trigger>
   			<args>inBox2,char,1376,300,1266,254</args>
   			<action command='changeRoomRemote'>rooms/thirdRoom.xml,thirdRoom,2904,1761</action>
