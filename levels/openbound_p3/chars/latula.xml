@@ -1,0 +1,74 @@
+<sburb description='latula'>
+
+<dependencies>
+	<!--<dependency>dialogs/latulaDialog.xml</dependency>-->
+</dependencies>
+
+<classes>
+	<animation class='latula-dialog' frameInterval='6' x='-200' y='-524'/>
+
+	
+	<character class='latula' name='latula' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='latulaSheet' state='walkFront' facing='Front'>
+		
+	</character>
+	
+	<action class='beLatula' name='Be Latula.' command='macro'>
+		<args>
+			<action command='changeChar' noDelay='true'>
+				<args>latula</args>
+				<action command='playSong' noDelay='true'>
+					<args>latulaSong</args>
+				</action>
+			</action>
+		</args>
+	</action>
+</classes>
+
+<assets>
+
+	<asset name='latulaSheet' type='graphic'>chars/latula/latula.png</asset>
+
+	
+	<asset name='latula_angry' type='graphic'>dialogs/latula/latula_angry.png</asset>
+	<asset name='latula_annoyed' type='graphic'>dialogs/latula/latula_annoyed.png</asset>
+	<asset name='latula_annoyedtalk' type='graphic'>dialogs/latula/latula_annoyedtalk.png</asset>
+	<asset name='latula_bored' type='graphic'>dialogs/latula/latula_bored.png</asset>
+	<asset name='latula_happier' type='graphic'>dialogs/latula/latula_happier.png</asset>
+	<asset name='latula_happy' type='graphic'>dialogs/latula/latula_happy.png</asset>
+	<asset name='latula_happytalk' type='graphic'>dialogs/latula/latula_happytalk.png</asset>
+	<asset name='latula_huh' type='graphic'>dialogs/latula/latula_huh.png</asset>
+	<asset name='latula_idle2' type='graphic'>dialogs/latula/latula_idle2.png</asset>
+	<asset name='latula_idle3' type='graphic'>dialogs/latula/latula_idle3.png</asset>
+	<asset name='latula_idle' type='graphic'>dialogs/latula/latula_idle.png</asset>
+	<asset name='latula_laugh' type='graphic'>dialogs/latula/latula_laugh.png</asset>
+	<asset name='latula_shades1' type='graphic'>dialogs/latula/latula_shades1.png</asset>
+	<asset name='latula_shades2' type='graphic'>dialogs/latula/latula_shades2.png</asset>
+	<asset name='latula_shine' type='graphic'>dialogs/latula/latula_shine.png</asset>
+	<asset name='latula_stunt' type='graphic'>dialogs/latula/latula_stunt.png</asset>
+	<asset name='latula_talk' type='graphic'>dialogs/latula/latula_talk.png</asset>
+	<asset name='latula_tongue' type='graphic'>dialogs/latula/latula_tongue.png</asset>
+</assets>
+
+<hud>
+	<dialogsprites>	
+  		<animation name='latula_angry' class='latula-dialog' sheet='latula_angry' x='-240' length='2'/>
+			<animation name='latula_annoyed' class='latula-dialog' sheet='latula_annoyed' />
+			<animation name='latula_annoyedtalk' class='latula-dialog' sheet='latula_annoyedtalk' length='2'/>
+			<animation name='latula_bored' class='latula-dialog' sheet='latula_bored' length='2'/>
+			<animation name='latula_happier' class='latula-dialog' sheet='latula_happier' />
+			<animation name='latula_happy' class='latula-dialog' sheet='latula_happy' />
+			<animation name='latula_happytalk' class='latula-dialog' sheet='latula_happytalk' length='2'/>
+			<animation name='latula_huh' class='latula-dialog' sheet='latula_huh' length='1'/>
+			<animation name='latula_idle2' class='latula-dialog' sheet='latula_idle2' />
+			<animation name='latula_idle3' class='latula-dialog' sheet='latula_idle3' />
+			<animation name='latula_idle' class='latula-dialog' sheet='latula_idle' />
+			<animation name='latula_laugh' class='latula-dialog' sheet='latula_laugh' length='2'/>
+			<animation name='latula_shades1' class='latula-dialog' sheet='latula_shades1' />
+			<animation name='latula_shades2' class='latula-dialog' sheet='latula_shades2' />
+			<animation name='latula_shine' class='latula-dialog' sheet='latula_shine' length='3'/>
+			<animation name='latula_stunt' class='latula-dialog' sheet='latula_stunt' length='2'/>
+			<animation name='latula_talk' class='latula-dialog' sheet='latula_talk' length='2'/>
+			<animation name='latula_tongue' class='latula-dialog' sheet='latula_tongue' />
+  </dialogsprites>
+</hud>
+</sburb>
