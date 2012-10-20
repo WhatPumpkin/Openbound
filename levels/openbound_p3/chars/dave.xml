@@ -1,21 +1,24 @@
 <sburb description='dave'>
 
 <dependencies>
-	<!--<dependency>dialogs/dave/daveDialog.xml</dependency>-->
+	<dependency>dialogs/daveDialog.xml</dependency>
 </dependencies>
 
 <classes>
-	<animation class='dave-dialog' frameInterval='6' x='-180' y='-524'/>
+	<animation class='dave-dialog' frameInterval='6' x='-230' y='-454'/>
 	
 	<character class='dave' name='dave' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='daveSheet' state='walkFront' facing='Front'>
 		
 	</character>
-	
-	<action class='beDave' name='Be Dave.' command='changeChar'>
-		<args>dave</args>
-		<action command='playSong'>
-			<args>daveSong,4.68</args>
-		</action>
+	<action command='macro' class='beDave' name='Be Dave.'>
+		<args>
+			<action  command='changeChar'>
+				<args>dave</args>
+				<action command='playSong'>
+					<args>daveSong,4.68</args>
+				</action>
+			</action>
+		</args>
 	</action>
 </classes>
 

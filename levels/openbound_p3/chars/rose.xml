@@ -1,21 +1,25 @@
 <sburb description='rose'>
 
 <dependencies>
-	<!--<dependency>dialogs/rose/roseDialog.xml</dependency>-->
+	<dependency>dialogs/roseDialog.xml</dependency>
 </dependencies>
 
 <classes>
-	<animation class='rose-dialog' frameInterval='6' x='-180' y='-524'/>
+	<animation class='rose-dialog' frameInterval='6' x='-190' y='-454'/>
 	
 	<character class='rose' name='rose' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='roseSheet' state='walkFront' facing='Front'>
 		
 	</character>
 	
-	<action class='beRose' name='Be Rose.' command='changeChar'>
-		<args>rose</args>
-		<action command='playSong'>
-			<args>roseSong</args>
-		</action>
+	<action class='beRose' name='Be Rose.' command='macro'>
+		<args>
+			<action command='changeChar'>
+				<args>rose</args>
+				<action command='playSong'>
+					<args>roseSong</args>
+				</action>
+			</action>
+		</args>
 	</action>
 </classes>
 

@@ -1,7 +1,7 @@
 <sburb description="fifth room">
 
 <dependencies>
-
+  <dependency>dialogs/hussieDialog.xml</dependency>
 </dependencies>
 
 <assets>
@@ -9,6 +9,12 @@
 	<asset name='fifthRoomFG' type='graphic'>backgrounds/fifthRoomFG.png</asset>
 
 	<asset name='fifthRoomMap' type='graphic'>backgrounds/fifthRoomMap.png</asset>
+
+  <asset name='vriskaSheet' type='graphic'>objects/vriska.png</asset>
+  <asset name='jovrosSheet' type='graphic'>objects/jovros.png</asset>
+  <asset name='andrewSheet' type='graphic'>objects/andrew.png</asset>
+
+  <asset name='fifthRoomStairs' type='path'>1100,1252;1100,1282;922,1142;920,1096</asset>
 </assets>
 
 
@@ -20,6 +26,23 @@
   			<action command='changeRoomRemote'>rooms/fourthRoom.xml,fourthRoom,279,405</action>
   		</trigger>
   	</triggers>
+
+    <paths>
+      <motionpath path='fifthRoomStairs' xtox='0.7' xtoy='0.7' />
+    </paths>
+
+    <sprite name='vriska' x='1126' y='2238' width='40' height='24'>
+      <animation sheet='vriskaSheet' x='-26' y='-92'/>
+    </sprite>
+
+    <sprite name='jovros' x='1130' y='2338' width='150' height='26'>
+      <animation sheet='jovrosSheet' x='-84' y='-94'/>
+    </sprite>
+
+    <sprite name='andrew' x='668' y='2090' width='130' height='80'>
+      <animation sheet='andrewSheet' x='-66' y='-86'/>
+      <action class='andrewTalk1'/>
+    </sprite>
   	
   	<sprite name='fifthRoomBG'>
   		<animation sheet='fifthRoomBG'/>

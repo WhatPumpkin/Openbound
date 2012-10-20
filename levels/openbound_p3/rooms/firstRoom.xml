@@ -91,14 +91,14 @@
   		<motionpath path='firstRoomStairs2' xtox='0.7' xtoy='-0.7' />
   		<motionpath path='firstRoomStairs3' xtox='0.7' xtoy='-0.7' />
   	</paths>
-  	
+  	<!--
   	<character class='meenah' x='390' y='630' >
       <action class='meenahTalk1'/>
       <action class='meenahTalk2'/>
       <action class='meenahTalk3'/>
-			<action class='beMeenah'/>
-  	</character>
-  	
+      <action class='beMeenah'/>
+    </character>
+  	-->
   	<character class='mituna' x='2394' y='285' state='crash'/>
   	
     <character class='rufioh' x='771' y='753' >

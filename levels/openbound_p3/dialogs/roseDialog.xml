@@ -1,0 +1,95 @@
+<sburb>
+    <classes>
+<action class='roseTalk1' sprite='kanaya' command='talk' name='Talk to Rose.'>
+      <args>
+      @rose_concern ROSE: What happened!
+      @kanaya2_idle KANAYA: What
+      @rose_concern ROSE: You're not glowing anymore!
+      @kanaya2_happy KANAYA: Oh Right
+      @kanaya2_smirktalk KANAYA: I Became So Absorbed In A Conversation With My Ancestor I Already Forgot She Taught Me How To
+      @kanaya2_happy KANAYA: Switch Off
+      @rose_talk ROSE: Oh, so you did go talk to her?
+      @kanaya2_happy KANAYA: Yes
+      @rose_happytalk ROSE: That's great! How did it go?
+      @kanaya2_happy KANAYA: Very Well
+      @kanaya2_happytalk KANAYA: She Is Very Nice And As A Person Is As Impressive As I Was Imagining Her To Be
+      @kanaya2_happytalk KANAYA: But Not Nearly As Intimidating Really
+      @rose_happytalk ROSE: I knew you wouldn't regret it if you got up the nerve to talk to her.
+      @rose_concern ROSE: What did she say, besides a few vampire-to-vampire skin-dimming pointers?
+      @kanaya2_happy KANAYA: Many Things
+      @kanaya2_happytalk KANAYA: Primarily Encouraging Me To Pursue My Prior Obligation To My People
+      @rose_idle ROSE: Oh?
+      @kanaya2_happytalk KANAYA: She Said She Used To Eschew Her Role Rather Vehemently
+      @kanaya2_happytalk KANAYA: The Duties Of Our Caste Were Quite Limiting In Both Worlds It Seems
+      @kanaya2_happytalk KANAYA: So She Renounced Them Completely And Wanted A Different Life
+      @kanaya2_happytalk KANAYA: But She Also Said Something To The Effect That
+      @kanaya2_happytalk KANAYA: She Found That It Wasnt Really Necessary To Reject That Role Completely
+      @kanaya2_happytalk KANAYA: And The Same Is True For Me
+      @kanaya2_happytalk KANAYA: As Long As I Know Within That I Am Free
+      @kanaya2_happytalk KANAYA: And If My Decision Is To Embrace My Path Then It Can Be A Source Of Strength
+      @rose_concern ROSE: Then you want to try to restore your race again?
+      @rose_concern ROSE: I had begun to think you'd lost hope in that possibility.
+      @kanaya2_talk KANAYA: Its True Theres No Orb Anymore
+      @kanaya2_talk KANAYA: She Said It May Be Very Difficult
+      @kanaya2_smirktalk KANAYA: But Theres No Hope If I Dont Try
+      @rose_idle ROSE: That's true.
+      @kanaya2_talk KANAYA: I Dont Know How Im Going To Do It Yet
+      @kanaya2_talk KANAYA: But Such Is The Nature Of Adventures
+      @kanaya2_talk KANAYA: You Cant Be Scared Of Adventures
+      @kanaya2_happytalk KANAYA: I Think Im Excited About It Now
+      @rose_happy ROSE: I can tell.
+      @rose_happytalk ROSE: We can work on it together when we arrive. Maybe the session we're about to explore will offer some answers.
+      @kanaya2_happy KANAYA: I Hope So
+      @rose_concern ROSE: Hey,
+      @rose_sad ROSE: You aren't permanently de-glowed now, are you?
+      @kanaya2_talk KANAYA: Oh No I Can Flip It Back On
+      @kanaya_idle KANAYA: See
+      @kanaya2_talk KANAYA: Turns Out Its Just
+      @kanaya_happytalk KANAYA: A Silly Biological Parlor Trick
+      @rose_talk ROSE: Oh, good. You had me worried there for a moment.
+      @kanaya2_idle KANAYA: Sorry
+      @kanaya2_talk KANAYA: I Know How You Enjoy A Good Source Of Light
+      @rose_happytalk ROSE: Light is one of my favorite things.
+      @rose_coytalk ROSE: Please don't take these as fighting words, but my aspect is simply the best there is.
+      <!--  -->
+      </args>
+</action>
+<action class='roseTalk2' sprite='dave' command='talk' name='Talk to Rose.'>
+      <args>
+      @dave_madtalk DAVE: rose quit all the clanking around over here i cant concentrate on my raps
+      @dave_madtalk DAVE: what in the sweet religious name of jesus h dick are you doing with all these bottles
+      @rose_talk ROSE: Just a little alchemy.
+      @dave_huh DAVE: alchemy
+      @dave_huhtalk DAVE: what kind of shitty thing are you alchemizing with this crap
+      @dave_huhtalk DAVE: are you alchemizing bottles with other bottles to make like
+      @dave_huhtalk:#rose_ebottles DAVE: superbottles
+      @rose_annoyedtalk ROSE: No. Believe it or not, I'm actually focused the contents of the bottles.
+      @dave_talk DAVE: youre a pretty good hike from the alchemiters
+      @rose_talk ROSE: The alchemy I'm practicing is a little more old fashioned.
+      @rose_talk ROSE: You know, there was a time on Earth when alchemy didn't refer to a process whereby a large device used game constructs to materialize some idealized version of an object out of thin air.
+      @rose_talk ROSE: Alchemists used to experiment with various substances to transmute them into something more valuable.
+      @rose_talk ROSE: Its more pedestrian and scientifically credible cousin would be chemistry, which I guess is the technical term for mixing shit together.
+      @rose_talk ROSE: Which strictly speaking more accurately describes what I'm doing.
+      @dave_talk DAVE: so what your doing science now
+      @dave_talk DAVE: who do you think you are your mom
+      @dave_huhtalk DAVE: wait that sounded like lame burn again
+      @dave_huhtalk DAVE: every time i talk about your mom it sounds like a burn
+      @dave_smug DAVE: who do you think you are my mom
+      @dave_huh DAVE: wait scratch that
+      @dave_huhtalk DAVE: every time we start talking about her as my mom things just start snowballing down our dumb conversational ski slope and suddenly sigmund freud and king oedipus start banging each others hot moms at some kind of depraved sexy momswap party
+      @rose_annoyedtalk ROSE: Thanks for the imagery. It was almost as graphic as it made no sense.
+      @dave_talk DAVE: so what are you making
+      @rose_happy ROSE: Beverages.
+      @dave_talk DAVE: beverages what kind of beverages
+      @rose_happytalk ROSE: Tasty beverages, I hope.
+      @dave_concern DAVE: apple juice???
+      @dave_concern DAVE: please let it be aj please let it be aj please let it be aj 
+      @rose_talk ROSE: I'll see what I can do.
+      @dave_idle DAVE: omg
+      @dave_idle:#omg DAVE: omg
+      @dave_smug DAVE: fuuuuuuuuuuuuuuuuuuuuuuck yes
+      <!--  -->
+      </args>
+</action>
+  	</classes>
+</sburb>

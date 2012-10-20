@@ -1,0 +1,64 @@
+<sburb description='porrim'>
+
+<dependencies>
+	<dependency>dialogs/porrimDialog.xml</dependency>
+</dependencies>
+
+<classes>
+	<animation class='porrim-dialog' frameInterval='6' x='-180' y='-444'/>
+	
+	<character class='porrim' name='porrim' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='porrimSheet' state='walkFront' facing='Front'>
+		
+	</character>
+	
+	<action class='bePorrim' name='Be Porrim.' command='changeChar'>
+		<args>porrim</args>
+		<action command='playSong'>
+			<args>porrimSong</args>
+		</action>
+	</action>
+</classes>
+
+<assets>
+
+	<asset name='porrimSheet' type='graphic'>chars/porrim/porrim.png</asset>
+
+	<asset name='porrimSong' type='audio'>audio/music/OrchidHorrorLoop.oga;audio/music/OrchidHorrorLoop.mp3</asset> <!-- loops to 0 -->
+	
+	<asset name='porrim_angry2' type='graphic'>dialogs/porrim/porrim_angry2.png</asset>
+	<asset name='porrim_angry' type='graphic'>dialogs/porrim/porrim_angry.png</asset>
+	<asset name='porrim_angrytalk' type='graphic'>dialogs/porrim/porrim_angrytalk.png</asset>
+	<asset name='porrim_annoyed2' type='graphic'>dialogs/porrim/porrim_annoyed2.png</asset>
+	<asset name='porrim_annoyed' type='graphic'>dialogs/porrim/porrim_annoyed.png</asset>
+	<asset name='porrim_annoyedtalk' type='graphic'>dialogs/porrim/porrim_annoyedtalk.png</asset>
+	<asset name='porrim_happier' type='graphic'>dialogs/porrim/porrim_happier.png</asset>
+	<asset name='porrim_happy' type='graphic'>dialogs/porrim/porrim_happy.png</asset>
+	<asset name='porrim_happytalk' type='graphic'>dialogs/porrim/porrim_happytalk.png</asset>
+	<asset name='porrim_idle' type='graphic'>dialogs/porrim/porrim_idle.png</asset>
+	<asset name='porrim_laugh' type='graphic'>dialogs/porrim/porrim_laugh.png</asset>
+	<asset name='porrim_light' type='graphic'>dialogs/porrim/porrim_light.png</asset>
+	<asset name='porrim_surprise' type='graphic'>dialogs/porrim/porrim_surprise.png</asset>
+	<asset name='porrim_surprisetalk' type='graphic'>dialogs/porrim/porrim_surprisetalk.png</asset>
+	<asset name='porrim_talk' type='graphic'>dialogs/porrim/porrim_talk.png</asset>
+</assets>
+
+<hud>
+	<dialogsprites>	
+		<animation name='porrim_angry2' class='porrim-dialog' sheet='porrim_angry2' length='2'/>
+		<animation name='porrim_angry' class='porrim-dialog' sheet='porrim_angry' />
+		<animation name='porrim_angrytalk' class='porrim-dialog' sheet='porrim_angrytalk' length='2'/>
+		<animation name='porrim_annoyed2' class='porrim-dialog' sheet='porrim_annoyed2' length='2'/>
+		<animation name='porrim_annoyed' class='porrim-dialog' sheet='porrim_annoyed' />
+		<animation name='porrim_annoyedtalk' class='porrim-dialog' sheet='porrim_annoyedtalk' length='2'/>
+		<animation name='porrim_happier' class='porrim-dialog' sheet='porrim_happier' />
+		<animation name='porrim_happy' class='porrim-dialog' sheet='porrim_happy' />
+		<animation name='porrim_happytalk' class='porrim-dialog' sheet='porrim_happytalk' length='2'/>
+		<animation name='porrim_idle' class='porrim-dialog' sheet='porrim_idle' />
+		<animation name='porrim_laugh' class='porrim-dialog' sheet='porrim_laugh' length='2'/>
+		<animation name='porrim_light' class='porrim-dialog' sheet='porrim_light' />
+		<animation name='porrim_surprise' class='porrim-dialog' sheet='porrim_surprise' />
+		<animation name='porrim_surprisetalk' class='porrim-dialog' sheet='porrim_surprisetalk' length='2'/>
+		<animation name='porrim_talk' class='porrim-dialog' sheet='porrim_talk' length='2'/>
+	</dialogsprites>
+</hud>
+</sburb>

@@ -1,0 +1,52 @@
+<sburb>
+<classes>
+<action class='hussieTalk1' command='talk' name='This guy again?'>
+      <args>
+      @! Oh. It's you. Scram kid!
+      @meenah_idle MEENAH: hey orange dude
+      @meenah_talk MEENAH: tell me your deal already
+      @!:#Do.-Not.-Fuck-with-me. I said get lost Feferi!!!!
+      @meenah_fish MEENAH: whoferi???
+      @! Alright. I see what's going on here. You clearly have developed feelings for me. I understand. I led you on.
+      @! Remember when I said bring me a horse and I am yours forever?
+      @! Total lie!
+      @! Sorry, but my heart is still set on Vriska. She will be my wife.
+      @meenah_idle MEENAH: whos vriska
+      @! That girl over there. No, don't look! Shhhhhhhhhh. Let's try to keep it down, ok? You're going to ruin this for me.
+      @meenah_wut MEENAH: her??
+      @meenah_wut MEENAH: dog aint she a little young for you
+      @! No, but that's the thing! She's spent like however many years being a ghost, so she's older now! That means it's not creepy.
+      @! Who even knows how many years she spent here? Maybe 100??? Hell, she might even be older than me now! See? Totally not creepy anymore. Case closed!
+      @meenah_annoyedtalk MEENAH: i dont know what yer talkin about but you sound like an asshole
+      @! Just need to find the right moment to make my move. Only problem is, I lost the ring.
+      @! John FUCKING Egbert has it. Doesn't look like he's gonna let it go either, the bastard. 
+      @! Gotta make a plan. Think, imagination, think. Argh, the one time I really need you!
+      @meenah_happytalk MEENAH: yo i goat boatloads a bling
+      @meenah_happytalk MEENAH: i could sell you a ring
+      @! You could??? Oh man, perfect. How much?
+      @meenah_happy~dialogimg_ks MEENAH: 
+      @! ARE YOU FUCKING SERIOUS.
+      @! What makes you think I've got that kind of dough just lying around?!
+      @meenah_annoyedtalk MEENAH: thats my price pumpkin skin you want the ring or not
+      @! Alright. Fine. Guess I've got no choice but to pony up.
+      @! Just... don't tell anyone, ok? I kind of promised I would use this money for something else.
+      @meenah_annoyedtalk MEENAH: none ma biz homes deal or no deal
+      @! Yeah. Here.
+      @meenah_happytalk MEENAH: awwwww yeah check them mad staxx
+      @meenah_creepylaugh MEENAH: here you go loverboy
+      @! Thanks!
+      @! Wait...
+      @! Is this ring...
+      @! Did you steal this...
+      @! From Cronus?
+      @meenah_wink MEENAH: fo sho
+      @! ...
+      @! Ew.
+      @meenah_angrytalk MEENAH: NO R-EFUNDS!!!!!!!!!!!!!!!
+      @! :(
+      <!--  -->
+      </args>
+</action>
+
+</classes>
+</sburb>

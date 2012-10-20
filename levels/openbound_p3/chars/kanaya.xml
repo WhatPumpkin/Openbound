@@ -1,7 +1,7 @@
 <sburb description='kanaya'>
 
 <dependencies>
-	<!--<dependency>dialogs/kanayaDialog.xml</dependency>-->
+	<dependency>dialogs/kanayaDialog.xml</dependency>
 </dependencies>
 
 <classes>
@@ -10,17 +10,20 @@
 	<character class='kanaya' name='kanaya' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='kanayaSheet' state='walkFront' facing='Front'>
 		
 	</character>
-	
-	<action class='beKanaya' name='Be Kanaya.' command='changeChar'>
-		<args>kanaya</args>
-		<action command='playSong'>
-			<args>kanayaSong,14.79</args>
-		</action>
-	</action>	
+	<action class='beKanaya' name='Be Kanaya.' command='macro'>
+		<args>
+			<action  command='changeChar'>
+				<args>kanaya</args>
+				<action command='playSong'>
+					<args>kanayaSong,14.79</args>
+				</action>
+			</action>	
+		</args>
+	</action>
 </classes>
 
 <assets>
-	<asset name='roseSheet' type='graphic'>chars/kanaya/kanaya.png</asset>
+	<asset name='kanayaSheet' type='graphic'>chars/kanaya/kanaya.png</asset>
 
 	<asset name='kanayaSong' type='audio'>audio/music/JadeSylphLoop.oga;audio/music/JadeSylphLoop.mp3</asset> --><!-- loops to 14.79 -->
 
@@ -60,7 +63,6 @@
 		<animation name='kanaya_smirktalk' class='kanaya-dialog' sheet='kanaya_smirktalk' length='2'/>
 		<animation name='kanaya_talk' class='kanaya-dialog' sheet='kanaya_talk' length='2'/>
 
-		<animation name='kanaya2_angrytalk' class='kanaya-dialog' sheet='kanaya2_angrytalk' length='2'/>
 		<animation name='kanaya2_bored' class='kanaya-dialog' sheet='kanaya2_bored' length='2'/>
 		<animation name='kanaya2_cry' class='kanaya-dialog' sheet='kanaya2_cry' length='2'/>
 		<animation name='kanaya2_facepalm' class='kanaya-dialog' sheet='kanaya2_facepalm' length='2'/>

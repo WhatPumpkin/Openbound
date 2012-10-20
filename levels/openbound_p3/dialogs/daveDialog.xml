@@ -1,0 +1,201 @@
+<sburb>
+<classes>
+<action class='daveTalk1' sprite='kanaya' command='talk' name='Talk to Dave.'>
+      <args>
+      @dave_idle DAVE: sup
+      @dave_talk DAVE: wait whats going on
+      @dave_talk DAVE: is the meteor passing through another dream bubble
+      @kanaya2_idle KANAYA: Yes
+      @kanaya2_talk KANAYA: Hence The Ghost Who Is Following Me
+      @dave_huh DAVE: oh
+      @dave_huh DAVE: hey
+      @meenah_wink MEENAH: 
+      @dave_huhtalk DAVE: what you dont talk now?
+      @dave_smug DAVE: you were pretty spunky before what happened
+      @kanaya2_talk KANAYA: She Is Exhibiting Her Best Behavior While On This Tour
+      @kanaya2_happytalk KANAYA: Shes Actually Doing Very Well So Far
+      @dave_idle DAVE: ok whatever
+      @dave_talk DAVE: so what are we just not even bother to care anymore when we pass through dream bubbles now
+      @dave_talk DAVE: like no warning or alert or getting into our facetious battle stations or anything
+      @dave_huh DAVE: eh who cares actually
+      @dave_huhtalk DAVE: i probably wont even leave the room this time
+      @dave_talk DAVE: getting a little bored of ghosts actually
+      @dave_smug DAVE: no offense sea troll
+      @meenah_fish MEENAH: (hornless dirtscraper)
+      @kanaya2_idle KANAYA: Shh!
+      @kanaya2_happytalk KANAYA: So What Were You Just Mumbling Over Here Before I Interrupted You
+      @dave_talk DAVE: oh just some raps
+      @dave_talk DAVE: been working on my raps
+      @dave_talk DAVE: youve heard my raps right
+      @dave_talk DAVE: want to hear some raps
+      @kanaya2_idle KANAYA: ...
+      @dave_huhtalk DAVE: wait do you know what rap is
+      @dave_talk DAVE: its this fly human tradition where you drop a beat and talk hard
+      @dave_talk DAVE: if the flow checks out and your rhymes are dope enough then the police start unholstering their guns
+      @dave_talk DAVE: they cant help it its like reflexive
+      @dave_talk DAVE: thats how you know youre doing it right
+      @kanaya2_talk KANAYA: I Know What Your Raps Are Theyre Basically The Same As The Ancient Artform Of Alternian Slam Poetry
+      @kanaya2_talk KANAYA: But More Primitive And Generally Involving Less Lyrics About Towering Muscular Livestock
+      @dave_idle DAVE: slam poetry
+      @dave_madtalk DAVE: why didnt you tell me about this
+      @kanaya2_talk KANAYA: I Dont Know I Dont Really Have Much Interest In The Subject
+      @dave_mad DAVE: yeah but
+      @dave_madtalk DAVE: it should have come up
+      @dave_huhtalk DAVE: wait now that i think about it
+      @dave_huhtalk DAVE: i remember some weird troll was rapping at me once
+      @kanaya2_idle KANAYA: Well There You Go
+      @dave_talk DAVE: but i mean we could have been talking about rap all this time
+      @dave_talk DAVE: you and me i mean
+      @dave_talk DAVE: it would have come up i think if we talked more
+      @dave_talk DAVE: kanaya we should talk more we dont really talk enough
+      @dave_talk DAVE: like really just
+      @dave_talk DAVE: get down to fucking business
+      @dave_talk DAVE: just the two of us
+      @dave_talk DAVE: all conversationally and such
+      @kanaya2_idle KANAYA: Um
+      @dave_idle DAVE: really like
+      @dave_smug DAVE: flesh out this dynamic
+      @dave_smug DAVE: see whats THERE
+      @dave_madtalk DAVE: we goddamn WILL squeeze blood from this stone
+      @dave_concern DAVE: this awkwardly quiet ghost troll as my witness
+      @kanaya2_talk KANAYA: If You Are Successful In Extracting Blood From The Geological Material In Question Can I Have It
+      @dave_smug DAVE: aw man
+      @dave_smug DAVE: kinda semi self deprecating vampire jokes this is a good start i like it
+      @kanaya2_talk KANAYA: I Dont Know How Sincere Youre Being Dave
+      @kanaya2_talk KANAYA: Probably Only Somewhat Since The Rule Is That Everything Has To Be At Least Partially A Joke Right
+      @dave_idle DAVE: yes exactly
+      @kanaya2_talk KANAYA: But If You Actually Want To Converse And Exchange Views On Our Respective Cultures Then Okay I Guess Thats Fine
+      @kanaya2_happytalk KANAYA: I Might Be Able To Dig Up Some Classic Texts By Some Famous Slam Poets
+      @dave_idle DAVE: oh man yes
+      @dave_talk DAVE: that would be so fucking perfect
+      @kanaya2_happytalk KANAYA: Ok I Will See What I Can Do
+      @dave_talk DAVE: youll have to read the troll gibberish to me
+      @dave_talk DAVE: itll be just like storytime with karkat 
+      @dave_idle DAVE: kanaya edition
+      @kanaya2_smirklaugh KANAYA: Heh Sure
+      @dave_smug DAVE: but youll have to rap the words
+      @kanaya2_facepalm KANAYA: Oh
+      @dave_smug DAVE: pump up the bass and slaughter the mic
+      @dave_madtalk DAVE: i want to goddamn FEEL that slam poetry
+      @kanaya2_bored KANAYA: Is It Too Late To Back Out Of This
+      @meenah_happy MEENAH: yes
+      <!--  -->
+      </args>
+</action>   
+<action class='daveTalk2' sprite='rose' command='talk' name='Talk to Dave.'>
+      <args>
+      @dave_huhtalk DAVE: whats up with the fish punk troll following kanaya around
+      @rose_talk ROSE: Seems she's passing through. Kanaya doesn't want her to cause trouble.
+      @dave_huh DAVE: cause trouble
+      @dave_madtalk DAVE: what the fuck could she even do here
+      @dave_madtalk DAVE: like kick over an old pile of garbage and cause the property value to fall even lower than jack shit
+      @dave_smug DAVE: i say let her go nuts
+      @rose_talk ROSE: Feel free to take it up with Kanaya.
+      @rose_annoyedtalk ROSE: But if you authorize her to flip a bitch, just make sure she's nowhere near my chemistry table. 
+      @dave_idle DAVE: yeah
+      @dave_talk DAVE: cant be droppin your vials and shit all over the floor
+      @dave_talk DAVE: the only one whos got clearance to drop science is me
+      @rose_annoyed ROSE: Dork.
+      @dave_mad DAVE: dont even hate
+      @dave_madtalk DAVE: been shoring up my muthafuckin CRAFT over here
+      @rose_annoyedtalk ROSE: I know. I've been in the same room, right over there, listening to you mumble lyrics to yourself for the last couple hours.
+      @dave_huhtalk DAVE: rose you know what sucks
+      @rose_idle ROSE: Yes.
+      @rose_talk ROSE: To which sucky thing are you referring?
+      @dave_talk DAVE: it kinda just occurred to me
+      @dave_talk DAVE: while i was spitting ill verse to no end
+      @dave_talk DAVE: i got this weird feeling that i might be getting like
+      @dave_huh DAVE: a little dated?
+      @rose_coy ROSE: Is this about Terezi?
+      @dave_huh DAVE: what
+      @dave_mad DAVE: no no
+      @dave_madtalk DAVE: dont be disingenuous word girl you know what im saying
+      @dave_huhtalk DAVE: i mean sorta passe
+      @dave_talk DAVE: like a lumbering pop reference dinosaur
+      @dave_talk DAVE: remember we are both kind of stuck in 2009
+      @dave_talk DAVE: so im like popculturally frozen in that period
+      @dave_talk DAVE: all my references feel like they might be getting a little stale
+      @dave_talk DAVE: even though the earth ended and all and there was no culture after that point anyway
+      @dave_talk DAVE: but still
+      @dave_talk DAVE: i can feel it
+      @dave_talk DAVE: like in my bones
+      @dave_talk DAVE: i just know on some hypothetical earth that kept going my shit is starting to get so lame
+      @dave_talk DAVE: and i know it doesnt matter because its just us here so who cares
+      @dave_talk DAVE: but i care
+      @dave_madtalk DAVE: its a matter of integrity i am a fucking artist
+      @dave_madtalk DAVE: like i think if i make one more rap about like some fucking dane cook movie from 2008 to piss karkat off or some tired bullshit like that im going to 
+      @dave_huhtalk DAVE: i dont know
+      @dave_huhtalk DAVE: ill just start feeling like a fraud
+      @dave_huhtalk DAVE: my game might be drying up rose
+      @dave_madtalk DAVE: but its not my fault like im totally hostage to this freezedried backlog of cultural garbage that can never move forward again
+      @dave_madtalk DAVE: so i have to pick through it like im looting a fucking tomb while still all tryin to act RAP SASSY
+      @dave_smug DAVE: like YEAH take THAT motherfuckers
+      @dave_concern DAVE: OF THE PAST
+      @dave_huhtalk DAVE: all in your mass graves somewhere in a dead frogiverse
+      @dave_madtalk DAVE: i be representing some god damn STANDARDS about your media do you feel me
+      @dave_huhtalk DAVE: im depressing myself here
+      @dave_talk DAVE: all im saying is it would be cool to have some fresh shit to work with
+      @dave_talk DAVE: like just to know
+      @dave_talk DAVE: to know what the world would be like in the year it would be for us now
+      @dave_talk DAVE: which would be 2011 i guess
+      @dave_huhtalk DAVE: wow 2011 really
+      @dave_huh DAVE: damn
+      @dave_talk DAVE: i just want to know what would have happened
+      @dave_talk DAVE: theres so much shit we were primed for
+      @dave_talk DAVE: it was gonna be exciting
+      @dave_talk DAVE: like barack obama just turned president remember that
+      @dave_talk DAVE: we never got to see if he fixed the economy
+      @dave_talk DAVE: remember how you were dying to see if he would fix the economy you were asking me about it every damn day
+      @dave_talk DAVE: just joking nobody gave a shit about that
+      @dave_huh DAVE: but like
+      @dave_huhtalk DAVE: i never got to check out the next batch of stiller jams and see how bad i could mock them
+      @dave_huhtalk DAVE: we never got to find out how the midnight crew adventure ended
+      @dave_mad DAVE: if ever
+      @dave_huh DAVE: rose
+      @dave_concern DAVE: ROSE??
+      @dave_concern DAVE: what the fuck man
+      @dave_concern DAVE: whyd you go back to your bottles and shit i was right in the thick of hella elocution
+      @dave_concern DAVE: dont give me that
+      @dave_concern DAVE: yes
+      @dave_concern DAVE: uh yeah
+      @dave_concern DAVE: yes i do ACTUALLY want you to come back over here
+      @dave_madtalk DAVE: im waiting
+      @rose_annoyed ROSE: Fine. Here I am.
+      @dave_madtalk DAVE: wow was that so hard
+      @dave_madtalk DAVE: this is what civilized people do rose they fucking talk to each other like actually in each others fucking vicinities
+      @rose_annoyedtalk ROSE: You just have a tendency to go on for a while. I assumed we progressed to the traditional mumbling monologue stage of Striderian discourse.
+      @dave_madtalk DAVE: no thats not even a thing
+      @dave_madtalk DAVE: i was actually like
+      @dave_huhtalk DAVE: trying to get your take
+      @rose_idle ROSE: Take on what.
+      @dave_huhtalk DAVE: i dont even know
+      @dave_huhtalk DAVE: i bet john would have stuff to say
+      @dave_huhtalk DAVE: hes probably going through the same frozen fucking caveman from 2009 syndrome as me
+      @dave_smug DAVE: actually what am i saying the dude is a caveman from 1997 
+      @dave_smug DAVE: hahaha like he could give a shit as long as hes got his cage dvds
+      @rose_happytalk ROSE: Oh! I saw him the other night.
+      @dave_concern DAVE: what
+      @rose_happytalk ROSE: In a dream. It was very brief, only a few minutes. I waved to him and then woke up.
+      @dave_huhtalk DAVE: whoa what was he doing
+      @rose_happytalk ROSE: He was fighting Jack. Actually, he was doing quite well!
+      @dave_huh DAVE: oh man
+      @dave_smug DAVE: you have to tell me all about this
+      @rose_talk ROSE: I will. Later, though. I'd like to get back to work.
+      @dave_idle DAVE: ok when
+      @dave_idle DAVE: tonight?
+      @rose_talk ROSE: I have plans tonight. How about tomorrow.
+      @dave_huh DAVE: plans 
+      @dave_huh DAVE: what plans
+      @rose_idle ROSE: Just some plans.
+      @dave_huh DAVE: can i come
+      @rose_annoyed ROSE: No!
+      @dave_mad DAVE: fuck fine
+      @dave_mad DAVE: tomorrow then
+      @dave_smug DAVE: maybe ill just dream up my own john tonight and well have an awesome time without you what do you think about that
+      @rose_laugh ROSE: ...
+      @dave_mad DAVE: fu
+      <!--  -->
+      </args>
+</action>   
+</classes>
+</sburb>

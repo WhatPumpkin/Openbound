@@ -11,11 +11,15 @@
 		
 	</character>
 	
-	<action class='beMeenah' name='Be Meenah.' command='changeChar'>
-		<args>meenah</args>
-		<action command='playSong'>
-			<args>meenahSong</args>
-		</action>
+	<action class='beMeenah' name='Be Meenah.' command='macro'>
+		<args>
+			<action command='changeChar' noDelay='true'>
+				<args>meenah</args>
+				<action command='playSong' noDelay='true'>
+					<args>meenahSong</args>
+				</action>
+			</action>
+		</args>
 	</action>
 </classes>
 

@@ -1,0 +1,74 @@
+<sburb>
+    <classes>
+  		<action class='porrimTalk1' sprite='meenah' command='talk' name='Listen in on conversation.'>
+		      <args>
+		      @porrim_talk PORRIM: Ah, seems we have co+mpany. Guess we sho+uld wrap this up!
+		      @porrim_happytalk PORRIM: I'm very happy yo+u came to+ see me. I ho+pe yo+u'll bear in mind what I said.
+		      @kanaya2_happytalk KANAYA: Yes I Surely Will
+		      @kanaya2_happytalk KANAYA: And Im Happy Too
+		      @kanaya2_happy KANAYA: About
+		      @kanaya2_smirktalk KANAYA: Yes
+		      @porrim_happytalk PORRIM: Yo+u have impo+rtant wo+rk ahead o+f yo+u. The legacy o+f o+ur race is in yo+ur hands.
+		      @porrim_happytalk PORRIM: I kno+w yo+u will make me pro+ud.
+		      @kanaya2_smirklaugh KANAYA: Okay Thank You
+		      <!--  -->
+		      </args>
+		</action>
+		<action class='porrimTalk2' sprite='meenah' command='talk' name='Ask Kanaya for password.'>
+      <args>
+      @meenah_talk MEENAH: aw snapperfish its popo merrygams and maryam lookalike kid
+      @meenah_happytalk MEENAH: water you ladies glubbin about over here
+      @kanaya2_bored KANAYA: Nothing I Was Just Leaving
+      @meenah_talk MEENAH: oh yeah where to
+      @meenah_talk MEENAH: back into your meteor right cause thats where im headed
+      @meenah_talk MEENAH: cant get through the door tho
+      @meenah_happytalk MEENAH: can i get your password
+      @kanaya2_idle KANAYA: Pardon Me
+      @kanaya2_idle KANAYA: No
+      @meenah_happy MEENAH: come on
+      @porrim_annoyed2 PORRIM: Meenah, what are yo+u do+ing? Do+n't hassle her fo+r private info+rmatio+n. It's rude.
+      @meenah_creepy MEENAH: COM-E OOOOON
+      @meenah_happier MEENAH: im being nice about it
+      @kanaya2_bored KANAYA: Are You Actually
+      @meenah_angrytalk MEENAH: im fuckin smiling aint i???
+      @kanaya2_talk KANAYA: Well I Was Going In There Anyway
+      @kanaya2_talk KANAYA: I Wont Give You My Password But You Can Follow Me I Guess
+      @kanaya2_talk KANAYA: But You Can Only Remain As Long As Im Escorting You
+      @meenah_wut MEENAH: da fuck
+      @meenah_wut MEENAH: why
+      @kanaya2_talk KANAYA: Because I Dont Trust You
+      @meenah_wut2 MEENAH: aw man
+      @meenah_annoyed MEENAH: but im cool
+      @meenah_fish MEENAH: you should wise the fuck up and start thinking im cool
+      @kanaya2_bored:#Human-Sarcasm KANAYA: Youre Right With A Sales Pitch Like That I Would Have To Be An Imbecile Not To Crave Your Company
+      @meenah_annoyedtalk MEENAH: what you got against me maryam clone
+      @kanaya2_idle KANAYA: I Think Youre Probably A Sociopath
+      @kanaya2_bored KANAYA: Ive Given Enough Of My Time To Such Characters In The Past
+      @meenah_fish MEENAH: you got me all wrong girl
+      @meenah_talk MEENAH: what i gotta do to make you my frond maryam the sequel
+      @kanaya2_facepalm KANAYA: My Name Is Kanaya!
+      @meenah_talk MEENAH: aight aight kanaya it is
+      @meenah_talk MEENAH: some day ill come up with a good fish pun way of saying that
+      @meenah_happytalk MEENAH: thats how you know our shit will be TIG)(T
+      @kanaya2_cry KANAYA: 
+      @meenah_happytalk MEENAH: just lead the way ill be well behaved and win you over
+      @meenah_creepy MEENAH: YOULL S-EA
+      @! Be Kanaya?
+      <!-- y/n -->
+      </args>
+</action>
+
+<action class='porrimTalk3' sprite='kanaya' command='talk' name='Talk to Porrim.'>
+      <args>
+      @porrim_happytalk PORRIM: Let's stay in to+uch, Kanaya. Co+me lo+o+king fo+r me in yo+ur dreams any time yo+u like.
+      @porrim_happytalk PORRIM: And be sure no+t to+ let that o+ne to+o+ far o+ut o+f yo+ur sight.
+      @meenah_annoyedtalk MEENAH: scrod dammit
+      @meenah_annoyedtalk MEENAH: kids got no respect for royalty these days and i about haddock up to here
+      @porrim_annoyedtalk PORRIM: Please. Yo+u aren't even mad. Yo+u just wanted an excuse to+ use mo+re fish puns.
+      @meenah_annoyedtalk MEENAH: merrygams stop bein such an astute judge a character
+      <!--  -->
+      </args>
+</action>
+
+	</classes>
+</sburb>

@@ -1,7 +1,8 @@
 <sburb description="third room">
 
 <dependencies>
-
+  <dependency>chars/dave.xml</dependency>
+  <dependency>chars/rose.xml</dependency>
 </dependencies>
 
 <assets>
@@ -9,6 +10,10 @@
 	<asset name='thirdRoomFG' type='graphic'>backgrounds/thirdRoomFG.png</asset>
 
 	<asset name='thirdRoomMap' type='graphic'>backgrounds/thirdRoomMap.png</asset>
+
+  <asset name='thirdRoomStairs1' type='path'>2247,1569;2430,1746;2424,1677;2247,1512</asset>
+  <asset name='thirdRoomStairs2' type='path'>2181,648;2181,612;2019,771;2019,843</asset>
+  <asset name='thirdRoomStairs3' type='path'>936,501;771,657;777,729;930,561</asset>
 </assets>
 
 
@@ -20,10 +25,38 @@
   			<action command='changeRoomRemote'>rooms/secondRoom.xml,secondRoom,1326,380</action>
   		</trigger>
   		<trigger>
-  			<args>inBox2,char,345,831,225,609</args>
-  			<action command='changeRoomRemote'>rooms/fourthRoom.xml,fourthRoom,1896,399</action>
+  			<args>inBox2,kanaya,345,831,225,609</args>
+        <action command='goBack' noDelay='true'>
+          <args>kanaya</args>
+          <action command='fadeOut'>
+            <action command='unfollow'>
+              <args>meenah</args>
+              <action class='beMeenah'>
+      			    <action command='changeRoomRemote'>rooms/fourthRoom.xml,fourthRoom,1896,399</action>
+              </action>
+            </action>
+          </action>
+        </action>
   		</trigger>
   	</triggers>
+
+    <paths>
+      <motionpath path='thirdRoomStairs1' xtox='0.7' xtoy='0.7' />
+      <motionpath path='thirdRoomStairs2' xtox='0.7' xtoy='-0.7' />
+      <motionpath path='thirdRoomStairs3' xtox='0.7' xtoy='-0.7' />
+    </paths>
+
+    <character class='rose' x='1503' y='1038'>
+      <action class='roseTalk1'/>
+      <action class='roseTalk2'/>
+      <action class='beRose'/>
+    </character>
+
+    <character class='dave' x='1125' y='903'>
+      <action class='daveTalk1'/>
+      <action class='daveTalk2'/>
+      <action class='beDave'/>
+    </character>
   	
   	<sprite name='thirdRoomBG'>
   		<animation sheet='thirdRoomBG'/>

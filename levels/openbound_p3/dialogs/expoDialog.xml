@@ -1,0 +1,107 @@
+<sburb>
+    <classes>
+<action class='expoTalk1' command='talk' name='Status report.'>
+      <args>
+      @meenah_annoyed:#kelp MEENAH: welp
+      @meenah_annoyedtalk MEENAH: im a total failure
+      @meenah_annoyedtalk MEENAH: didnt recruit a single ghost for my army
+      @meenah_wut2 MEENAH: except for one guy but he was asleep
+      @aranea_happytalk ARANEA: Don't lose hope! I know our group of friends is a 8it lackluster in the motivation department, 8ut there are plenty of other souls out there.
+      @aranea_happytalk ARANEA: You just need to find someone with the right amount of moxy to get you started. Then I'm sure more will follow.
+      @aranea_happytalk ARANEA: Who knows, if you keep exploring, may8e someone like that will 8e right around the corner!
+      @meenah_talk MEENAH: you seem more psyched about my army plan than you did before
+      @meenah_talk MEENAH: whats with the change of tuna
+      @aranea_happytalk ARANEA: I've started to 8elieve that what you're doing may 8e important. Just a feeling.
+      @aranea_happytalk:#Or,-prongs-of-a-fork,-if-you-will. ARANEA: It could 8e every 8it as critical as my quest to find the cheru8. I think it all could 8e related. Like legs of a stool that won't stand unless all are in place.
+      @meenah_talk MEENAH: how is cherubquest goin btw
+      @aranea_think ARANEA: Uh... ok.
+      @aranea_think ARANEA: I've still 8een........ a little preoccupied.
+      @meenah_idle MEENAH: girl please
+      @meenah_talk MEENAH: you been draggin your talking booth around to hassle people with facts aintcha
+      @aranea_surprised ARANEA: This is my last session, I swear!!!!!!!!
+      @aranea_talk ARANEA: After this, I promised myself I would retire the exposition stand for good. May8e I'll put it up for sale, and try to recoup some of the su8stantial losses required to operate it.
+      @meenah_talk MEENAH: aranea we are such failures at stuff together
+      @meenah_talk MEENAH: why are we such a couple of gorgeous and sexy failures at things
+      @aranea_happytalk ARANEA: I don't know, 8ut we can't give up!
+      @aranea_happytalk ARANEA: Once I close down shop here, I will redou8le my efforts to find that cheru8.
+      @aranea_happytalk ARANEA: The first thing to do will 8e to figure out her name. It's 8een so maddeningly elusive, almost as if someone's taken care to scru8 any reference to it throughout paradox space, whether in memories or reality.
+      @meenah_talk MEENAH: ok then how about this
+      @meenah_talk MEENAH: while im out there fishin for recruits ill keep an ear out for clues about her
+      @meenah_talk MEENAH: and while youre out there cherub hunting maybe you can see if anyone wants to serve the lil condesce in her slammin new imperial army
+      @meenah_idle MEENAH: itll be
+      @meenah_happy MEENAH: teamfork
+      @aranea_happier ARANEA: That sounds like a great plan!
+      @aranea_happier ARANEA: Now let's hurry this up so we can get started on that. What would you like me to tell you a8out in exchange for the precious few 8oon8ucks I have left?
+      <!--  -->
+      </args>
+</action>
+
+
+<action class='expoTalk2' command='talk' name='Tell me about Rufioh Nitram.'>
+      <args>
+      @aranea_happytalk ARANEA: The Rogue of 8reath was always a very popular mem8er of our group. Pro8a8ly the most popular, I'd say. Sort of the anti-me, in that respect. Ever the recipient of romantic solicitations whichever way he turned. Sort of the anti-Cronus, in that respect.
+      @meenah_creepylaugh MEENAH: aw yeah sick ampora burn outta nowhere hi 5
+      @aranea_happytalk ARANEA: Indeed. His mutation made him an outcast, though. To avoid the unwanted attention his wings would 8ring him, he took refuge in the forest among those who welcomed his differences, and learned their ways.
+      @aranea_happytalk ARANEA: The Lost Weea8oos was a guild of youthful tree-dwelling troll otakus with a zeal for fisticuffs, flight, and various forms of exotic eastern theater. 8ane to the enemies of hijinks, scourge to the seafaring classes who...
+      @meenah_fish MEENAH: NOP-E
+      @meenah_fishtalk MEENAH: NOT LISFININ TO T)(IS LA LA LA GLUB GLUB GLUB
+      @aranea_annoyedtalk ARANEA: #77003c (GLU8 GLU8 GLU8 GLU8)## centuries of feuding with the Kemonomimi tri8es #77003c (GLU8 GLU8 GLU8 LA LA LA LA GLU8 GLU8 GLU8)## ceremonial torchlight yaoi festivals #77003c (LA LA LA LA GLU8 GLU8 LA LA LA)## tsundere quadrant vacillation #77003c (GLUUUUU8 GLU8GLU8GLU8GLU8 GLUUUUUUUUU8)## threw down a daggerlance to challenge the guild's high seme for dominance #77003c (NO NO NO NO NO NO NO NO NO NO)## ultimately served like a shonen on Shitsuji Island.
+      @meenah_annoyed MEENAH: hey serket
+      @meenah_annoyedtalk MEENAH: how much i gotta pay you to zip yer blowhole on this shit so tight you never bring it up again
+      @aranea_happier ARANEA: For such a service, I will require nothing short of the large gold statue in your palace. I think you know which one I'm talking a8out.
+      @meenah_annoyedtalk MEENAH: you drive a hard bargain serks
+      @meenah_annoyed MEENAH: but you got a deal
+      <!--  -->
+      </args>
+</action>
+
+
+<action class='expoTalk3' command='talk' name='Tell me about Horuss Zahhak.'>
+      <args>
+      @aranea_happytalk ARANEA: The Page of Void was a self taught master of mechanics, an avid patron of the fine arts, a passionate 8ody 8uilder, archer, am8rosia collector and steamwright. A poet, a scholar, a warrior, a lover, he was all that his caste demanded and more. A true troll Renaissance man. His name means "He Who Stalks With The Muscle8easts."
+      @aranea_happytalk ARANEA: 8ut all of his proficiencies were hard won, 8uilt from the 8lank slate as his aspect would imply, advancing at the slow pace his class would as well. Yet in spite of all he worked to make something of himself, he amounted to very little. Responsi8le for neither great feats of heroism nor acts of villainy, he was just another game piece to 8e moved a8out the 8oard. The aspect ruling his life would always conspire to dampen his relevance.
+      @aranea_happytalk ARANEA: Void is easily the most mysterious aspect, the one which inherently defies rational understanding. This makes it particularly fascinating, and just as frustrating, to light players such as myself. Casting illumination upon nothing itself is futile. For to truly know void is to paradoxically cause it not to 8e!
+      @aranea_happytalk ARANEA: The role of the void player is to somehow em8race nothingness, to 8ecome one with it. And yet in total contradiction with this, to make use of the power it grants and serve a role of relevance, one must find a way to overcome it! To see the limitless potential in the void. To find everything within nothing, and 8ring it into 8eing. 
+      @aranea_annoyed #77003c MEENAH: zzzzzzzzzzz##
+      @aranea_angrytalk ARANEA: Hey!!!!!!!!
+      @meenah_wut2 MEENAH: wuh
+      @aranea_annoyedtalk ARANEA: This is a perfect case in point, regarding the path of the void player. So resistant is his story to having a relevant 8earing on anything, you fell asleep and didnt hear a word.
+      @meenah_annoyed MEENAH: yeah thats nice
+      @meenah_annoyed MEENAH: WH-ER-E MA MON-EY
+      @aranea_facepalmtalk ARANEA: You don't get any. Your slum8er voided the transaction.
+      @meenah_wut MEENAH: dag
+      <!--  -->
+      </args>
+</action>
+
+
+<action class='expoTalk4' command='talk' name='Tell me about Damara Megido.'>
+      <args>
+      @aranea_happytalk ARANEA: The Witch of Time was not always the party's 8iggest trou8lemaker. If you recall, you wore that tiara for a long time. ::::)
+      @meenah_annoyed MEENAH: yeah yeah
+      @aranea_happytalk ARANEA: Once she was as meek as can 8e. Hailing from the eastern provinces, she migrated across the seas and settled near the forest concealing Rufioh's guild. The two of them 8ecame quite fond of each other, and shared many interests!
+      @aranea_happytalk ARANEA: He secretly 8egan seeing someone else, 8elieving she knew nothing. 8ut she always suspected his infidelity, and over time grew quite distraught. 8ut her sadness never quite turned to rage and malevolence. Not until you... involved yourself. 
+      @meenah_annoyedtalk MEENAH: ugh do we really have to go through this
+      @aranea_happytalk ARANEA: If you'd like to earn your money, then yes!
+      @meenah_annoyed MEENAH: bleh fine
+      @aranea_happytalk ARANEA: After we 8egan our game, you quickly determined that winning was going to 8e an uphill 8attle with our team. Everyone was so preoccupied with their interpersonal issues, and no one seemed in any shape to 8e fighting major 8attles. Sound familiar?
+      @meenah_talk MEENAH: deja vus a bitch serk
+      @aranea_happytalk ARANEA: So you did your 8est to rile up the crew any way you could. Appealing to peoples insecurities, 8uried hostilities, 8rewing rivalries... needling anyone you could into confrontation with others. Your theory was that increasing everyone's state of aggression would make them 8etter equipped to play the game. And you were sort of right a8out that! 8ut the Alternians would prove it. Not our group, sadly.
+      @aranea_happytalk ARANEA: The poor girl who took the 8runt of your 8ullying tactics was Damara Megido. You talked up her matesprit's 8etrayal making her feel even more dreadful, while pushing him further into the arms of her rival, until she simply snapped. She attacked him, paralyzing him from the neck down. You finally got the aggressive confrontation you were looking for. Unfortunately, you unleashed something even you weren't prepared for, and you had to deal with her yourself. After a long 8loody duel, she killed you. And you would have stayed dead if not for me!
+      @aranea_happytalk ARANEA: You never listened to me. You just kept needling and fussing and meddling until eventually you paid the price, and I had to 8ail you out.
+      @meenah_wut2 MEENAH: (arg how bad do i even want this stupid money...)
+      @aranea_happytalk ARANEA: Damara has 8een unhinged ever since. 8y increasing her violent tendencies, instead of 8eing an asset in the game, she 8ecame a loose canon, ar8itrarily showing up at key moments throughout the timeline to sa8otage us. 
+      @aranea_happytalk ARANEA: So radical was her shift in personality, I've had a hard time 8elieving your incitement was solely to 8lame. It always seemed like other forces were in play, as if her acts, though apparently haphazard, were in keeping with some inscruta8le agenda. Of course it doesn't help that it's so hard to understand her even on a good day.
+      @aranea_happytalk ARANEA: Strangely, the only time she was eager to help us was when we were preparing to initiate the Scratch. And it's a good thing she was, since I'm not sure anyone else would have had the a8ility to do that kind of damage to the Cardinal Movement and release its energy. 
+      @aranea_happytalk ARANEA: It was almost a little eerie how happily she complied with our plan. What did Rufioh say she said? Something a8out how we would all finally get what we deserved...
+      @aranea_happytalk ARANEA: Which at the time, I thought sounded chilling. 8ut there's really two ways of looking at it. One is how the Scratch re8ooted our world into a state of pure chaos, culminating in the annihilation of our universe. 8ut on the other hand, we all got the chance to live out our wildest fantasies as adults on Alternia! 
+      @aranea_happytalk ARANEA: At least you and I sure did. And I wouldn't dou8t she feels the same way.
+      @meenah_idle MEENAH: so
+      @meenah_idle MEENAH: we done?
+      @aranea_happier ARANEA: That's it!
+      @meenah_talk MEENAH: toughest 5 bucks i ever made
+      <!--  -->
+      </args>
+</action>
+  	</classes>
+</sburb>

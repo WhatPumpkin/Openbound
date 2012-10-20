@@ -1,7 +1,8 @@
 <sburb description="fourth room">
 
 <dependencies>
-
+  <dependency>chars/aranea.xml</dependency>
+  <dependency>dialogs/expoDialog.xml</dependency>
 </dependencies>
 
 <assets>
@@ -9,6 +10,7 @@
 	<asset name='fourthRoomFG' type='graphic'>backgrounds/fourthRoomFG.png</asset>
 
 	<asset name='fourthRoomMap' type='graphic'>backgrounds/fourthRoomMap.png</asset>
+  <asset name='araneaStandSheet' type='graphic'>objects/aranea_stand.png</asset>
 </assets>
 
 
@@ -20,11 +22,29 @@
   			<action command='changeRoomRemote'>rooms/thirdRoom.xml,thirdRoom,459,720</action>
   		</trigger>
   		<trigger>
-  			<args>inBox2,char,1336,696,1432,420</args>
-  			<action command='changeRoomRemote'>rooms/fifthRoom.xml,fifthRoom,1228,552</action>
+  			<args>inBox2,char,186,279,228,492</args>
+  			<action command='changeRoomRemote'>
+          <args>rooms/fifthRoom.xml,fifthRoom,1228,552</args>
+          <action class='beKanaya'>
+            <action command='goBack'>
+              <args>kanaya</args>
+              <action command='follow'>
+                <args>meenah,kanaya</args>
+              </action>
+            </action>
+          </action>
+        </action>
   		</trigger>
   	</triggers>
   	
+    <sprite name='araneaStand' x='1004' y='418' width='100' height='30' collidable='true' depthing='1'>
+      <animation sheet='araneaStandSheet' x='-44' y='-100'/>
+      <action class='expoTalk1'/>
+      <action class='expoTalk2'/>
+      <action class='expoTalk3'/>
+      <action class='expoTalk4'/>
+    </sprite>
+
   	<sprite name='fourthRoomBG'>
   		<animation sheet='fourthRoomBG'/>
   	</sprite>
