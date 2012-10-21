@@ -94,25 +94,25 @@
 
 <action class='damaraTalk4' sprite='rufioh' command='talk' name='Talk to Damara.'>
       <args>
-      @rufioh_offendedtalk RUFIOH: hey doll... don't suppose you had anyth1ng to do w1th the recent d1sappearance of my lusus, d1d you?
+      @rufioh_offendedtalk \nRUFIOH: hey doll... don't suppose you had anyth1ng to do w1th the recent d1sappearance of my lusus, d1d you?
       @damara_talk DAMARA: もちろんそんなことはない。あなたの告発は言語道断。 
-      @rufioh_offended RUFIOH: yeah... sure... l1ke 1 bel1eve that!
-      @rufioh_talk RUFIOH: l1ke 1'm not so on to your tr1cks by now...
+      @rufioh_offended \nRUFIOH: yeah... sure... l1ke 1 bel1eve that!
+      @rufioh_talk \nRUFIOH: l1ke 1'm not so on to your tr1cks by now...
       @damara_huhtalk DAMARA: 黙れ。そう。あなたはまだ彼と別れたのですか？
-      @rufioh_sadtalk RUFIOH: no... not yet...
-      @rufioh_sheepish RUFIOH: 1 tr1ed... but 1 just couldn't do 1t... 1t's hard, you know?
+      @rufioh_sadtalk \nRUFIOH: no... not yet...
+      @rufioh_sheepish \nRUFIOH: 1 tr1ed... but 1 just couldn't do 1t... 1t's hard, you know?
       @damara_meantalk DAMARA: あなたは、どういう意味ですか。それは恋人があなたを裏切ったときに感じる？はい、私は知っている。
-      @rufioh_sadtalk RUFIOH: d*mn... so cold, g1rl. why can't you let the past go?
-      @rufioh_offended RUFIOH: anyway... once 1 actually do get up the nerve to break 1t to h1m... don't be th1nk1ng th1s 1s your b1g chance w1th me!
-      @rufioh_sheepish RUFIOH: 1t's over between us for good... k1nda for obv1ous reasons... so just fr1ends, you d1g?
+      @rufioh_sadtalk \nRUFIOH: d*mn... so cold, g1rl. why can't you let the past go?
+      @rufioh_offended \nRUFIOH: anyway... once 1 actually do get up the nerve to break 1t to h1m... don't be th1nk1ng th1s 1s your b1g chance w1th me!
+      @rufioh_sheepish \nRUFIOH: 1t's over between us for good... k1nda for obv1ous reasons... so just fr1ends, you d1g?
       @damara_fiendish DAMARA: 右。我々が表示されます。
-      @rufioh_happytalk RUFIOH: haha... yeah, 1 f1gured you'd be l1ke that. 
-      @rufioh_surprisetalk RUFIOH: anyway, meenah k1nd of needs to keep go1ng through th1s bubble... 1 know you l1ke to make sh*t d1ff1cult for everyone all the t1me, but...
-      @rufioh_surprisetalk RUFIOH: you th1nk you could get r1d of that b1g *ss 1ceberg th1ng you dropped there?
+      @rufioh_happytalk \nRUFIOH: haha... yeah, 1 f1gured you'd be l1ke that. 
+      @rufioh_surprisetalk \nRUFIOH: anyway, meenah k1nd of needs to keep go1ng through th1s bubble... 1 know you l1ke to make sh*t d1ff1cult for everyone all the t1me, but...
+      @rufioh_surprisetalk \nRUFIOH: you th1nk you could get r1d of that b1g *ss 1ceberg th1ng you dropped there?
       @damara_idle DAMARA: いいえクソ方法。
-      @rufioh_sheepish RUFIOH: aw, come on... do 1t for me, damara?
+      @rufioh_sheepish \nRUFIOH: aw, come on... do 1t for me, damara?
       @damara_smilemeantalk DAMARA:罰金。しかし、あなたは私に借りがある。性的な接待。
-      @rufioh_laugh RUFIOH: hahahaha... wow... alr1ght uh... maybe? just go...
+      @rufioh_laugh \nRUFIOH: hahahaha... wow... alr1ght uh... maybe? just go...
       <!--  -->
       </args>
 </action>
@@ -128,7 +128,7 @@
       @damara_talk DAMARA: ない。手袋を着用しないでください。私はそれがラフ好きです。私の体を押しつぶす。馬男。
       @horuss_hmmtalk HORUSS: 8=D &lt; I really need to finish my universal translation device so we can have a more coherent conversation. It's just so difficult to get the circuitry to function correctly when one insists on relying on steam power.
       @damara_squinttalk DAMARA: あなたは、幽霊のような私の性器が性的クライマックスを持っていることを確認してください。あなたの幻の馬のペニスでそれを行う必要があります。
-      @horuss_smiletalk HORUSS: 8=D &lt; You want me to bring your what to what e%actly with my what?
+      @horuss_smiletalk HORUSS: 8=D &lt; You want me to bring your what to what e%25actly with my what?
       @damara_smiletalk DAMARA: 私の裸の底にあなたの汗まみれの顔をこする。
       @horuss_idle HORUSS: 8=D &lt; Hmm. I...
       @horuss_sweat_bashful HORUSS: 8=D &lt; Sure?

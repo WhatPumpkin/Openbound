@@ -70,5 +70,17 @@
       </args>
 </action>
 
+<action class='porrimTalk4' sprite='damara' command='talk' name='Eavesdrop.'>
+      <args>
+      @porrim_angrytalk PORRIM: Damara, do+ yo+u mind? We're having a private co+nversatio+n here.
+      @damara_idle DAMARA: 
+      @porrim_angrytalk PORRIM: Please. Leave us alo+ne. We'll talk later, o+k?
+      @kanaya2_idle KANAYA: ...
+      @kanaya2_talk KANAYA: (shes making me slightly uncomfortable)
+      @porrim_talk PORRIM: (that's her specialty. just igno+re her until she go+es away.)
+      <!--  -->
+      </args>
+</action>
+
 	</classes>
 </sburb>

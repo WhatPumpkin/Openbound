@@ -70,7 +70,8 @@ Sburb.FontEngine.prototype.prefixColours = {
 	kankri:"#ff0000",porrim: "#008141",
 	latula:"#008282",cronus: "#6a006a",
 	mituna:"#a1a100", kurloz: "#6c00da",
-	meulin:"#416600"
+	meulin:"#416600", rufioh: "#a15000",
+	horuss:"#2b0057", damara: "#a10000"
 };
 
 //set the style
@@ -128,9 +129,9 @@ Sburb.FontEngine.prototype.parseText = function(){ //break it up into lines
 	for(i=0;i<this.text.length;i++){
 		if(this.text.charAt(i)==" "){
 			lastSpace = i;
-		}else if(this.text.charAt(i)=="\n"){
+		}else if(this.text.charAt(i)=="\\" && this.text.charAt(i+1)=="n"){
 			this.lines.push(this.text.substring(lineStart,i));
-			lineStart = i+1;
+			lineStart = i+2;
 			lastSpace = lineStart;
 			continue;
 		}

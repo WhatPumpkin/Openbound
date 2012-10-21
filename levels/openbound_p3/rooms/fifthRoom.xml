@@ -21,7 +21,7 @@
   <asset name='item17' type='graphic'>objects/items/item17.png</asset>
   <asset name='item18' type='graphic'>objects/items/item18.png</asset>
 
-  <asset name='dialogimg_ks.png'>interface/backgrounds/dialogimg_ks.png</asset>
+  <asset name='dialogimg_ks.png' type='graphic'>interface/backgrounds/dialogimg_ks.png</asset>
 </assets>
 
 <sprite depthing='3' name='item15'>
@@ -45,13 +45,17 @@
   	<triggers>
   		<trigger>
   			<args>inBox2,char,1336,696,1432,420</args>
-  			<action command='changeRoomRemote'>rooms/fourthRoom.xml,fourthRoom,279,405</action>
+  			<action command='changeRoomRemote'>
+          <args>rooms/fourthRoom.xml,fourthRoom,279,405</args>
+          <action command='playSong'>elevatorStuck,10.895</action>
+        </action>
   		</trigger>
-      <!--
+
       <trigger>
         <args>inBox,char,1024,2020,1000,1000</args>
+        <action class='finish'/>
       </trigger>
-      -->
+
   	</triggers>
 
     <paths>

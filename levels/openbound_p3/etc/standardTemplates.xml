@@ -50,7 +50,27 @@
 				<args>@!:#nice-try Where do you think YOU'RE going! This is Meenah's interactive quest through the afterlife. You can only leave this area if you're being her!</args>
 			</action>
 		</action>
-	  
+
+	  <action class='finish' command='goBack'>
+			<args>char</args>
+			<action command='talk'>
+				<args>@! This leads to the end of the game. Are you sure you're done here?</args>
+				<action command='presentActions'>
+					<args>
+						<action command='fadeOut' name='Yes.'>
+							<action command='presentActions'>
+								<args>
+									<action command='loadStateFile' name='Start over.'>
+											<args>../init.xml,false</args>
+									</action>
+								</args>
+							</action>
+						</action>
+						<action command='cancel' name='No.'/>
+					</args>
+				</action>
+			</action>
+		</action>
 	</classes>
 	
 	

@@ -103,7 +103,12 @@
             <action command="moveSprite" noDelay='true'>
               <args>horsaponi,1755,702</args>
               <action command="talk">
-                <args>@! nothing for now</args>
+                <args>@horuss_smiletalk HORUSS: 8=D &lt; You did it! You brought me a fine, young stallion!
+      @horuss_smiletalk HORUSS: 8=D &lt; What a beautiful gesture of friendship. I am so f*dging happy, you have no idea.
+      @horuss_crossed2 HORUSS: （;≧皿≦） &lt; Wh**ps, so happy, I have become loose with foul language, and forgot I wasn't supposed to make that face anymore.
+      @horuss_crossed2 HORUSS:  (;¬д¬) &lt; You are of course free to be me whenever you wish, my lady.
+      @! Be Horuss?
+                </args>
                 <action command='removeAction'>
                   <args>horuss,Be Horuss.,Give Horsaponi to Horuss.</args>
                   <action command='removeAction'>
@@ -119,8 +124,14 @@
                       </args>
                       <action command='addAction'>
                         <args>horuss,
-                          <action sprite='meenah' class='beHoruss'/>
+                          <action class='beHoruss'/>
                         </args>
+                        <action command='presentActions'>
+                          <args>
+                            <action class='beHoruss' name='Yes.'/>
+                            <action command='cancel' name='No.'/>
+                          </args>
+                        </action>
                       </action>
                     </action>
                   </action>
@@ -146,7 +157,6 @@
   <room name='firstRoom' walkableMap='firstRoomMap' mapScale='2'>
   	<triggers>
   		<trigger>
-
         <args>inBox2,meenah,2607,1701,2478,1146</args>
         <action command='goBack'>
           <args>meenah</args>
@@ -159,14 +169,58 @@
                   <action class='beKanaya'>
                     <action command='goBack'>
                       <args>kanaya</args>
-                      <action command='follow'>
-                        <args>meenah,kanaya</args>
+                      <action command='moveSprite'>
+                        <args>kanaya,400,502</args>
+                          <action command='follow'>
+                          <args>meenah,kanaya</args>
+                        </action>
                       </action>
                     </action>
                   </action>
                 </trigger>
               </args>
             </action>
+          </action>
+        </action>
+      </trigger>
+
+      <trigger>
+        <args>inBox2,damara,2607,1701,2478,1146</args>
+        <action command='changeRoomRemote'>
+          <args>rooms/secondRoom.xml,secondRoom,340,502</args>
+          <action command='moveSprite'>
+            <args>kanaya,1760,622</args>
+            <action command='playAnimation'>
+              <args>kanaya,walkRight</args>
+            </action>
+          </action>
+        </action>
+      </trigger>
+
+      <trigger operator='OR'>
+        <args>inBox2,rufioh,2607,1701,2478,1146</args>
+        <args>inBox2,horuss,2607,1701,2478,1146</args>
+        <action class='notForYou'/>
+      </trigger>
+
+      <trigger>
+        <args>spriteProperty,char,name=damara</args>
+        <args>gameState,isDamara!=true</args>
+        <action silent='true' command='setGameState'>
+          <args>isDamara,true</args>
+          <action command='addSprite'>
+            <args>latula,firstRoom</args>
+          </action>
+        </action>
+      </trigger>
+
+      <trigger>
+        <args>spriteProperty,char,name!=damara</args>
+        <args>gameState,isDamara=true</args>
+        <action silent='true' command='setGameState'>
+          <args>isDamara,false</args>
+          <action command='removeSprite'>
+            <args>latula,firstRoom</args>
           </action>
         </action>
       </trigger>
@@ -178,15 +232,13 @@
   		<motionpath path='firstRoomStairs3' xtox='0.7' xtoy='-0.7' />
   	</paths>
   	
-  	<character class='meenah' x='320' y='466' >
+  	<character class='meenah' x='404' y='692' >
       <action class='meenahTalk1'/>
       <action class='meenahTalk2'/>
       <action class='meenahTalk3'/>
-      <action sprite='damara' class='beMeenah'>
-        <action command='removeSprite'>
-          <args>latula,firstRoom</args>
-        </action>
-      </action>
+      <action class='beMeenah' sprite='rufioh'/>
+      <action class='beMeenah' sprite='horuss'/>
+      <action class='beMeenah' sprite='damara'/>
     </character>
   	
   	<character class='mituna' x='2394' y='285' state='crash'>
@@ -205,7 +257,7 @@
       </action>
     </character>
   	
-    <character class='rufioh' x='771' y='753' >
+    <character class='rufioh' x='771' y='733' >
       <action class='rufiohTalk1'/>
       <action class='rufiohTalk2'/>
       <action class='rufiohTalk3'/>
@@ -229,8 +281,13 @@
       <action class='damaraTalk5'/>
       <action class='damaraTalk6'/>
       <action class='beDamara' sprite='rufioh'>
-        <action command='addSprite'>
-          <args>latula,firstRoom</args>
+        <action command='removeAction'>
+          <args>damara,Be Damara.</args>
+          <action command='addAction'>
+            <args>damara,
+              <action class='beDamara'/>
+            </args>
+          </action>
         </action>
       </action>
     </character>
@@ -250,6 +307,9 @@
   			<args>qwartz,firstRoom</args>
   			<action command='addWalkable'>
   				<args>firstRoomWalkable,firstRoom</args>
+          <action command='removeActions'>
+            <args>firstRoomOrb,Examine bubble.,Remove quartz glacier.</args>
+          </action>
   			</action>
   		</action>
   	</sprite>
@@ -351,13 +411,23 @@
         <action command='addAction'>
           <args>rufioh,
             <action command='talk' name='Give Rufioh his lusus.'>
-              <args>@! nothing for now</args>
-              <action command='addAction'>
+              <args>@rufioh_happytalk RUFIOH: oh SH*T! you found h1m... thank you so much!!!
+      @rufioh_happytalk RUFIOH: 1 was so worr1ed... but now he's back, and so are my happy thoughts.
+      @rufioh_happytalk RUFIOH: got all k1nds of conf1dence now... heh, you wanna be me? my self esteem can totally accommodate that yo!!!
+      @! Be Rufioh?
+              </args>
+              <action command='addAction' noDelay='true'>
                 <args>rufioh,
                   <action class='beRufioh'/>
                 </args>
-                <action command='removeAction' noDelay='true'>
-                  <args>rufioh,Give Rufioh his lusus.</args>
+                <action command='removeActions' noDelay='true'>
+                  <args>rufioh,Give Rufioh his lusus.,Be Rufioh.</args>
+                  <action command='presentActions'>
+                    <args>
+                      <action class='beRufioh' name='Yes.'/>
+                      <action command='cancel' name='No.'/>
+                    </args>
+                  </action>
                 </action>
               </action>
             </action>

@@ -19,6 +19,7 @@
 <rooms>
   <room name='secondRoom' walkableMap='secondRoomMap' mapScale='2'>
   	<triggers>
+      
   		<trigger>
   			<args>inBox2,kanaya,200,196,286,820</args>
         <action command='goBack' noDelay='true'>
@@ -33,10 +34,17 @@
           </action>
         </action>
   		</trigger>
+
       <trigger>
         <args>inBox2,meenah,200,196,286,820</args>
         <action command='changeRoomRemote' noDelay='true'>rooms/firstRoom.xml,firstRoom,2403,1428</action>
       </trigger>
+
+      <trigger>
+        <args>inBox2,damara,200,196,286,820</args>
+        <action command='changeRoomRemote' noDelay='true'>rooms/firstRoom.xml,firstRoom,2403,1428</action>
+      </trigger>
+
   		<trigger>
   			<args>inBox2,char,1376,300,1266,254</args>
   			<action command='changeRoomRemote'>rooms/thirdRoom.xml,thirdRoom,2904,1761</action>
@@ -68,13 +76,16 @@
           </args>
         </action>
       </action>
-      <action sprite='!meenah' class='beKanaya'/>
+      <action class='porrimTalk4'/>
+      <action sprite='rose' class='beKanaya'/>
+      <action sprite='dave' class='beKanaya'/>
+      
     </character>
 
     <character class='porrim' x='1816' y='622' state='walkLeft'>
       <action class='porrimTalk1'/>
-      
       <action class='porrimTalk3'/>
+      <action class='porrimTalk4'/>
     </character>
 
     <sprite name='secondRoomDoor' x='1235' y='200' width='200' height='300'>

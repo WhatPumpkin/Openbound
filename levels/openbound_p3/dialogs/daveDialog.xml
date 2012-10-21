@@ -15,7 +15,7 @@
       @kanaya2_talk KANAYA: She Is Exhibiting Her Best Behavior While On This Tour
       @kanaya2_happytalk KANAYA: Shes Actually Doing Very Well So Far
       @dave_idle DAVE: ok whatever
-      @dave_talk DAVE: so what are we just not even bother to care anymore when we pass through dream bubbles now
+      @dave_talk DAVE: so what are we just not even bothering to care anymore when we pass through dream bubbles now
       @dave_talk DAVE: like no warning or alert or getting into our facetious battle stations or anything
       @dave_huh DAVE: eh who cares actually
       @dave_huhtalk DAVE: i probably wont even leave the room this time
@@ -23,6 +23,7 @@
       @dave_smug DAVE: no offense sea troll
       @meenah_fish MEENAH: (hornless dirtscraper)
       @kanaya2_idle KANAYA: Shh!
+      @meenah_wut2 MEENAH: 38(
       @kanaya2_happytalk KANAYA: So What Were You Just Mumbling Over Here Before I Interrupted You
       @dave_talk DAVE: oh just some raps
       @dave_talk DAVE: been working on my raps
@@ -197,5 +198,19 @@
       <!--  -->
       </args>
 </action>   
+<action class='daveTalk3' sprite='damara' command='talk' name='Talk to Dave.'>
+      <args>
+      @dave_idle DAVE: hey
+      @dave_talk DAVE: who the fuck are you
+      @dave_talk DAVE: dont think you belong in here 
+      @damara_smile DAMARA: I VERY HAPPY. 
+      @damara_smile DAMARA: MEET HUMAN.
+      @damara_smile DAMARA: SAY MUCH DELIGHT.
+      @dave_talk DAVE: meh you seem harmless enough
+      @dave_talk DAVE: what do i even care
+      @dave_talk DAVE: go fuck some shit up japanese schoolgirl troll
+      <!--  -->
+      </args>
+</action>
 </classes>
 </sburb>

@@ -1,6 +1,6 @@
 <sburb>
     <classes>
-<action class='expoTalk1' command='talk' name='Status report.'>
+<action sprite='meenah' class='expoTalk1' command='talk' name='Status report.'>
       <args>
       @meenah_annoyed:#kelp MEENAH: welp
       @meenah_annoyedtalk MEENAH: im a total failure
@@ -37,7 +37,7 @@
 </action>
 
 
-<action class='expoTalk2' command='talk' name='Tell me about Rufioh Nitram.'>
+<action sprite='meenah' class='expoTalk2' command='talk' name='Tell me about Rufioh Nitram.'>
       <args>
       @aranea_happytalk ARANEA: The Rogue of 8reath was always a very popular mem8er of our group. Pro8a8ly the most popular, I'd say. Sort of the anti-me, in that respect. Ever the recipient of romantic solicitations whichever way he turned. Sort of the anti-Cronus, in that respect.
       @meenah_creepylaugh MEENAH: aw yeah sick ampora burn outta nowhere hi 5
@@ -45,7 +45,7 @@
       @aranea_happytalk ARANEA: The Lost Weea8oos was a guild of youthful tree-dwelling troll otakus with a zeal for fisticuffs, flight, and various forms of exotic eastern theater. 8ane to the enemies of hijinks, scourge to the seafaring classes who...
       @meenah_fish MEENAH: NOP-E
       @meenah_fishtalk MEENAH: NOT LISFININ TO T)(IS LA LA LA GLUB GLUB GLUB
-      @aranea_annoyedtalk ARANEA: #77003c (GLU8 GLU8 GLU8 GLU8)## centuries of feuding with the Kemonomimi tri8es #77003c (GLU8 GLU8 GLU8 LA LA LA LA GLU8 GLU8 GLU8)## ceremonial torchlight yaoi festivals #77003c (LA LA LA LA GLU8 GLU8 LA LA LA)## tsundere quadrant vacillation #77003c (GLUUUUU8 GLU8GLU8GLU8GLU8 GLUUUUUUUUU8)## threw down a daggerlance to challenge the guild's high seme for dominance #77003c (NO NO NO NO NO NO NO NO NO NO)## ultimately served like a shonen on Shitsuji Island.
+      @aranea_annoyedtalk ARANEA: #77003c (GLUB GLUB GLUB GLUB)## centuries of feuding with the Kemonomimi tri8es #77003c (GLUB GLUB GLUB LA LA LA LA GLUB GLUB GLUB)## ceremonial torchlight yaoi festivals #77003c (LA LA LA LA GLUB GLUB LA LA LA)## tsundere quadrant vacillation #77003c (GLUUUUUB GLUBGLUBGLUBGLUB GLUUUUUUUUUB)## threw down a daggerlance to challenge the guild's high seme for dominance #77003c (NO NO NO NO NO NO NO NO NO NO)## ultimately served like a shonen on Shitsuji Island.
       @meenah_annoyed MEENAH: hey serket
       @meenah_annoyedtalk MEENAH: how much i gotta pay you to zip yer blowhole on this shit so tight you never bring it up again
       @aranea_happier ARANEA: For such a service, I will require nothing short of the large gold statue in your palace. I think you know which one I'm talking a8out.
@@ -56,7 +56,7 @@
 </action>
 
 
-<action class='expoTalk3' command='talk' name='Tell me about Horuss Zahhak.'>
+<action sprite='meenah' class='expoTalk3' command='talk' name='Tell me about Horuss Zahhak.'>
       <args>
       @aranea_happytalk ARANEA: The Page of Void was a self taught master of mechanics, an avid patron of the fine arts, a passionate 8ody 8uilder, archer, am8rosia collector and steamwright. A poet, a scholar, a warrior, a lover, he was all that his caste demanded and more. A true troll Renaissance man. His name means "He Who Stalks With The Muscle8easts."
       @aranea_happytalk ARANEA: 8ut all of his proficiencies were hard won, 8uilt from the 8lank slate as his aspect would imply, advancing at the slow pace his class would as well. Yet in spite of all he worked to make something of himself, he amounted to very little. Responsi8le for neither great feats of heroism nor acts of villainy, he was just another game piece to 8e moved a8out the 8oard. The aspect ruling his life would always conspire to dampen his relevance.
@@ -75,7 +75,7 @@
 </action>
 
 
-<action class='expoTalk4' command='talk' name='Tell me about Damara Megido.'>
+<action sprite='meenah' class='expoTalk4' command='talk' name='Tell me about Damara Megido.'>
       <args>
       @aranea_happytalk ARANEA: The Witch of Time was not always the party's 8iggest trou8lemaker. If you recall, you wore that tiara for a long time. ::::)
       @meenah_annoyed MEENAH: yeah yeah
@@ -103,5 +103,132 @@
       <!--  -->
       </args>
 </action>
+
+<action sprite='damara' class='expo2Talk1' command='talk' name='SAY WHAAAAAAAAAAAAAAT?'>
+      <args>
+      @! Damara!!! What the hell are you doing this deep into the game! Good grief, you are such a teen delinquent. I never should have let you out of Doc Scratch's pervert chamber in the alternate universe.
+      @damara_smilemeantalk DAMAR#000000 WHOOPS, nooooooooo no no no.##
+      @! I'm not gonna let you respond. You're just going say something totally filthy in Japanese again and make everyone uncomfortable.
+      @damara_lewd #000000 WHOA CUT THAT OUT!##
+      @! Sheesh. I guess this is what happens when you don't have a proper upbringing by a decent guardian. Or at least one who isn't a four foot tall asshole in suspenders, who's kind of like a creepy puppet uncle.
+      @! Look, let's all just chill out here. No more lewd Asian shenanigans, got it?? You may notice I bought a new franchise recently.
+      @! Cost me a fortune! I had to pawn a ring that used to belong to some dirtbag just to make the down payment.
+      @! But I should be able to recoup the losses, if I just tweak the business model a little. Hear me out. Instead of giving people money to listen to my shit? I think I might actually start CHARGING people for the service. Crazy, I know, right?
+      @! I've been thinking of dividing up my offers into a series of handsomely priced explanation bundles called EXPOSITION PAKS where I would...
+      @damara_fu3 DAMARA:
+      @! Oh kaaay, guess you're not down with that? 
+      @! What would you pay for an explanation? Want to make an offer?
+      @! Yeah you're not gonna pay me a goddamn penny, are you.
+      @damara_smoke DAMARA:
+      @! Ok fine. I'll give you these explanations for free. Let's call it a loss leader. You'll tell your friends, maybe they'll tell their friends, then the dead presidents start rolling in.
+      @! Yes? Yes???
+      @damara_huh DAMARA:
+      @! Aw fuck it. Just tell me what you wanna know.
+      @! But just a heads up, these stories are gonna be pretty shitty! I ain't no light player.
+      <!--  -->
+      </args>
+</action>
+
+<action sprite='damara' class='expo2Talk2' command='talk' name='Hey, before we start...'>
+      <args>
+      @! Did you get here with Damara before you got here with Meenah? If you did I think I'm going to flip my shit. That is one cracked way of going through this game. Stop talking to me right now and go come back as Meenah.
+      </args>
+</action>
+
+<action sprite='damara' class='expo2Talk3' command='talk' name='Tell me about Damara Megido.'>
+      <args>
+      @! You want me to tell you about YOU??? Talk about self absorbed, but alright.
+      @! You say stuff in Japanese, and when people who actually speak Japanese read it they probably laugh because the Japanese is so shitty. Sorry to burst your bubble Damara but the things you say started out in English, went through the google translator, and then out again so that it vaguely makes sense when translated back to English. So you aren't really authentic troll Japanese, you're fake troll Japanese.
+      @damara_fu2 DAMARA:
+      @! Whoa don't kill the messenger! Relax. Everyone thinks you're great. In fact, there's probably someone out there RIGHT NOW drawing some weird porn of you.
+      @damara_huh DAMARA: ???
+      <!--  -->
+      </args>
+</action>
+
+<action sprite='damara' class='expo2Talk4' command='talk' name='Tell me about Mituna Captor.'>
+      <args>
+      @! Mega Man Sollux has some problems. He falls down and stuff and talks on a 4chan background, because of 4chan. But in spite of that, he's brave and does his best and everyone loves him. Also no one can read a damn thing he says. His quirk is the least legible of all quirks, with Damara's coming in at a close second.
+      <!--  -->
+      </args>
+</action>
+
+<action sprite='damara' class='expo2Talk5' command='talk' name='Tell me about Rufioh Nitram.'>
+      <args>
+      @! With apologies to Dante Basco. Dante, I'm sorry about this. All of this. I am so, so sorry. You were leading the regular, modest life of a Hollywood superstar, then this shit happened. Everything is broken forever. I liked your work in The Last Airbender. You know what's funny is how there are probably some people who are reading this right now who have no idea what the fuck I'm talking about. But you know what? What the FUCK else is even new.
+      @! Anyway. Bangarang, dude.
+      @!:#rufiozuko.tumblr.com Bangarang.
+      <!--  -->
+      </args>
+</action>
+
+<action sprite='damara' class='expo2Talk6' command='talk' name='Tell me about Kankri Vantas.'>
+      <args>
+      @! Did you know: it is a Homestuck fact that 99 percent of all readers didn't read or care about anything Kankri said. So in other words, he is exactly like all terrible social justice bloggers. Some social justice bloggers get angry at the joke that he is, but those are the terrible ones, and being terrible is why they get angry. They want to be terrible in peace without being mocked. That is what it is like to be a justified target of ridicule. You feel sad and angry all the time and you don't know why. 
+      @! Kankri wears a cute red sweater and is otherwise fairly adorable. Porrim acts like his mom which is also cute as hell.
+      <!--  -->
+      </args>
+</action>
+  
+<action sprite='damara' class='expo2Talk7' command='talk' name='Tell me about Meulin Leijon.'>
+      <args>
+      @! Meulin is the deaf Nepeta in this kickass smorgasbord of disabled characters. She speaks in ASL to say memes which are called mimes because it's one letter away and therefore a play on words. But you can't actually use ASL to say animated tumblr gifs, you can only say words. She otherwise reads lips, which is funny because her bff sewed his damn mouth shut so they just sign memes to each other all day while stoned. It is implied that they smoke catnip together, as if it were marijuana, which is an especially amusing notion to people who like drugs. Moving on??
+      <!--  -->
+      </args>
+</action>
+
+<action sprite='damara' class='expo2Talk8' command='talk' name='Tell me about Latula Pyrope.'>
+      <args>
+      @! Latula is the gamegrl to Mituna's gamebro. Gamebros and gamegrls aren't really "types of people" so much as they are hollow cliches which are patronizing to multiple groups of people on multiple levels. So in other words, perfect attributes for some 1.5 dimensional NPC-caliber characters stocking a fun jrpg style walkaround game. Wait what was I talking about? Oh yeah Latula.
+      @! Latula's so rad but she can't smell. I think I agree with Karkat, that's not a disability. That's just like having a cold all the time, but without any actual symptoms or problems. Who cares. Latula likes to high five people all the time, but doesn't like to be left hanging. That's a pun, because Redglare liked to hang people with nooses. Mindfang ultimately left Redglare hanging that way too. I'm explaining jokes here. What? I told you these stories would suck. You get what you pay for.
+      <!--  -->
+      </args>
+</action>
+
+<action sprite='damara' class='expo2Talk9' command='talk' name='Tell me about Porrim Maryam.'>
+      <args>
+      @! Porrim is better at social justice than Kankri because she isn't a boring asshole. Some social justice people should try looking into that. Porrim wants there to be equality for ladies. Not everybody cares about that though, which makes it hard for people like Porrim. That's the way it is in the real world. CHALLENGES. But in any case, she is a vampire with cool tattoos. End of story.
+      <!--  -->
+      </args>
+</action>
+
+<action sprite='damara' class='expo2Talk10' command='talk' name='Tell me about Aranea Serket.'>
+      <args>
+      @! Aranea is a blabbermouth, just like Mindfang. She says long things both as a teen and as a sexy pirate adult that make people ask what am I even reading? It's about time I took over this exposition stand. The way I describe shit is a million times better. She sure charged me enough for it. God I took a bath on this thing. Why was it so expensive??? IT'S MADE OF FUCKING CARDBOARD.
+      <!--  -->
+      </args>
+</action>
+
+<action sprite='damara' class='expo2Talk11' command='talk' name='Tell me about Horrus Zahhak.'>
+      <args>
+      @! This dude is just Equius on horse steroids. The end.
+      <!--  -->
+      </args>
+</action>
+
+<action sprite='damara' class='expo2Talk12' command='talk' name='Tell me about Kurloz Makara.'>
+      <args>
+      @! He chewed off his tongue and sewed his mouth shut because he's a weirdo in cahoots with Gamzee and English. Who even knows what they're up to. It's probably just a lot of stupid bullshit. Meaningless, clownish nonsense. Want to know why they're assembling the wicked ensemble? They probably just think it's funny. Kurloz speaks in bones when he does his clown hypnosis shit but otherwise he mimes everything because get this: he's pretty much literally a mime. Also a juggalo. Because that's exactly what Homestuck needed. Another fucking juggalo. Homestuck needed another juggalo like it needed... 
+      @! Well, another twelve trolls I guess. 
+      <!--  -->
+      </args>
+</action>
+
+<action sprite='damara' class='expo2Talk13' command='talk' name='Tell me about Cronus Ampora.'>
+      <args>
+      @! Cronus is the worst character in Homestuck by a nautical mile. Any questions?
+      <!--  -->
+      </args>
+</action>
+
+<action sprite='damara' class='expo2Talk14' command='talk' name='Tell me about Meenah Peixes.'>
+      <args>
+      @! Meenah is kind of throwing a bone to the pisces people who got stuck with Feferi. Feferi didn't really do anything and then she died. Meenah is a cool sassy punk who has more important stuff to do than Feferi ever did. You just spent like the last three hours playing through these games from her POV so obviously you know that. You're probably sick of fish puns by now. After a while you start running out of fish puns. You can overdo it with fish puns, much like you can overfish the ocean. You start literally running out of fucking fish. Be careful out there.
+      @! Meenah discovered that raising and army is hard. But you know what's really hard? What's really hard is making games. Games disguise the effort that go into them probably like few other crafts. In order to make a game that is even slightly better than mediocre, someone probably had to die in the process. Like building pyramids. Nobody actually died while making these games though, hence they were just ok. But still if you add up all the work done collectively on these last three games, it probably was comparable to the manhours that went into [S] Cascade. You know what that is? That's a silly ass fact.
+      <!--  -->
+      </args>
+</action>
+
+
   	</classes>
 </sburb>

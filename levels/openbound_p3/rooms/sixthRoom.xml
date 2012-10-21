@@ -2,6 +2,7 @@
 
 <dependencies>
 	<dependency>chars/karkat.xml</dependency>
+  <dependency>chars/terezi.xml</dependency>
 </dependencies>
 
 <assets>
@@ -10,9 +11,17 @@
 	<asset name='sixthRoomMap' type='graphic'>backgrounds/sixthRoomMap.png</asset>
 
   <asset name='gamzeeSheet' type='graphic'>objects/gamzee.png</asset>
+  <asset name='tereziSit' type='graphic'>objects/terezi_sit.png</asset>
+  <asset name='gamzee_idle' type='graphic'>dialogs/gamzee/gamzee_idle.png</asset>
   <asset name='snooze' type='graphic'>objects/snooze.png</asset>
 
 </assets>
+
+<hud>
+  <dialogsprites>
+    <animation name='gamzee_idle' sheet='gamzee_idle' x='-220' y='-420'/>
+  </dialogsprites>
+</hud>
 
 <character class='karkat' x='792' y='638'>
       <action sprite='dave' command='talk' name='Talk to Karkat.'>
@@ -101,6 +110,18 @@
       </action>
     </sprite>
 
+    <sprite name='terezi' x='422' y='624' width='40' height='24' collidable='true' depthing='1'>
+      <animation sheet='tereziSit' x='-30' y='-90'/>
+      <action command='talk' name="It's Terezi!" sprite='damara'>
+          <args>
+          @terezi_idle TEREZI: H3Y D4MZ!!!!
+          @terezi_idle TEREZI: 1F YOU GO 4NYWH3R3 N34R H1M, 1 W1LL FUCK1NG K1LL YOU!
+          @damara_fu2 DAMARA:
+          <!--  -->
+          </args>
+      </action>
+    </sprite>
+
 <rooms>
   <room name='sixthRoom' walkableMap='sixthRoomMap' mapScale='2'>
   	<triggers>
@@ -122,6 +143,14 @@
         <args>inBox2,rose,751,998,503,900</args>
         <action command='removeSprite'>
           <args>gamzee,sixthRoom</args>
+          <action command='changeRoomRemote'>rooms/thirdRoom.xml,thirdRoom,1668,378</action>
+        </action>
+      </trigger>
+
+      <trigger>
+        <args>inBox2,damara,751,998,503,900</args>
+        <action command='removeSprite'>
+          <args>terezi,sixthRoom</args>
           <action command='changeRoomRemote'>rooms/thirdRoom.xml,thirdRoom,1668,378</action>
         </action>
       </trigger>
@@ -157,6 +186,12 @@
       <action sprite='dave' command='talk' name='Examine snoozing Karkat.'>
             <args>
             @! So many horns. You've always wondered what the elusive juggalo troll even needs with so many horns? You think he may have some sort of problem. Also what is with trolls and their weird tendency to be found sleeping in horn piles? You can't even imagine a less comfortable place to nap. There are some things you will never understand.
+            <!--  -->
+            </args>
+      </action>
+      <action sprite='damara' command='talk' name='What have we here?'>
+            <args>
+            @damara_smilemean DAMARA: ..............
             <!--  -->
             </args>
       </action>

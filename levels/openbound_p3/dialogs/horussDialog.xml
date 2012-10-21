@@ -3,7 +3,7 @@
     	<action class='horussTalk1' sprite='meenah' command='talk' name='Talk to Horuss.'>
       <args>
       @horuss_smiletalk HORUSS: 8=D &lt; Your Harness... I mean Hayness. Highness I mean.
-      @horuss_bashful:#Sh*ot!#I-mean-Hayness!#Whew. HORUSS: 8=D &lt; F*DDLEST*%. Please pardon my utterly e%ecrable language, and unforgivable stammering, your Horseness.
+      @horuss_bashful:#Sh*ot!#I-mean-Hayness!#Whew. HORUSS: 8=D &lt; F*DDLEST*%25. Please pardon my utterly e%25ecrable language, and unforgivable stammering, your Horseness.
       @horuss_sweat_talk HORUSS: 8=D &lt; I am a bale of nerves in your royal presence, and it has been so long. 
       @horuss_sweat_grin HORUSS: 8=D &lt; And when I am so spooked, you must know how that causes me to even more firmly identify with the majestic hoofbeast.
       @meenah_idle MEENAH: hey uh
@@ -16,14 +16,14 @@
       @meenah_wut MEENAH: guess??
       @meenah_annoyedtalk MEENAH: its disturbin as heck to me for whatever reason
       @horuss_smiletalk HORUSS: 8=D &lt; The last thing I desire is to disconcert our prodigal empress.
-      @horuss_smiletalk:#I've-been-cutting-back-on-the-horse-puns-too,-as-you-can-see. HORUSS: 8=D &lt; I just thought I would try smiling permanently and uncompromisingly, rather than resnorting to all those disgruntled e%pressions I usually trot out.
+      @horuss_smiletalk:#I've-been-cutting-back-on-the-horse-puns-too,-as-you-can-see. HORUSS: 8=D &lt; I just thought I would try smiling permanently and uncompromisingly, rather than resnorting to all those disgruntled e%25pressions I usually trot out.
       @meenah_annoyedtalk MEENAH: why the eff would you want to do that
       @horuss_idle:#8=3 HORUSS: 8=D &lt; It was on Meulin's suggestion, actually.
       @meenah_idle MEENAH: huh??
       @horuss_smiletalk HORUSS: 8=D &lt; Oh, I guess you must not have herd. She and I have developed quite a STRONG and stable moirallegiance recently.
       @meenah_idle:#disclamer:#less-impressed-than-i-sound MEENAH: daaaang
       @meenah_talk:#cats+horse#ftw MEENAH: that matchup makes no glubbin sense dude
-      @horuss_laugh:#If-you're-going-to-go#Go-out-with-a-smile#8=D HORUSS: 8=D &lt; E%actly. Whoof would have thought? If you a%ed me before we all died whether I would consider romantically pairing with a r*d*culous midb100d, let alone Ms. Leijon of all people, I'd probably have died regardless, due to laughter-induced asphy%iation.
+      @horuss_laugh:#If-you're-going-to-go#Go-out-with-a-smile#8=D HORUSS: 8=D &lt; E%25actly. Whoof would have thought? If you a%25ed me before we all died whether I would consider romantically pairing with a r*d*culous midb100d, let alone Ms. Leijon of all people, I'd probably have died regardless, due to laughter-induced asphy%25iation.
       @horuss_smiletalk:#Dancestors#Or-shall-I-say#Dressagecestors? HORUSS: 8=D &lt; But do you know what it was that finally cleared the sweat steam-induced fog from my goggles? It was meeting our post-scratch counterparts. 
       @horuss_smiletalk:#Which-naturally-I-would-drain-right-away-through-the-custom-sweat-valves HORUSS: 8=D &lt; Seeing our corresponding young Alternians, why it threatened to produce a tear-induced f100d on the inside of my goggles.
       @horuss_smiletalk HORUSS: 8=D &lt; Their relationship in spite of the STRONG class disparity I found to be so moving, so pure. It made me reconsider my perspective on Meulin entirely, who horsenestly I'd hardly ever given a second thought.
@@ -34,22 +34,22 @@
       @meenah_talk MEENAH: man why yall still act like you give a heap of manure about dating down on the spectrum
       @meenah_talk MEENAH: you and nitram been a thing for how long now
       @horuss_idle HORUSS: 8=D &lt; Yes, but no one was supposed to know about that!
-      @horuss_sweat_bashful2:#Though-I-have-literally-smithed-such-items-before,-pun-notwithstanding. HORUSS: 8=D &lt; That was always to be my own private, um, e%ploration. I had no intention of creating such a stirrup. 
+      @horuss_sweat_bashful2:#Though-I-have-literally-smithed-such-items-before,-pun-notwithstanding. HORUSS: 8=D &lt; That was always to be my own private, um, e%25ploration. I had no intention of creating such a stirrup. 
       @horuss_sweat_talk:#A-spur-of-the-moment-affair,-really. HORUSS: 8=D &lt; It was only to be a very private, fleeting dalliance with a BUOY, but the whole thing became so quickly scandalized. 
       @horuss_crossed HORUSS: 8=D &lt; And soon others were whisked into it such as you and the vengeful rust b100d, and... well, imagine my embarrassment. Trust me, the last thing I wanted was for royalty such as yourself to know I was pursuing forbidden b100d. To be caught with my hoof in the chocolate jar, so to nicker.
       @meenah_wut MEENAH: ill
       @horuss_idle2talk HORUSS: 8=D &lt; And I suppose I would have clopped my hands of the matter after the big k*rfuffle, but...
-      @horuss_idle HORUSS: 8=D &lt; I guess I didn't e%pect to fall in love.
+      @horuss_idle HORUSS: 8=D &lt; I guess I didn't e%25pect to fall in love.
       @meenah_wut MEENAH: 
       @horuss_smiletalk HORUSS: 8=D &lt; It's true. I am not ashamed to say it. I fell mane over hooves. Phantom snout over phantom hind quarters. He...
       @horuss_bashful:#With-but-a-roguish-glance. HORUSS: 8=D &lt; He stole my breath away.
       @meenah_idle MEENAH: wow life story alert do not care
-      @horuss_idle HORUSS: 8=D &lt; My apologies, your E%cellency.
+      @horuss_idle HORUSS: 8=D &lt; My apologies, your E%25cellency.
       @meenah_annoyedtalk MEENAH: just tell me why paling up with meu means you have to make that terrible face now
       @horuss_smiletalk:#Such-as#All-times. HORUSS: 8=D &lt; She's taught me to get in touch with my anger. Through a moderately discernible series of enthusiastic mimes, she has made it clear that it is much healthier to crush all negative emotions beneath a stampede of positivity, and to always be cheerful and upbeat no matter what, even if projecting that facade is at times physically painful.
       @meenah_talk MEENAH: that is some shitsauce advice and you should give it up homes
       @horuss_idle HORUSS: 8=D &lt; Um, yes. Very well.
-      @horuss_mad HORUSS: (EMOTE) &lt; Is this better?
+      @horuss_mad HORUSS: (;≧Д≦) &lt; Is this better?
       @meenah_happy MEENAH: much
       <!--  -->
       </args>
@@ -62,7 +62,7 @@
       @horuss_smiletalk HORUSS: 8=D &lt; Of course, I will if you order me to without hesitation. But lately I've been attempting to canter down a trail of nonviolence.
       @horuss_smiletalk:#Soon-I-may-even-be-able-to-say-STRENGTH-without-shouting. HORUSS: 8=D &lt; I've been saddled for so long with anger and hostility, and now my focus is on solving problems in ways that do not involve confrontation or physical STRENGTH.
       @horuss_sweat_talk HORUSS: 8=D &lt; Technology can solve so many problems, for instance. Do you have any idea how much energy is stored in sweat which may be released through its steam?
-      @horuss_sweat_grin HORUSS: 8=D &lt; Have you any clue as to the MIGHT of a quadrupedal automaton powered by raging currents of steam coursing through its e%quisite horizontal torso, and finally jetting through a perfect pair of metal nostrils? I could build as many as you like, my Empress.
+      @horuss_sweat_grin HORUSS: 8=D &lt; Have you any clue as to the MIGHT of a quadrupedal automaton powered by raging currents of steam coursing through its e%25quisite horizontal torso, and finally jetting through a perfect pair of metal nostrils? I could build as many as you like, my Empress.
       @meenah_talk:#unless-you-build-those-suckas-out-of-gold MEENAH: um no think i will pass on taking an army of snorting horsebots with me
       @meenah_talk MEENAH: so thats all you do is build stupid shit that runs on your sweat now?
       @meenah_talk MEENAH: cause i could really use a guy with muscle
@@ -77,7 +77,7 @@
       @meenah_angrytalk MEENAH: zahhak god damn it i am royally orderin you to stop doing that face forever
       @horuss_idle2 HORUSS: 8=o &lt; At once, my lady.
       @horuss_sadtalk HORUSS: 8o &lt; My formerly perky visage withdraws, while my fully erect posture shrivels at your regal disapproval.
-      @horuss_idle2talk HORUSS: (EMOTE) &lt; I shall henceforth emote in my customary manner, as such.
+      @horuss_idle2talk HORUSS: (ಠ益ಠ;) &lt; I shall henceforth emote in my customary manner, as such.
       @meenah_idle MEENAH: respect
       <!--  -->
       </args>
@@ -86,51 +86,51 @@
 
 <action class='horussTalk3' sprite='meenah' command='talk' name='Be Horuss.'>
       <args>
-      @horuss_idle2talk HORUSS: (EMOTE) &lt; Bring me a horse, and I am yours forever.
+      @horuss_idle2talk HORUSS: ᕦ(ò д óˇ)ᕤ &lt; Bring me a horse, and I am yours forever.
       <!--  -->
       </args>
 </action>
 
 <action class='horussTalk4' sprite='rufioh' command='talk' name='Talk to Horuss.'>
       <args>
-      @rufioh_happytalk RUFIOH: yo yo, horuss my gangsta, how you feel?
-      @rufioh_talk:#actually-that-st1ll-k1nda-hurt... RUFIOH: can 1 get a way gentle f1st bump from my boy? heh, yeah... just l1ke that... f*ck yes.
-      @rufioh_sheepish RUFIOH: anyway 1've been mean1ng to talk to you about someth1ng... someth1ng uh... pretty 1mportant.
-      @rufioh_surprisetalk RUFIOH: about us and the future and all that... you got a m1nute?
-      @rufioh_sheepish RUFIOH: ok, cool. so... d*mn... where do 1 even start...
-      @rufioh_sheepish RUFIOH: you know we've had noth1ng but good t1mes together... 1t's been the bomb.
-      @rufioh_sadtalk RUFIOH: well, maybe not everyth1ng... sh*t got d1cey at the start... w1th my crazy ex and... yeah. that's not the po1nt.
-      @rufioh_happytalk RUFIOH: remember the way you used to be... before you all started be1ng 1nterested 1n me... man you thought 1 sucked! haha, just another lowblood not worth your t1me.
-      @rufioh_happytalk RUFIOH: you were so p1ssed at people l1ke me and damara... so angry, damn. sh*t was scary... and damara... she used to be n1ce as can be... dunno what happened there. talk about a personal1ty sw1tch... for both of ya...
-      @rufioh_sheepish RUFIOH: but then for whatever reason... 1 guess you wanted to reach out to me? 1 mean... 1n secret, 1 know. you d1dn't want to be all shamed out of your h1ghbrow CIP club, 1 could always d1g that. 1 understood, you know?
-      @rufioh_sheepish RUFIOH: so you came to my woods... never told anybody... we hung out. that meant a lot to me. 1 want you to know that.
-      @rufioh_surprisetalk RUFIOH: people always had crazy 1deas about me. l1ke 1 was th1s brave adventure guy all up 1n th1s forest be1ng a bad*ss and sh*t. people l1ke... they always wanted to be w1th me, or... maybe even wanted to BE me? 1t was all k1nd of whack... even damara when we were go1ng out d1dn't really get me, 1 th1nk... she put me on th1s pedestal, 1 mean, back before she snapped.
-      @rufioh_happytalk RUFIOH: but you saw me for who 1 was. wh1ch was... not a perfect guy.
-      @rufioh_sheepish RUFIOH: l1ke, 1 wasn't really sure about myself, and you saw that... so you actually helped me.
-      @rufioh_happytalk RUFIOH: when we were 1n the woods together, you taught me to f1ght... taught me to fly... taught me to crow!
-      @rufioh_laugh RUFIOH: well, not l1terally. 1 mean... 1 knew how to do those th1ngs. 1 knew techn1cally how to flap my w1ngs and fly through the a1r. 1 knew how to say "bangarang" all loud 1f 1 really wanted to... but that was the th1ng. 1 was scared! 1 was scared of fly1ng and fall1ng... 1 was scared of f1ght1ng and fa1l1ng... and 1 was scared of crow1ng and... sound1ng l1ke a f***1ng 1d1ot 1 guess! lol...
-      @rufioh_sadtalk RUFIOH: but you helped me not be so scared, or self consc1ous maybe... you just helped me be myself. l1ke... to just be ok w1th not be1ng perfect, or l1v1ng up to whatever people th1nk 1 should be.
-      @rufioh_surprisetalk RUFIOH: maybe 1t's just nostalg1a... there was someth1ng better about those t1mes... just you and me ch1ll1ng 1n the woods. but then we entered the game.
-      @rufioh_sadtalk RUFIOH: and for some reason... st1ll don't know why... damara just started go1ng a l1ttle more nuts every day... gett1ng more and more jealous when she knew we were hang1ng out...
-      @rufioh_sadtalk RUFIOH: then she found out 1t was more than just hang1ng out... and 1 guess the rest was h1story.
-      @rufioh_sheepish RUFIOH: and yada yada... then we all d1ed... and we been together ever s1nce. all th1s t1me as ghosts...
-      @rufioh_sheepish RUFIOH: wh1ch 1s... a long t1me, you know?
-      @rufioh_surprisetalk RUFIOH: and 1'll always be grateful for what we had together... but... 1 guess people change.
-      @rufioh_surprisetalk RUFIOH: even as ghosts, they change, 1f you g1ve em long enough... they start want1ng d1fferent th1ngs...
-      @rufioh_sheepish RUFIOH: aw man! 1'm go1ng about th1s all wrong... say1ng way too much, but not what 1 want to say... sh*t, haha.
-      @rufioh_happytalk RUFIOH: 1 should just use the bravery you helped me understand 1 always had, and just say 1t...
-      @rufioh_sadtalk RUFIOH: 1 th1nk we should break up.
-      @rufioh_sad:#... RUFIOH: ...
-      @rufioh_sad RUFIOH: uh...
-      @rufioh_sad RUFIOH: you ok, bro?
+      @rufioh_happytalk \nRUFIOH: yo yo, horuss my gangsta, how you feel?
+      @rufioh_talk:#actually-that-st1ll-k1nda-hurt... \nRUFIOH: can 1 get a way gentle f1st bump from my boy? heh, yeah... just l1ke that... f*ck yes.
+      @rufioh_sheepish \nRUFIOH: anyway 1've been mean1ng to talk to you about someth1ng... someth1ng uh... pretty 1mportant.
+      @rufioh_surprisetalk \nRUFIOH: about us and the future and all that... you got a m1nute?
+      @rufioh_sheepish \nRUFIOH: ok, cool. so... d*mn... where do 1 even start...
+      @rufioh_sheepish \nRUFIOH: you know we've had noth1ng but good t1mes together... 1t's been the bomb.
+      @rufioh_sadtalk \nRUFIOH: well, maybe not everyth1ng... sh*t got d1cey at the start... w1th my crazy ex and... yeah. that's not the po1nt.
+      @rufioh_happytalk \nRUFIOH: remember the way you used to be... before you all started be1ng 1nterested 1n me... man you thought 1 sucked! haha, just another lowblood not worth your t1me.
+      @rufioh_happytalk \nRUFIOH: you were so p1ssed at people l1ke me and damara... so angry, damn. sh*t was scary... and damara... she used to be n1ce as can be... dunno what happened there. talk about a personal1ty sw1tch... for both of ya...
+      @rufioh_sheepish \nRUFIOH: but then for whatever reason... 1 guess you wanted to reach out to me? 1 mean... 1n secret, 1 know. you d1dn't want to be all shamed out of your h1ghbrow CIP club, 1 could always d1g that. 1 understood, you know?
+      @rufioh_sheepish \nRUFIOH: so you came to my woods... never told anybody... we hung out. that meant a lot to me. 1 want you to know that.
+      @rufioh_surprisetalk \nRUFIOH: people always had crazy 1deas about me. l1ke 1 was th1s brave adventure guy all up 1n th1s forest be1ng a bad*ss and sh*t. people l1ke... they always wanted to be w1th me, or... maybe even wanted to BE me? 1t was all k1nd of whack... even damara when we were go1ng out d1dn't really get me, 1 th1nk... she put me on th1s pedestal, 1 mean, back before she snapped.
+      @rufioh_happytalk \nRUFIOH: but you saw me for who 1 was. wh1ch was... not a perfect guy.
+      @rufioh_sheepish \nRUFIOH: l1ke, 1 wasn't really sure about myself, and you saw that... so you actually helped me.
+      @rufioh_happytalk \nRUFIOH: when we were 1n the woods together, you taught me to f1ght... taught me to fly... taught me to crow!
+      @rufioh_laugh \nRUFIOH: well, not l1terally. 1 mean... 1 knew how to do those th1ngs. 1 knew techn1cally how to flap my w1ngs and fly through the a1r. 1 knew how to say "bangarang" all loud 1f 1 really wanted to... but that was the th1ng. 1 was scared! 1 was scared of fly1ng and fall1ng... 1 was scared of f1ght1ng and fa1l1ng... and 1 was scared of crow1ng and... sound1ng l1ke a f***1ng 1d1ot 1 guess! lol...
+      @rufioh_sadtalk \nRUFIOH: but you helped me not be so scared, or self consc1ous maybe... you just helped me be myself. l1ke... to just be ok w1th not be1ng perfect, or l1v1ng up to whatever people th1nk 1 should be.
+      @rufioh_surprisetalk \nRUFIOH: maybe 1t's just nostalg1a... there was someth1ng better about those t1mes... just you and me ch1ll1ng 1n the woods. but then we entered the game.
+      @rufioh_sadtalk \nRUFIOH: and for some reason... st1ll don't know why... damara just started go1ng a l1ttle more nuts every day... gett1ng more and more jealous when she knew we were hang1ng out...
+      @rufioh_sadtalk \nRUFIOH: then she found out 1t was more than just hang1ng out... and 1 guess the rest was h1story.
+      @rufioh_sheepish \nRUFIOH: and yada yada... then we all d1ed... and we been together ever s1nce. all th1s t1me as ghosts...
+      @rufioh_sheepish \nRUFIOH: wh1ch 1s... a long t1me, you know?
+      @rufioh_surprisetalk \nRUFIOH: and 1'll always be grateful for what we had together... but... 1 guess people change.
+      @rufioh_surprisetalk \nRUFIOH: even as ghosts, they change, 1f you g1ve em long enough... they start want1ng d1fferent th1ngs...
+      @rufioh_sheepish \nRUFIOH: aw man! 1'm go1ng about th1s all wrong... say1ng way too much, but not what 1 want to say... sh*t, haha.
+      @rufioh_happytalk \nRUFIOH: 1 should just use the bravery you helped me understand 1 always had, and just say 1t...
+      @rufioh_sadtalk \nRUFIOH: 1 th1nk we should break up.
+      @rufioh_sad:#... \nRUFIOH: ...
+      @rufioh_sad \nRUFIOH: uh...
+      @rufioh_sad \nRUFIOH: you ok, bro?
       @horuss_sweat_talk HORUSS: 8=D &lt; Oh! I'm sorry, what did you say?
       @horuss_sweat_talk HORUSS: 8=D &lt; My ear valves filled up with sweat, and I didn't catch most of that.
-      @rufioh_sad RUFIOH: ...
+      @rufioh_sad \nRUFIOH: ...
       @horuss_sweat_talk HORUSS: 8=D &lt; Hey, why don't we participate in an enjoyable activity together later, as romantic afterlife partners? We could play one of those foreign card games you seem to like. What's that one called again? Fiddlespoon?
-      @rufioh_sadtalk RUFIOH: um. yeah... we can do that... 1 guess. that sounds... uh... dope.
-      @horuss_sweat_talk HORUSS: 8=D &lt; I know I'm not the best partner to share your e%otic and somewhat childish interests with, but I do my best to try to understand them and enjoy them with you. The most important thing is that we spend time together, and maintain a STRONG relationship.
-      @rufioh_sad RUFIOH: ...
-      @rufioh_sad RUFIOH: bangarang.
+      @rufioh_sadtalk \nRUFIOH: um. yeah... we can do that... 1 guess. that sounds... uh... dope.
+      @horuss_sweat_talk HORUSS: 8=D &lt; I know I'm not the best partner to share your e%25otic and somewhat childish interests with, but I do my best to try to understand them and enjoy them with you. The most important thing is that we spend time together, and maintain a STRONG relationship.
+      @rufioh_sad \nRUFIOH: ...
+      @rufioh_sad \nRUFIOH: bangarang.
       <!--  -->
       </args>
 </action>
@@ -138,7 +138,7 @@
 <action class='horussTalk5' sprite='damara' command='talk' name='Talk to Horuss.'>
       <args>
       @damara_meantalk DAMARA: これ以上のゲームはありません。馬男。今私をファック。
-      @horuss_idle HORUSS: 8=D &lt; E%cuse me?
+      @horuss_idle HORUSS: 8=D &lt; E%25cuse me?
       @damara_meantalk DAMARA: HORSEAPONIまたがっ私を曲げる。あなたは私がハードファック。HORSEYスタイル。
       @horuss_smiletalk HORUSS: 8=D &lt; Oh! I see you've taken an interest in this fine, albeit diminutive steed given to me as a gift earlier.
       @horuss_smiletalk HORUSS: 8=D &lt; Isn't it wonderful? I shall feed it many an apple and it will grow to be STRONG.
@@ -147,7 +147,7 @@
       @damara_squinttalk DAMARA: のバケツを埋めることができます。その後、内容がスプラッシュ。私の体の上にすべての。次に干し草の山に私を投げる。
       @horuss_hmmtalk HORUSS: 8=D &lt; You want me to... something about... hay? Hm.
       @damara_talk DAMARA: 私はあなたのホーンを吸うことができます。同時に、あなたは私のお尻を平手打ち。リズミカルにそれを行う。また。いななく。
-      @horuss_sweat_talk HORUSS: 8=D &lt; You would like me to perform... what rhythmic behavior, e%actly? While making which animal noise?
+      @horuss_sweat_talk HORUSS: 8=D &lt; You would like me to perform... what rhythmic behavior, e%25actly? While making which animal noise?
       @damara_talk DAMARA: 私のすべての反復をファック。性的エクスタシーを体験する私たちのすべてを引き起こす。私たちは一斉にオーガズムましょう。
       @horuss_sweat_bashful2 HORUSS: 8=D &lt; Do what with... wait... all of you? Wouldn't that be quite a lot of Damaras, regardless of the activity you are trying to describe?
       @damara_squinttalk DAMARA: 清潔なタオルで私を包んでください。私は農場の動物のようにうめき声をしなければならない。
@@ -155,8 +155,8 @@
       @damara_fiendish DAMARA: 私たちは一緒に私たちのお尻を持ってみましょう。共通のオーガズムに参加。すべての終わりでは、私たちを取り囲んでいる。
       @horuss_crossed HORUSS: 8=D &lt; Trying to decode your speech is quite agitating, you know.
       @horuss_crossed2 HORUSS: 8=D &lt; Whenever I talk to you, my system gets a little switchy.
-      @horuss_sweat_grin HORUSS: 8=D &lt; I begin to faintly channel an ancient soul from Alterniasia, and I come very close to understanding you. But then it vanishes just as quickly, and my host vessel is left with nothing but an overwhelming e%perience of perspiration.
-      @horuss_sweat_talk HORUSS: 8=D &lt; Not that I would e%pect a lowly rust b100ded singleton like you to understand.
+      @horuss_sweat_grin HORUSS: 8=D &lt; I begin to faintly channel an ancient soul from Alterniasia, and I come very close to understanding you. But then it vanishes just as quickly, and my host vessel is left with nothing but an overwhelming e%25perience of perspiration.
+      @horuss_sweat_talk HORUSS: 8=D &lt; Not that I would e%25pect a lowly rust b100ded singleton like you to understand.
       @damara_squinttalk DAMARA: もっと私を低下させる。私はほとんどそこにいる。
       @damara_fu4 DAMARA: フリーク。
       <!--  -->

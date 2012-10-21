@@ -49,14 +49,34 @@
 <rooms>
   <room name='thirdRoom' walkableMap='thirdRoomMap' mapScale='2'>
   	<triggers>
-  		<trigger>
+
+  		<trigger operator="OR">
   			<args>inBox2,kanaya,2991,1911,2841,1812</args>
+        <args>inBox2,damara,2991,1911,2841,1812</args>
   			<action command='changeRoomRemote'>rooms/secondRoom.xml,secondRoom,1326,380</action>
   		</trigger>
+
+      <trigger operator='OR'>
+        <args>inBox2,rose,2991,1911,2841,1812</args>
+        <args>inBox2,dave,2991,1911,2841,1812</args>
+        <action class='notForYou'/>
+      </trigger>
+
       <trigger>
         <args>inBox2,kanaya,1800,312,1551,243</args>
         <action command='changeRoomRemote'>rooms/sixthRoom.xml,sixthRoom,623,846</action>
       </trigger>
+
+      <trigger>
+        <args>inBox2,damara,1800,312,1551,243</args>
+        <action command='changeRoomRemote'>
+          <args>rooms/sixthRoom.xml,sixthRoom,623,846</args>
+          <action command='addSprite'>
+            <args>terezi,sixthRoom</args>
+          </action>
+        </action>
+      </trigger>
+
       <trigger>
         <args>inBox2,rose,1800,312,1551,243</args>
         <action command='changeRoomRemote'>
@@ -66,6 +86,7 @@
           </action>
         </action>
       </trigger>
+
       <trigger>
         <args>inBox2,dave,1800,312,1551,243</args>
         <action command='changeRoomRemote'>
@@ -75,6 +96,7 @@
           </action>
         </action>
       </trigger>
+
   		<trigger>
   			<args>inBox2,kanaya,345,831,225,609</args>
         <action command='goBack' noDelay='true'>
@@ -83,12 +105,36 @@
             <action command='unfollow'>
               <args>meenah</args>
               <action class='beMeenah'>
-      			    <action command='changeRoomRemote'>rooms/fourthRoom.xml,fourthRoom,1896,399</action>
+      			    <action command='changeRoomRemote'>
+                  <args>rooms/fourthRoom.xml,fourthRoom,1896,399</args>
+                  <action command='playAnimation'>
+                    <args>araneaStand,aranea</args>
+                    <action command='playSong'>elevatorStuck,10.895</action>
+                  </action>
+                </action>
               </action>
             </action>
           </action>
         </action>
   		</trigger>
+
+      <trigger>
+        <args>inBox2,damara,345,831,225,609</args>
+        <action command='changeRoomRemote'>
+          <args>rooms/fourthRoom.xml,fourthRoom,1896,399</args>
+          <action command='playAnimation'>
+            <args>araneaStand,andrew</args>
+            <action command='playSong'>elevatorStuck,10.895</action>
+          </action>
+        </action>
+      </trigger>
+
+      <trigger operator='OR'>
+        <args>inBox2,rose,345,831,225,609</args>
+        <args>inBox2,dave,345,831,225,609</args>
+        <action class='notForYou'/>
+      </trigger>
+
   	</triggers>
 
     <paths>
@@ -100,13 +146,15 @@
     <character class='rose' x='1503' y='1038'>
       <action class='roseTalk1'/>
       <action class='roseTalk2'/>
-      <action class='beRose'/>
+      <action class='roseTalk3'/>
+      <action class='beRose' sprite='!damara'/>
     </character>
 
     <character class='dave' x='1125' y='903'>
       <action class='daveTalk1'/>
       <action class='daveTalk2'/>
-      <action class='beDave'/>
+      <action class='daveTalk3'/>
+      <action class='beDave' sprite='!damara'/>
     </character>
 
     <sprite class='chest7' name='thirdRoomChest9' x='2826' y='351'>

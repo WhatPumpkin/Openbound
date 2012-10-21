@@ -215,7 +215,7 @@ Sburb.Dialoger.prototype.nextDialog = function(){
 			var desiredPos = this.startOnSide(this.oppositeSide(this.dialogSide));
 			sprite.x = desiredPos.x;
 			sprite.y = desiredPos.y;
-		}else if(this.actor.indexOf(newActor)!=0){
+		}else if(this.actor.indexOf(newActor)!=0 && newActor.indexOf(this.actor)!=0){
 			this.dialogSide = this.oppositeSide(this.dialogSide);
 			var sprite = this.dialogOnSide(this.dialogSide)
 			var desiredPos = this.startOnSide(this.dialogSide);

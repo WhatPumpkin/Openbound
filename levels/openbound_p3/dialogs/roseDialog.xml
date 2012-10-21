@@ -91,5 +91,18 @@
       <!--  -->
       </args>
 </action>
+<action class='roseTalk3' sprite='damara' command='talk' name='Talk to Rose.'>
+      <args>
+      @rose_talk ROSE: Hello. I don't think we've met.
+      @damara_huh DAMARA: 
+      @rose_talk ROSE: You seem confused. Are you lost?
+      @rose_annoyedtalk ROSE: Maybe you shouldn't be wandering around here.
+      @damara_smile DAMARA: PLEASE. APOLOGY.
+      @damara_smile DAMARA: NOT WANT. DISTURB YOU.
+      @rose_happytalk ROSE: Aw. You seem so sweet.
+      @rose_happytalk ROSE: Please, feel free to stay as long as you like.
+      <!--  -->
+      </args>
+</action>
   	</classes>
 </sburb>
