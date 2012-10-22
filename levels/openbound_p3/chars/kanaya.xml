@@ -7,7 +7,7 @@
 <classes>
 	<animation class='kanaya-dialog' frameInterval='6' x='-180' y='-454'/>
 	
-	<character class='kanaya' name='kanaya' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='kanayaSheet' state='walkFront' facing='Front'>
+	<character class='kanaya' name='kanaya' sx='-50' sy='-115' sWidth='100' sHeight='130' width='35' height='25' sheet='kanayaSheet' state='walkFront' facing='Front'>
 		
 	</character>
 	<action class='beKanaya' name='Be Kanaya.' command='macro'>

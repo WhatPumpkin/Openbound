@@ -6,8 +6,32 @@
 </dependencies>
 
 <assets>
-	<asset name='secondRoomBG' type='graphic'>backgrounds/secondRoomBG.png</asset>
-	<asset name='secondRoomFG' type='graphic'>backgrounds/secondRoomFG.png</asset>
+	<asset name='secondRoomBG_0_0' type='graphic'>backgrounds/slices/secondRoomBG_0_0.png</asset>
+<asset name='secondRoomBG_0_1' type='graphic'>backgrounds/slices/secondRoomBG_0_1.png</asset>
+<asset name='secondRoomBG_0_2' type='graphic'>backgrounds/slices/secondRoomBG_0_2.png</asset>
+<asset name='secondRoomBG_1_0' type='graphic'>backgrounds/slices/secondRoomBG_1_0.png</asset>
+<asset name='secondRoomBG_1_1' type='graphic'>backgrounds/slices/secondRoomBG_1_1.png</asset>
+<asset name='secondRoomBG_1_2' type='graphic'>backgrounds/slices/secondRoomBG_1_2.png</asset>
+<asset name='secondRoomBG_2_0' type='graphic'>backgrounds/slices/secondRoomBG_2_0.png</asset>
+<asset name='secondRoomBG_2_1' type='graphic'>backgrounds/slices/secondRoomBG_2_1.png</asset>
+<asset name='secondRoomBG_2_2' type='graphic'>backgrounds/slices/secondRoomBG_2_2.png</asset>
+<asset name='secondRoomBG_3_0' type='graphic'>backgrounds/slices/secondRoomBG_3_0.png</asset>
+<asset name='secondRoomBG_3_1' type='graphic'>backgrounds/slices/secondRoomBG_3_1.png</asset>
+<asset name='secondRoomBG_3_2' type='graphic'>backgrounds/slices/secondRoomBG_3_2.png</asset>
+<asset name='secondRoomBG_4_2' type='graphic'>backgrounds/slices/secondRoomBG_4_2.png</asset>
+<asset name='secondRoomFG_0_0' type='graphic'>backgrounds/slices/secondRoomFG_0_0.png</asset>
+<asset name='secondRoomFG_0_1' type='graphic'>backgrounds/slices/secondRoomFG_0_1.png</asset>
+<asset name='secondRoomFG_0_2' type='graphic'>backgrounds/slices/secondRoomFG_0_2.png</asset>
+<asset name='secondRoomFG_1_0' type='graphic'>backgrounds/slices/secondRoomFG_1_0.png</asset>
+<asset name='secondRoomFG_1_1' type='graphic'>backgrounds/slices/secondRoomFG_1_1.png</asset>
+<asset name='secondRoomFG_1_2' type='graphic'>backgrounds/slices/secondRoomFG_1_2.png</asset>
+<asset name='secondRoomFG_2_0' type='graphic'>backgrounds/slices/secondRoomFG_2_0.png</asset>
+<asset name='secondRoomFG_2_1' type='graphic'>backgrounds/slices/secondRoomFG_2_1.png</asset>
+<asset name='secondRoomFG_2_2' type='graphic'>backgrounds/slices/secondRoomFG_2_2.png</asset>
+<asset name='secondRoomFG_3_0' type='graphic'>backgrounds/slices/secondRoomFG_3_0.png</asset>
+<asset name='secondRoomFG_3_1' type='graphic'>backgrounds/slices/secondRoomFG_3_1.png</asset>
+<asset name='secondRoomFG_3_2' type='graphic'>backgrounds/slices/secondRoomFG_3_2.png</asset>
+<asset name='secondRoomFG_4_2' type='graphic'>backgrounds/slices/secondRoomFG_4_2.png</asset>
 
 	<asset name='secondRoomMap' type='graphic'>backgrounds/secondRoomMap.png</asset>
 
@@ -61,15 +85,9 @@
             <action name='Yes.' class='beKanaya'>
               <action command='follow'>
                 <args>meenah,kanaya</args>
-                <action command='removeSprite'>
-                  <args>secondRoomDoor,secondRoom</args>
-                  <action command='addWalkable'>
-                    <args>secondRoomWalkable,secondRoom</args>
-                    <action command='setGameState'>
-                      <args>followingKanaya,true</args>
-                    </action>
-                  </action>
-                </action>
+                <action command='setGameState'>
+                  <args>followingKanaya,true</args>
+                </action>  
               </action>
             </action>
             <action command='cancel' name='No.'/>
@@ -89,20 +107,29 @@
     </character>
 
     <sprite name='secondRoomDoor' x='1235' y='200' width='200' height='300'>
-      <action command='talk' name='Examine door.' sprite='meenah'>
+      <action command='talk' name='Examine door.' sprite='!kanaya'>
             <args>
             @! Wait... there's something different about this door. You think it might be a real door! It's not someone's memory, like the rest of this place is.
             @! The meteor must be physically passing through the dream bubble again. You'd love to get in here and snoop around somehow, but the door is password protected. There's got to be someone around here who knows the password...
             <!--  -->
             </args>
       </action>
+      <action command='removeSprite' name='Enter password.' sprite='kanaya'>
+        <args>secondRoomDoor,secondRoom</args>
+        <action command='addWalkable' noDelay='true'>
+          <args>secondRoomWalkable,secondRoom</args>
+          <action command='playSound' noDelay='true'>
+            <args>openSound2</args>
+          </action>
+        </action>
+      </action>
     </sprite>
 
   	<sprite name='secondRoomBG'>
-  		<animation sheet='secondRoomBG'/>
+  		<animation sheet='secondRoomBG' sliced='true' colSize='500' rowSize='500' numCols='5' numRows='3'/>
   	</sprite>
   	<sprite name='secondRoomFG' depthing='2'>
-  		<animation sheet='secondRoomFG'/>
+  		<animation sheet='secondRoomFG' sliced='true' colSize='500' rowSize='500' numCols='5' numRows='3'/>
   	</sprite>
   </room> 
 </rooms>

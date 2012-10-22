@@ -6,8 +6,15 @@
 </dependencies>
 
 <assets>
-	<asset name='sixthRoomBG' type='graphic'>backgrounds/sixthRoomBG.png</asset>
-
+<asset name='sixthRoomBG_0_0' type='graphic'>backgrounds/slices/sixthRoomBG_0_0.png</asset>
+<asset name='sixthRoomBG_0_1' type='graphic'>backgrounds/slices/sixthRoomBG_0_1.png</asset>
+<asset name='sixthRoomBG_0_2' type='graphic'>backgrounds/slices/sixthRoomBG_2_1.png</asset>
+<asset name='sixthRoomBG_1_0' type='graphic'>backgrounds/slices/sixthRoomBG_1_0.png</asset>
+<asset name='sixthRoomBG_1_1' type='graphic'>backgrounds/slices/sixthRoomBG_1_1.png</asset>
+<asset name='sixthRoomBG_1_2' type='graphic'>backgrounds/slices/sixthRoomBG_2_1.png</asset>
+<asset name='sixthRoomBG_2_0' type='graphic'>backgrounds/slices/sixthRoomBG_2_0.png</asset>
+<asset name='sixthRoomBG_2_1' type='graphic'>backgrounds/slices/sixthRoomBG_2_1.png</asset>
+<asset name='sixthRoomBG_2_2' type='graphic'>backgrounds/slices/sixthRoomBG_2_1.png</asset>
 	<asset name='sixthRoomMap' type='graphic'>backgrounds/sixthRoomMap.png</asset>
 
   <asset name='gamzeeSheet' type='graphic'>objects/gamzee.png</asset>
@@ -200,7 +207,7 @@
     
   	
   	<sprite name='sixthRoomBG'>
-  		<animation sheet='sixthRoomBG'/>
+  		<animation sheet='sixthRoomBG' sliced='true' colSize='500' rowSize='500' numCols='3' numRows='3'/>
   	</sprite>
 
   </room> 

@@ -17,9 +17,51 @@
 
 <assets>
 	
-	<asset name='firstRoomBG' type='graphic'>backgrounds/firstRoomBG.png</asset>
-
-  <asset name='firstRoomFG' type='graphic'>backgrounds/firstRoomFG.png</asset>
+	<asset name='firstRoomBG_0_0' type='graphic'>backgrounds/slices/firstRoomBG_0_0.png</asset>
+<asset name='firstRoomBG_0_1' type='graphic'>backgrounds/slices/firstRoomBG_0_1.png</asset>
+<asset name='firstRoomBG_0_2' type='graphic'>backgrounds/slices/firstRoomBG_0_2.png</asset>
+<asset name='firstRoomBG_0_3' type='graphic'>backgrounds/slices/firstRoomBG_0_3.png</asset>
+<asset name='firstRoomBG_1_0' type='graphic'>backgrounds/slices/firstRoomBG_1_0.png</asset>
+<asset name='firstRoomBG_1_1' type='graphic'>backgrounds/slices/firstRoomBG_1_1.png</asset>
+<asset name='firstRoomBG_1_2' type='graphic'>backgrounds/slices/firstRoomBG_1_2.png</asset>
+<asset name='firstRoomBG_1_3' type='graphic'>backgrounds/slices/firstRoomBG_1_3.png</asset>
+<asset name='firstRoomBG_2_0' type='graphic'>backgrounds/slices/firstRoomBG_2_0.png</asset>
+<asset name='firstRoomBG_2_1' type='graphic'>backgrounds/slices/firstRoomBG_2_1.png</asset>
+<asset name='firstRoomBG_2_2' type='graphic'>backgrounds/slices/firstRoomBG_2_2.png</asset>
+<asset name='firstRoomBG_2_3' type='graphic'>backgrounds/slices/firstRoomBG_2_3.png</asset>
+<asset name='firstRoomBG_3_0' type='graphic'>backgrounds/slices/firstRoomBG_3_0.png</asset>
+<asset name='firstRoomBG_3_1' type='graphic'>backgrounds/slices/firstRoomBG_3_1.png</asset>
+<asset name='firstRoomBG_3_2' type='graphic'>backgrounds/slices/firstRoomBG_3_2.png</asset>
+<asset name='firstRoomBG_3_3' type='graphic'>backgrounds/slices/firstRoomBG_3_3.png</asset>
+<asset name='firstRoomBG_4_0' type='graphic'>backgrounds/slices/firstRoomBG_4_0.png</asset>
+<asset name='firstRoomBG_4_1' type='graphic'>backgrounds/slices/firstRoomBG_4_1.png</asset>
+<asset name='firstRoomBG_4_2' type='graphic'>backgrounds/slices/firstRoomBG_4_2.png</asset>
+<asset name='firstRoomBG_4_3' type='graphic'>backgrounds/slices/firstRoomBG_4_3.png</asset>
+<asset name='firstRoomBG_5_0' type='graphic'>backgrounds/slices/firstRoomBG_5_0.png</asset>
+<asset name='firstRoomBG_5_1' type='graphic'>backgrounds/slices/firstRoomBG_5_1.png</asset>
+<asset name='firstRoomBG_5_2' type='graphic'>backgrounds/slices/firstRoomBG_5_2.png</asset>
+<asset name='firstRoomBG_5_3' type='graphic'>backgrounds/slices/firstRoomBG_5_3.png</asset>
+<asset name='firstRoomFG_0_1' type='graphic'>backgrounds/slices/firstRoomFG_0_1.png</asset>
+<asset name='firstRoomFG_0_2' type='graphic'>backgrounds/slices/firstRoomFG_0_2.png</asset>
+<asset name='firstRoomFG_0_3' type='graphic'>backgrounds/slices/firstRoomFG_0_3.png</asset>
+<asset name='firstRoomFG_1_1' type='graphic'>backgrounds/slices/firstRoomFG_1_1.png</asset>
+<asset name='firstRoomFG_1_2' type='graphic'>backgrounds/slices/firstRoomFG_1_2.png</asset>
+<asset name='firstRoomFG_1_3' type='graphic'>backgrounds/slices/firstRoomFG_1_3.png</asset>
+<asset name='firstRoomFG_2_0' type='graphic'>backgrounds/slices/firstRoomFG_2_0.png</asset>
+<asset name='firstRoomFG_2_1' type='graphic'>backgrounds/slices/firstRoomFG_2_1.png</asset>
+<asset name='firstRoomFG_2_2' type='graphic'>backgrounds/slices/firstRoomFG_2_2.png</asset>
+<asset name='firstRoomFG_2_3' type='graphic'>backgrounds/slices/firstRoomFG_2_3.png</asset>
+<asset name='firstRoomFG_3_0' type='graphic'>backgrounds/slices/firstRoomFG_3_0.png</asset>
+<asset name='firstRoomFG_3_1' type='graphic'>backgrounds/slices/firstRoomFG_3_1.png</asset>
+<asset name='firstRoomFG_3_3' type='graphic'>backgrounds/slices/firstRoomFG_3_3.png</asset>
+<asset name='firstRoomFG_4_0' type='graphic'>backgrounds/slices/firstRoomFG_4_0.png</asset>
+<asset name='firstRoomFG_4_1' type='graphic'>backgrounds/slices/firstRoomFG_4_1.png</asset>
+<asset name='firstRoomFG_4_2' type='graphic'>backgrounds/slices/firstRoomFG_4_2.png</asset>
+<asset name='firstRoomFG_4_3' type='graphic'>backgrounds/slices/firstRoomFG_4_3.png</asset>
+<asset name='firstRoomFG_5_0' type='graphic'>backgrounds/slices/firstRoomFG_5_0.png</asset>
+<asset name='firstRoomFG_5_1' type='graphic'>backgrounds/slices/firstRoomFG_5_1.png</asset>
+<asset name='firstRoomFG_5_2' type='graphic'>backgrounds/slices/firstRoomFG_5_2.png</asset>
+<asset name='firstRoomFG_5_3' type='graphic'>backgrounds/slices/firstRoomFG_5_3.png</asset>
 
 	<asset name='firstRoomMap' type='graphic'>backgrounds/firstRoomMap.png</asset>
 	
@@ -282,7 +324,7 @@
       <action class='damaraTalk6'/>
       <action class='beDamara' sprite='rufioh'>
         <action command='removeAction'>
-          <args>damara,Be Damara.</args>
+          <args>damara,Be Damara.,Be Damara.,Be Damara.</args>
           <action command='addAction'>
             <args>damara,
               <action class='beDamara'/>
@@ -309,9 +351,17 @@
   				<args>firstRoomWalkable,firstRoom</args>
           <action command='removeActions'>
             <args>firstRoomOrb,Examine bubble.,Remove quartz glacier.</args>
+            <action command='playSound'>
+              <args>hitPowerfulSound</args>
+            </action>
           </action>
   			</action>
   		</action>
+      <action command='talk' name="Yeah I have no idea what I'm doing here.">
+        <args>
+        @! Click the MAP link below the game for HOT TIPS!!!
+        </args>
+      </action>
   	</sprite>
 
     <sprite class='chest8' name='firstRoomChest1' x='618' y='778'>
@@ -393,6 +443,9 @@
                 <args>plush2,firstRoom</args>
                 <action command='addSprite' noDelay='true'>
                   <args>horsaponi,firstRoom</args>
+                  <action command='playSound' noDelay='true'>
+                    <args>hitWeakSound</args>
+                  </action>
                 </action>
               </action>
             </action>
@@ -465,11 +518,11 @@
     </sprite>
 
 		<sprite name='firstRoomBG'>
-			<animation sheet='firstRoomBG'/>
+			<animation sheet='firstRoomBG' sliced='true' colSize='500' rowSize='500' numCols='6' numRows='4'/>
 		</sprite>
 
 		<sprite name='firstRoomFG' depthing='2'>
-  		<animation sheet='firstRoomFG'/>
+  		<animation sheet='firstRoomFG' sliced='true' colSize='500' rowSize='500' numCols='6' numRows='4'/>
   	</sprite>
 
   </room> 

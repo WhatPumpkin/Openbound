@@ -7,7 +7,7 @@
 <classes>
 	<animation class='rose-dialog' frameInterval='6' x='-200' y='-454'/>
 	
-	<character class='rose' name='rose' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='roseSheet' state='walkFront' facing='Front'>
+	<character class='rose' name='rose' sx='-50' sy='-115' sWidth='100' sHeight='130' width='35' height='25' sheet='roseSheet' state='walkFront' facing='Front'>
 		
 	</character>
 	

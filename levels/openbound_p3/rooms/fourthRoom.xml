@@ -6,8 +6,32 @@
 </dependencies>
 
 <assets>
-	<asset name='fourthRoomBG' type='graphic'>backgrounds/fourthRoomBG.png</asset>
-	<asset name='fourthRoomFG' type='graphic'>backgrounds/fourthRoomFG.png</asset>
+	<asset name='fourthRoomBG_0_0' type='graphic'>backgrounds/slices/fourthRoomBG_0_0.png</asset>
+<asset name='fourthRoomBG_0_1' type='graphic'>backgrounds/slices/fourthRoomBG_0_1.png</asset>
+<asset name='fourthRoomBG_0_2' type='graphic'>backgrounds/slices/fourthRoomBG_0_2.png</asset>
+<asset name='fourthRoomBG_1_0' type='graphic'>backgrounds/slices/fourthRoomBG_1_0.png</asset>
+<asset name='fourthRoomBG_1_1' type='graphic'>backgrounds/slices/fourthRoomBG_1_1.png</asset>
+<asset name='fourthRoomBG_1_2' type='graphic'>backgrounds/slices/fourthRoomBG_1_2.png</asset>
+<asset name='fourthRoomBG_2_0' type='graphic'>backgrounds/slices/fourthRoomBG_2_0.png</asset>
+<asset name='fourthRoomBG_2_1' type='graphic'>backgrounds/slices/fourthRoomBG_2_1.png</asset>
+<asset name='fourthRoomBG_2_2' type='graphic'>backgrounds/slices/fourthRoomBG_2_2.png</asset>
+<asset name='fourthRoomBG_3_0' type='graphic'>backgrounds/slices/fourthRoomBG_3_0.png</asset>
+<asset name='fourthRoomBG_3_1' type='graphic'>backgrounds/slices/fourthRoomBG_3_1.png</asset>
+<asset name='fourthRoomBG_3_2' type='graphic'>backgrounds/slices/fourthRoomBG_3_2.png</asset>
+<asset name='fourthRoomBG_4_2' type='graphic'>backgrounds/slices/fourthRoomBG_4_2.png</asset>
+<asset name='fourthRoomFG_0_0' type='graphic'>backgrounds/slices/fourthRoomFG_0_0.png</asset>
+<asset name='fourthRoomFG_0_1' type='graphic'>backgrounds/slices/fourthRoomFG_0_1.png</asset>
+<asset name='fourthRoomFG_0_2' type='graphic'>backgrounds/slices/fourthRoomFG_0_2.png</asset>
+<asset name='fourthRoomFG_1_0' type='graphic'>backgrounds/slices/fourthRoomFG_1_0.png</asset>
+<asset name='fourthRoomFG_1_1' type='graphic'>backgrounds/slices/fourthRoomFG_1_1.png</asset>
+<asset name='fourthRoomFG_1_2' type='graphic'>backgrounds/slices/fourthRoomFG_1_2.png</asset>
+<asset name='fourthRoomFG_2_0' type='graphic'>backgrounds/slices/fourthRoomFG_2_0.png</asset>
+<asset name='fourthRoomFG_2_1' type='graphic'>backgrounds/slices/fourthRoomFG_2_1.png</asset>
+<asset name='fourthRoomFG_2_2' type='graphic'>backgrounds/slices/fourthRoomFG_2_2.png</asset>
+<asset name='fourthRoomFG_3_0' type='graphic'>backgrounds/slices/fourthRoomFG_3_0.png</asset>
+<asset name='fourthRoomFG_3_1' type='graphic'>backgrounds/slices/fourthRoomFG_3_1.png</asset>
+<asset name='fourthRoomFG_3_2' type='graphic'>backgrounds/slices/fourthRoomFG_3_2.png</asset>
+<asset name='fourthRoomFG_4_2' type='graphic'>backgrounds/slices/fourthRoomFG_4_2.png</asset>
 
 	<asset name='fourthRoomMap' type='graphic'>backgrounds/fourthRoomMap.png</asset>
   <asset name='araneaStandSheet' type='graphic'>objects/aranea_stand.png</asset>
@@ -54,7 +78,7 @@
   			<action command='changeRoomRemote'>
           <args>rooms/fifthRoom.xml,fifthRoom,1228,552</args>
           <action command='playSong'>
-            <args>meenahSong</args>
+            <args>vristavSong</args>
           </action>
         </action>
   		</trigger>
@@ -106,10 +130,10 @@
     </sprite>
 
   	<sprite name='fourthRoomBG'>
-  		<animation sheet='fourthRoomBG'/>
+  		<animation sheet='fourthRoomBG' sliced='true' colSize='500' rowSize='500' numCols='5' numRows='3'/>
   	</sprite>
   	<sprite name='fourthRoomFG' depthing='2'>
-  		<animation sheet='fourthRoomFG'/>
+  		<animation sheet='fourthRoomFG' sliced='true' colSize='500' rowSize='500' numCols='5' numRows='3'/>
   	</sprite>
   </room> 
 </rooms>

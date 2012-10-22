@@ -7,7 +7,7 @@
 <classes>
 	<animation class='horuss-dialog' frameInterval='6' x='-240' y='-524'/>
 	
-	<character class='horuss' name='horuss' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='horussSheet' state='walkFront' facing='Front'>
+	<character class='horuss' name='horuss' sx='-50' sy='-115' sWidth='100' sHeight='130' width='35' height='25' sheet='horussSheet' state='walkFront' facing='Front'>
 		
 	</character>
 	

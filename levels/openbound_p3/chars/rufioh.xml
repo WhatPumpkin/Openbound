@@ -7,7 +7,7 @@
 <classes>
 	<animation class='rufioh-dialog' frameInterval='6' x='-340' y='-598'/>
 	
-	<character class='rufioh' name='rufioh' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='rufiohSheet' state='walkFront' facing='Front'>
+	<character class='rufioh' name='rufioh' sx='-50' sy='-115' sWidth='100' sHeight='130' width='35' height='25' sheet='rufiohSheet' state='walkFront' facing='Front'>
 		
 	</character>
 	

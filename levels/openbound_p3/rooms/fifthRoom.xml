@@ -5,8 +5,40 @@
 </dependencies>
 
 <assets>
-	<asset name='fifthRoomBG' type='graphic'>backgrounds/fifthRoomBG.png</asset>
-	<asset name='fifthRoomFG' type='graphic'>backgrounds/fifthRoomFG.png</asset>
+	<asset name='fifthRoomBG_0_0' type='graphic'>backgrounds/slices/fifthRoomBG_0_0.png</asset>
+<asset name='fifthRoomBG_0_1' type='graphic'>backgrounds/slices/fifthRoomBG_0_1.png</asset>
+<asset name='fifthRoomBG_0_2' type='graphic'>backgrounds/slices/fifthRoomBG_0_2.png</asset>
+<asset name='fifthRoomBG_0_3' type='graphic'>backgrounds/slices/fifthRoomBG_0_3.png</asset>
+<asset name='fifthRoomBG_0_4' type='graphic'>backgrounds/slices/fifthRoomBG_0_4.png</asset>
+<asset name='fifthRoomBG_0_5' type='graphic'>backgrounds/slices/fifthRoomBG_0_5.png</asset>
+<asset name='fifthRoomBG_1_0' type='graphic'>backgrounds/slices/fifthRoomBG_1_0.png</asset>
+<asset name='fifthRoomBG_1_1' type='graphic'>backgrounds/slices/fifthRoomBG_1_1.png</asset>
+<asset name='fifthRoomBG_1_2' type='graphic'>backgrounds/slices/fifthRoomBG_1_2.png</asset>
+<asset name='fifthRoomBG_1_3' type='graphic'>backgrounds/slices/fifthRoomBG_1_3.png</asset>
+<asset name='fifthRoomBG_1_4' type='graphic'>backgrounds/slices/fifthRoomBG_1_4.png</asset>
+<asset name='fifthRoomBG_1_5' type='graphic'>backgrounds/slices/fifthRoomBG_1_5.png</asset>
+<asset name='fifthRoomBG_2_0' type='graphic'>backgrounds/slices/fifthRoomBG_2_0.png</asset>
+<asset name='fifthRoomBG_2_1' type='graphic'>backgrounds/slices/fifthRoomBG_2_1.png</asset>
+<asset name='fifthRoomBG_2_2' type='graphic'>backgrounds/slices/fifthRoomBG_2_2.png</asset>
+<asset name='fifthRoomBG_2_3' type='graphic'>backgrounds/slices/fifthRoomBG_2_3.png</asset>
+<asset name='fifthRoomBG_2_4' type='graphic'>backgrounds/slices/fifthRoomBG_2_4.png</asset>
+<asset name='fifthRoomBG_2_5' type='graphic'>backgrounds/slices/fifthRoomBG_2_5.png</asset>
+<asset name='fifthRoomFG_0_0' type='graphic'>backgrounds/slices/fifthRoomFG_0_0.png</asset>
+<asset name='fifthRoomFG_0_1' type='graphic'>backgrounds/slices/fifthRoomFG_0_1.png</asset>
+<asset name='fifthRoomFG_0_2' type='graphic'>backgrounds/slices/fifthRoomFG_0_2.png</asset>
+<asset name='fifthRoomFG_0_3' type='graphic'>backgrounds/slices/fifthRoomFG_0_3.png</asset>
+<asset name='fifthRoomFG_0_4' type='graphic'>backgrounds/slices/fifthRoomFG_0_4.png</asset>
+<asset name='fifthRoomFG_0_5' type='graphic'>backgrounds/slices/fifthRoomFG_0_5.png</asset>
+<asset name='fifthRoomFG_1_0' type='graphic'>backgrounds/slices/fifthRoomFG_1_0.png</asset>
+<asset name='fifthRoomFG_1_2' type='graphic'>backgrounds/slices/fifthRoomFG_1_2.png</asset>
+<asset name='fifthRoomFG_1_4' type='graphic'>backgrounds/slices/fifthRoomFG_1_4.png</asset>
+<asset name='fifthRoomFG_1_5' type='graphic'>backgrounds/slices/fifthRoomFG_1_5.png</asset>
+<asset name='fifthRoomFG_2_0' type='graphic'>backgrounds/slices/fifthRoomFG_2_0.png</asset>
+<asset name='fifthRoomFG_2_1' type='graphic'>backgrounds/slices/fifthRoomFG_2_1.png</asset>
+<asset name='fifthRoomFG_2_2' type='graphic'>backgrounds/slices/fifthRoomFG_2_2.png</asset>
+<asset name='fifthRoomFG_2_3' type='graphic'>backgrounds/slices/fifthRoomFG_2_3.png</asset>
+<asset name='fifthRoomFG_2_4' type='graphic'>backgrounds/slices/fifthRoomFG_2_4.png</asset>
+<asset name='fifthRoomFG_2_5' type='graphic'>backgrounds/slices/fifthRoomFG_2_5.png</asset>
 
 	<asset name='fifthRoomMap' type='graphic'>backgrounds/fifthRoomMap.png</asset>
 
@@ -21,7 +53,8 @@
   <asset name='item17' type='graphic'>objects/items/item17.png</asset>
   <asset name='item18' type='graphic'>objects/items/item18.png</asset>
 
-  <asset name='dialogimg_ks.png' type='graphic'>interface/backgrounds/dialogimg_ks.png</asset>
+  <asset name='dialogimg_ks' type='graphic'>interface/backgrounds/dialogimg_ks.png</asset>
+  <asset name='vristavSong' type='audio'>audio/music/VrisTavLoop.oga;audio/music/VrisTavLoop.mp3</asset>
 </assets>
 
 <sprite depthing='3' name='item15'>
@@ -115,10 +148,10 @@
     </sprite>
   	
   	<sprite name='fifthRoomBG'>
-  		<animation sheet='fifthRoomBG'/>
+  		<animation sheet='fifthRoomBG' sliced='true' colSize='500' rowSize='500' numCols='3' numRows='6'/>
   	</sprite>
   	<sprite name='fifthRoomFG' depthing='2'>
-  		<animation sheet='fifthRoomFG'/>
+  		<animation sheet='fifthRoomFG' sliced='true' colSize='500' rowSize='500' numCols='3' numRows='6'/>
   	</sprite>
   </room> 
 </rooms>

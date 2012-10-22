@@ -6,8 +6,51 @@
 </dependencies>
 
 <assets>
-	<asset name='thirdRoomBG' type='graphic'>backgrounds/thirdRoomBG.png</asset>
-	<asset name='thirdRoomFG' type='graphic'>backgrounds/thirdRoomFG.png</asset>
+	<asset name='thirdRoomBG_0_0' type='graphic'>backgrounds/slices/thirdRoomBG_0_0.png</asset>
+<asset name='thirdRoomBG_0_1' type='graphic'>backgrounds/slices/thirdRoomBG_0_1.png</asset>
+<asset name='thirdRoomBG_0_2' type='graphic'>backgrounds/slices/thirdRoomBG_0_2.png</asset>
+<asset name='thirdRoomBG_0_3' type='graphic'>backgrounds/slices/thirdRoomBG_0_3.png</asset>
+<asset name='thirdRoomBG_1_0' type='graphic'>backgrounds/slices/thirdRoomBG_1_0.png</asset>
+<asset name='thirdRoomBG_1_1' type='graphic'>backgrounds/slices/thirdRoomBG_1_1.png</asset>
+<asset name='thirdRoomBG_1_2' type='graphic'>backgrounds/slices/thirdRoomBG_1_2.png</asset>
+<asset name='thirdRoomBG_1_3' type='graphic'>backgrounds/slices/thirdRoomBG_1_3.png</asset>
+<asset name='thirdRoomBG_2_0' type='graphic'>backgrounds/slices/thirdRoomBG_2_0.png</asset>
+<asset name='thirdRoomBG_2_1' type='graphic'>backgrounds/slices/thirdRoomBG_2_1.png</asset>
+<asset name='thirdRoomBG_2_2' type='graphic'>backgrounds/slices/thirdRoomBG_2_2.png</asset>
+<asset name='thirdRoomBG_2_3' type='graphic'>backgrounds/slices/thirdRoomBG_2_3.png</asset>
+<asset name='thirdRoomBG_3_0' type='graphic'>backgrounds/slices/thirdRoomBG_3_0.png</asset>
+<asset name='thirdRoomBG_3_1' type='graphic'>backgrounds/slices/thirdRoomBG_3_1.png</asset>
+<asset name='thirdRoomBG_3_2' type='graphic'>backgrounds/slices/thirdRoomBG_3_2.png</asset>
+<asset name='thirdRoomBG_3_3' type='graphic'>backgrounds/slices/thirdRoomBG_3_3.png</asset>
+<asset name='thirdRoomBG_4_0' type='graphic'>backgrounds/slices/thirdRoomBG_4_0.png</asset>
+<asset name='thirdRoomBG_4_1' type='graphic'>backgrounds/slices/thirdRoomBG_4_1.png</asset>
+<asset name='thirdRoomBG_4_2' type='graphic'>backgrounds/slices/thirdRoomBG_4_2.png</asset>
+<asset name='thirdRoomBG_4_3' type='graphic'>backgrounds/slices/thirdRoomBG_4_3.png</asset>
+<asset name='thirdRoomBG_5_0' type='graphic'>backgrounds/slices/thirdRoomBG_5_0.png</asset>
+<asset name='thirdRoomBG_5_1' type='graphic'>backgrounds/slices/thirdRoomBG_5_1.png</asset>
+<asset name='thirdRoomBG_5_2' type='graphic'>backgrounds/slices/thirdRoomBG_5_2.png</asset>
+<asset name='thirdRoomBG_5_3' type='graphic'>backgrounds/slices/thirdRoomBG_5_3.png</asset>
+<asset name='thirdRoomFG_0_2' type='graphic'>backgrounds/slices/thirdRoomFG_0_2.png</asset>
+<asset name='thirdRoomFG_0_3' type='graphic'>backgrounds/slices/thirdRoomFG_0_3.png</asset>
+<asset name='thirdRoomFG_1_0' type='graphic'>backgrounds/slices/thirdRoomFG_1_0.png</asset>
+<asset name='thirdRoomFG_1_1' type='graphic'>backgrounds/slices/thirdRoomFG_1_1.png</asset>
+<asset name='thirdRoomFG_1_2' type='graphic'>backgrounds/slices/thirdRoomFG_1_2.png</asset>
+<asset name='thirdRoomFG_1_3' type='graphic'>backgrounds/slices/thirdRoomFG_1_3.png</asset>
+<asset name='thirdRoomFG_2_0' type='graphic'>backgrounds/slices/thirdRoomFG_2_0.png</asset>
+<asset name='thirdRoomFG_2_1' type='graphic'>backgrounds/slices/thirdRoomFG_2_1.png</asset>
+<asset name='thirdRoomFG_2_2' type='graphic'>backgrounds/slices/thirdRoomFG_2_2.png</asset>
+<asset name='thirdRoomFG_2_3' type='graphic'>backgrounds/slices/thirdRoomFG_2_3.png</asset>
+<asset name='thirdRoomFG_3_0' type='graphic'>backgrounds/slices/thirdRoomFG_3_0.png</asset>
+<asset name='thirdRoomFG_3_1' type='graphic'>backgrounds/slices/thirdRoomFG_3_1.png</asset>
+<asset name='thirdRoomFG_3_2' type='graphic'>backgrounds/slices/thirdRoomFG_3_2.png</asset>
+<asset name='thirdRoomFG_3_3' type='graphic'>backgrounds/slices/thirdRoomFG_3_3.png</asset>
+<asset name='thirdRoomFG_4_0' type='graphic'>backgrounds/slices/thirdRoomFG_4_0.png</asset>
+<asset name='thirdRoomFG_4_1' type='graphic'>backgrounds/slices/thirdRoomFG_4_1.png</asset>
+<asset name='thirdRoomFG_4_2' type='graphic'>backgrounds/slices/thirdRoomFG_4_2.png</asset>
+<asset name='thirdRoomFG_4_3' type='graphic'>backgrounds/slices/thirdRoomFG_4_3.png</asset>
+<asset name='thirdRoomFG_5_1' type='graphic'>backgrounds/slices/thirdRoomFG_5_1.png</asset>
+<asset name='thirdRoomFG_5_2' type='graphic'>backgrounds/slices/thirdRoomFG_5_2.png</asset>
+<asset name='thirdRoomFG_5_3' type='graphic'>backgrounds/slices/thirdRoomFG_5_3.png</asset>
 
 	<asset name='thirdRoomMap' type='graphic'>backgrounds/thirdRoomMap.png</asset>
 
@@ -104,7 +147,8 @@
           <action command='fadeOut'>
             <action command='unfollow'>
               <args>meenah</args>
-              <action class='beMeenah'>
+              <action command='changeChar'>
+                <args>meenah</args>
       			    <action command='changeRoomRemote'>
                   <args>rooms/fourthRoom.xml,fourthRoom,1896,399</args>
                   <action command='playAnimation'>
@@ -212,10 +256,10 @@
     </sprite>
   	
   	<sprite name='thirdRoomBG'>
-  		<animation sheet='thirdRoomBG'/>
+  		<animation sheet='thirdRoomBG' sliced='true' colSize='500' rowSize='500' numCols='6' numRows='4'/>
   	</sprite>
   	<sprite name='thirdRoomFG' depthing='2'>
-  		<animation sheet='thirdRoomFG'/>
+  		<animation sheet='thirdRoomFG' sliced='true' colSize='500' rowSize='500' numCols='6' numRows='4'/>
   	</sprite>
   </room> 
 </rooms>

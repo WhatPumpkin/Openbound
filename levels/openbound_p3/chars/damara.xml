@@ -7,7 +7,7 @@
 <classes>
 	<animation class='damara-dialog' frameInterval='6' x='-180' y='-494'/>
 	
-	<character class='damara' name='damara' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='damaraSheet' state='walkFront' facing='Front'>
+	<character class='damara' name='damara' sx='-50' sy='-115' sWidth='100' sHeight='130' width='35' height='25' sheet='damaraSheet' state='walkFront' facing='Front'>
 		
 	</character>
 	

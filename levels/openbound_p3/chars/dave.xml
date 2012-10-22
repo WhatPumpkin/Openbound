@@ -7,7 +7,7 @@
 <classes>
 	<animation class='dave-dialog' frameInterval='6' x='-230' y='-454'/>
 	
-	<character class='dave' name='dave' sx='-50' sy='-110' sWidth='100' sHeight='130' width='30' height='15' sheet='daveSheet' state='walkFront' facing='Front'>
+	<character class='dave' name='dave' sx='-50' sy='-115' sWidth='100' sHeight='130' width='35' height='25' sheet='daveSheet' state='walkFront' facing='Front'>
 		
 	</character>
 	<action command='macro' class='beDave' name='Be Dave.'>
