@@ -71,7 +71,7 @@ Sburb.FontEngine.prototype.prefixColours = {
 	latula:"#008282",cronus: "#6a006a",
 	mituna:"#a1a100", kurloz: "#6c00da",
 	meulin:"#416600", rufioh: "#a15000",
-	horuss:"#2b0057", damara: "#a10000"
+	horuss:"#000056", damara: "#a10000"
 };
 
 //set the style
